@@ -1,11 +1,11 @@
 
 let identity = function ( n ) {
 
-	let sigma = permutation( n ) ;
+	let rho = permutation( n ) ;
 
-	_identity( sigma , n ) ;
+	_identity( rho , n ) ;
 
-	return sigma ;
+	return rho ;
 
 } ;
 
