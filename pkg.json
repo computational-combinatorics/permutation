@@ -10,6 +10,7 @@
 			"js"
 		]
 	},
+	"babel": true,
 	"out": "js/dist/",
 	"debug": false,
 	"src": "js/src/",
