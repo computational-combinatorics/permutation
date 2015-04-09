@@ -1,7 +1,7 @@
 
 var random = require( "aureooms-js-random" ) ;
 
-test( "apply" , function ( ) {
+test( "copy" , function ( ) {
 
 	var m , n , sigma , tau ;
 
@@ -13,9 +13,9 @@ test( "apply" , function ( ) {
 
 		random.shuffle( sigma , 0 , n ) ;
 
-		tau = permutation.apply( sigma.length , permutation.transpositions( sigma ) ) ;
+		tau = permutation.copy( sigma ) ;
 
-		deepEqual( tau , sigma , n + " : sigma = tau" ) ;
+		deepEqual( tau , sigma , n + " : tau = sigma" ) ;
 
 	}
 

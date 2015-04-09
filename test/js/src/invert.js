@@ -5,7 +5,7 @@ test( "invert" , function ( ) {
 
 	var m , n , rho , sigma , tau ;
 
-	m = 101 ;
+	m = 100 ;
 
 	for ( n = 0 ; n < m ; ++n ) {
 
