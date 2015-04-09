@@ -5,7 +5,7 @@ let _invert = function ( cycles , tau ) {
 
 		for ( let t of cycle ) {
 
-			_transpose( tau , s , t ) ;
+			_transpose( s , t , tau ) ;
 
 		}
 
