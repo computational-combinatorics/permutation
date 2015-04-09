@@ -256,7 +256,7 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 					for (var _iterator5 = cycle[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
 						var t = _step5.value;
 
-						_transpose(tau, s, t);
+						_transpose(s, t, tau);
 					}
 				} catch (err) {
 					_didIteratorError5 = true;
