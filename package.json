@@ -14,7 +14,7 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"aureooms-node-package": "^2.0.3"
+		"aureooms-node-package": "^4.0.1"
 	},
 	"author": "aureooms",
 	"bugs": {
