@@ -235,7 +235,19 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 	/* js/src/_invert.js */
 
-	var _invert = function _invert(cycles, tau) {
+	var _invert = function _invert(sigma, n, tau) {
+
+		for (var i = 0; i < n; ++i) {
+
+			tau[sigma[i]] = i;
+		}
+	};
+
+	exports._invert = _invert;
+
+	/* js/src/_invertcycles.js */
+
+	var _invertcycles = function _invertcycles(cycles, tau) {
 		var _iteratorNormalCompletion4 = true;
 		var _didIteratorError4 = false;
 		var _iteratorError4 = undefined;
@@ -289,7 +301,7 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 		}
 	};
 
-	exports._invert = _invert;
+	exports._invertcycles = _invertcycles;
 
 	/* js/src/_itranspositions.js */
 
@@ -607,7 +619,11 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 	var invert = function invert(sigma) {
 
-		return apply(sigma.length, itranspositions(sigma));
+		var rho = permutation(sigma.length);
+
+		_invert(sigma, sigma.length, rho);
+
+		return rho;
 	};
 
 	exports.invert = invert;

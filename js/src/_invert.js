@@ -1,13 +1,9 @@
 
-let _invert = function ( cycles , tau ) {
+let _invert = function ( sigma , n , tau ) {
 
-	for ( let [ s , cycle ] of cycles ) {
+	for ( let i = 0 ; i < n ; ++i ) {
 
-		for ( let t of cycle ) {
-
-			_transpose( s , t , tau ) ;
-
-		}
+		tau[sigma[i]] = i ;
 
 	}
 
