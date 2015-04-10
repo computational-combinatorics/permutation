@@ -1,7 +1,7 @@
 
 var random = require( "aureooms-js-random" ) ;
 
-test( "_invert" , function ( ) {
+test( "_invertcycles" , function ( ) {
 
 	var m , n , rho , sigma , tau , cycles ;
 
@@ -17,7 +17,7 @@ test( "_invert" , function ( ) {
 
 		cycles = permutation.cycles( sigma ) ;
 
-		permutation._invert( cycles , tau ) ;
+		permutation._invertcycles( cycles , tau ) ;
 
 		rho = permutation.compose( sigma , tau ) ;
 

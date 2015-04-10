@@ -1,7 +1,11 @@
 
 let invert = function ( sigma ) {
 
-	return apply( sigma.length , itranspositions( sigma ) ) ;
+	let rho = permutation( sigma.length ) ;
+
+	_invert( sigma , sigma.length , rho ) ;
+
+	return rho ;
 
 } ;
 
