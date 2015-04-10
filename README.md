@@ -1,7 +1,7 @@
 [js-permutation](http://aureooms.github.io/js-permutation)
 ==
 
-Permutations code bricks for JavaScript
+Permutations code bricks for JavaScript.
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-permutation.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-permutation.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-permutation)
@@ -13,3 +13,47 @@ Permutations code bricks for JavaScript
 [![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-permutation.svg?style=flat)](https://codeclimate.com/github/aureooms/js-permutation)
 [![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-permutation.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-permutation)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-permutation.svg?style=flat)](https://github.com/aureooms/js-permutation/issues)
+Can be managed through [bower](https://github.com/bower/bower),
+[component](https://github.com/componentjs/component), or
+[npm](https://github.com/npm/npm).
+
+```js
+let permutation = require( "aureooms-js-permutation" ) ;
+```
+
+Example usage:
+
+```js
+let sigma = permutation.identity( 3 ) ;
+
+sigma ; // [ 0 , 1 , 2 ]
+
+permutation.reversed( sigma ) ; // [ 2 , 1 , 0 ]
+
+permutation.next( sigma ) ; // [ 0 , 2 , 1 ]
+
+for ( let tau of permutation.permutations( 3 ) ) {
+
+	... // yields [ 0 , 1 , 2 ]
+	    //        [ 0 , 2 , 1 ]
+	    //        [ 1 , 0 , 2 ]
+	    //        [ 1 , 2 , 0 ]
+	    //        [ 2 , 0 , 1 ]
+	    //        [ 2 , 1 , 0 ]
+
+}
+
+permutation.invert( [ 0 , 1 , 2 ] ) ; // [ 0 , 1 , 2 ]
+
+permutation.invert( [ 0 , 2 , 1 ] ) ; // [ 0 , 2 , 1 ]
+
+permutation.invert( [ 1 , 0 , 2 ] ) ; // [ 1 , 0 , 2 ]
+
+permutation.invert( [ 1 , 2 , 0 ] ) ; // [ 2 , 0 , 1 ]
+
+permutation.invert( [ 2 , 0 , 1 ] ) ; // [ 1 , 2 , 0 ]
+
+permutation.invert( [ 2 , 1 , 0 ] ) ; // [ 2 , 1 , 0 ]
+
+permutation.compose( "abc" , [ 2 , 0 , 1 ] ) ; // [ "c" , "a" , "b" ]
+```
