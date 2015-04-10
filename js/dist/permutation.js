@@ -404,6 +404,77 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 	exports._itranspositions = _itranspositions;
 
+	/* js/src/_next.js */
+
+	var _next = function _next(sigma, n) {
+
+		var i = n - 1;
+
+		while (i > 0) {
+
+			--i;
+
+			if (sigma[i] > sigma[i + 1]) continue;
+
+			var j = n - 1;
+
+			while (sigma[j] < sigma[i]) --j;
+
+			_transpose(i, j, sigma);
+
+			_reverse(sigma, i + 1, n);
+
+			return true;
+		}
+
+		return false;
+	};
+
+	exports._next = _next;
+
+	/* js/src/_permutations.js */
+
+	var _permutations = regeneratorRuntime.mark(function _permutations(sigma, n) {
+		return regeneratorRuntime.wrap(function _permutations$(context$2$0) {
+			while (1) switch (context$2$0.prev = context$2$0.next) {
+				case 0:
+					if (!_next(sigma, n)) {
+						context$2$0.next = 5;
+						break;
+					}
+
+					context$2$0.next = 3;
+					return sigma;
+
+				case 3:
+					context$2$0.next = 0;
+					break;
+
+				case 5:
+				case 'end':
+					return context$2$0.stop();
+			}
+		}, _permutations, this);
+	});
+
+	exports._permutations = _permutations;
+
+	/* js/src/_reverse.js */
+
+	var _reverse = function _reverse(sigma, i, j) {
+
+		while (i < --j) {
+
+			var tmp = sigma[i];
+			sigma[i] = sigma[j];
+			sigma[j] = tmp;
+
+			++i;
+		}
+	};
+
+	exports._reverse = _reverse;
+
 	/* js/src/_transpose.js */
 
 	var _transpose = function _transpose(a, b, sigma) {
@@ -645,6 +716,19 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 	exports.itranspositions = itranspositions;
 
+	/* js/src/next.js */
+
+	var next = function next(sigma) {
+
+		var rho = copy(sigma);
+
+		if (!_next(rho, rho.length)) reverse(rho);
+
+		return rho;
+	};
+
+	exports.next = next;
+
 	/* js/src/permutation.js */
 
 	var permutation = function permutation(n) {
@@ -653,6 +737,45 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 	};
 
 	exports.permutation = permutation;
+
+	/* js/src/permutations.js */
+
+	var permutations = regeneratorRuntime.mark(function permutations(n) {
+		return regeneratorRuntime.wrap(function permutations$(context$2$0) {
+			while (1) switch (context$2$0.prev = context$2$0.next) {
+				case 0:
+					return context$2$0.delegateYield(_permutations(identity(n), n), 't6', 1);
+
+				case 1:
+				case 'end':
+					return context$2$0.stop();
+			}
+		}, permutations, this);
+	});
+
+	exports.permutations = permutations;
+
+	/* js/src/reverse.js */
+
+	var reverse = function reverse(sigma) {
+
+		_reverse(sigma, 0, sigma.length);
+	};
+
+	exports.reverse = reverse;
+
+	/* js/src/reversed.js */
+
+	var reversed = function reversed(sigma) {
+
+		var rho = copy(sigma);
+
+		reverse(rho);
+
+		return rho;
+	};
+
+	exports.reversed = reversed;
 
 	/* js/src/transpose.js */
 
@@ -686,7 +809,7 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 		return regeneratorRuntime.wrap(function transpositions$(context$2$0) {
 			while (1) switch (context$2$0.prev = context$2$0.next) {
 				case 0:
-					return context$2$0.delegateYield(_transpositions(cycles(sigma, used(sigma.length))), 't6', 1);
+					return context$2$0.delegateYield(_transpositions(cycles(sigma, used(sigma.length))), 't7', 1);
 
 				case 1:
 				case 'end':
