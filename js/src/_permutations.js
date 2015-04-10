@@ -1,7 +1,7 @@
 
 let _permutations = function* ( sigma , n ) {
 
-	while ( _next( sigma , n ) ) yield sigma ;
+	do { yield sigma ; } while ( _next( sigma , n ) ) ;
 
 } ;
 

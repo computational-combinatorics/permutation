@@ -438,19 +438,16 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 		return regeneratorRuntime.wrap(function _permutations$(context$2$0) {
 			while (1) switch (context$2$0.prev = context$2$0.next) {
 				case 0:
-					if (!_next(sigma, n)) {
-						context$2$0.next = 5;
+					context$2$0.next = 2;
+					return sigma;
+
+				case 2:
+					if (_next(sigma, n)) {
+						context$2$0.next = 0;
 						break;
 					}
 
-					context$2$0.next = 3;
-					return sigma;
-
 				case 3:
-					context$2$0.next = 0;
-					break;
-
-				case 5:
 				case 'end':
 					return context$2$0.stop();
 			}
@@ -741,16 +738,71 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 	/* js/src/permutations.js */
 
 	var permutations = regeneratorRuntime.mark(function permutations(n) {
+		var _iteratorNormalCompletion9, _didIteratorError9, _iteratorError9, _iterator9, _step9, _permutation;
+
 		return regeneratorRuntime.wrap(function permutations$(context$2$0) {
 			while (1) switch (context$2$0.prev = context$2$0.next) {
 				case 0:
-					return context$2$0.delegateYield(_permutations(identity(n), n), 't6', 1);
+					_iteratorNormalCompletion9 = true;
+					_didIteratorError9 = false;
+					_iteratorError9 = undefined;
+					context$2$0.prev = 3;
+					_iterator9 = _permutations(identity(n), n)[Symbol.iterator]();
 
-				case 1:
+				case 5:
+					if (_iteratorNormalCompletion9 = (_step9 = _iterator9.next()).done) {
+						context$2$0.next = 12;
+						break;
+					}
+
+					_permutation = _step9.value;
+					context$2$0.next = 9;
+					return copy(_permutation);
+
+				case 9:
+					_iteratorNormalCompletion9 = true;
+					context$2$0.next = 5;
+					break;
+
+				case 12:
+					context$2$0.next = 18;
+					break;
+
+				case 14:
+					context$2$0.prev = 14;
+					context$2$0.t6 = context$2$0['catch'](3);
+					_didIteratorError9 = true;
+					_iteratorError9 = context$2$0.t6;
+
+				case 18:
+					context$2$0.prev = 18;
+					context$2$0.prev = 19;
+
+					if (!_iteratorNormalCompletion9 && _iterator9['return']) {
+						_iterator9['return']();
+					}
+
+				case 21:
+					context$2$0.prev = 21;
+
+					if (!_didIteratorError9) {
+						context$2$0.next = 24;
+						break;
+					}
+
+					throw _iteratorError9;
+
+				case 24:
+					return context$2$0.finish(21);
+
+				case 25:
+					return context$2$0.finish(18);
+
+				case 26:
 				case 'end':
 					return context$2$0.stop();
 			}
-		}, permutations, this);
+		}, permutations, this, [[3, 14, 18, 26], [19,, 21, 25]]);
 	});
 
 	exports.permutations = permutations;

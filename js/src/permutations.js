@@ -1,7 +1,11 @@
 
 let permutations = function* ( n ) {
 
-	yield* _permutations( identity( n ) , n ) ;
+	for ( let permutation of _permutations( identity( n ) , n ) ) {
+
+		yield copy( permutation ) ;
+
+	}
 
 } ;
 
