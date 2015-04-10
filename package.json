@@ -1,34 +1,34 @@
 {
-  "license": "AGPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aureooms/js-permutation.git"
-  },
-  "homepage": "http://aureooms.github.io/js-permutation/",
-  "keywords": [
-    "bricks",
-    "javascript",
-    "js",
-    "list",
-    "permutation"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "aureooms-js-compare": "^1.4.1",
-    "aureooms-js-random": "^1.0.0",
-    "aureooms-node-package": "^4.0.1"
-  },
-  "author": "aureooms",
-  "bugs": {
-    "url": "https://github.com/aureooms/js-permutation/issues"
-  },
-  "main": "js/dist/permutation.js",
-  "scripts": {
-    "doc": "./node_modules/.bin/groc",
-    "test": "./node_modules/.bin/aureooms-node-package-test",
-    "build": "./node_modules/.bin/aureooms-node-package-build"
-  },
-  "version": "0.0.1",
-  "description": "Permutations code bricks for JavaScript",
-  "name": "aureooms-js-permutation"
+	"license": "AGPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aureooms/js-permutation.git"
+	},
+	"homepage": "http://aureooms.github.io/js-permutation/",
+	"keywords": [
+		"bricks",
+		"javascript",
+		"js",
+		"list",
+		"permutation"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"aureooms-js-compare": "^1.4.1",
+		"aureooms-js-random": "^1.0.0",
+		"aureooms-node-package": "^4.0.1"
+	},
+	"author": "aureooms",
+	"bugs": {
+		"url": "https://github.com/aureooms/js-permutation/issues"
+	},
+	"main": "js/dist/permutation.js",
+	"scripts": {
+		"doc": "./node_modules/.bin/groc",
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"build": "./node_modules/.bin/aureooms-node-package-build"
+	},
+	"version": "1.0.0",
+	"description": "Permutations code bricks for JavaScript",
+	"name": "aureooms-js-permutation"
 }
