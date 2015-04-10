@@ -13,7 +13,7 @@
 		"README.md"
 	],
 	"main": "js/dist/permutation.js",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Permutations code bricks for JavaScript",
 	"name": "aureooms-js-permutation"
 }
