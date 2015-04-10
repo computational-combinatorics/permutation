@@ -5,7 +5,7 @@
 	"scripts": [
 		"js/dist/permutation.js"
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Permutations code bricks for JavaScript",
 	"name": "aureooms-js-permutation"
 }
