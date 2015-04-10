@@ -28,7 +28,7 @@
 		"test": "./node_modules/.bin/aureooms-node-package-test",
 		"build": "./node_modules/.bin/aureooms-node-package-build"
 	},
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Permutations code bricks for JavaScript",
 	"name": "aureooms-js-permutation"
 }
