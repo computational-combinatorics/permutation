@@ -41,6 +41,27 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 	exports._apply = _apply;
 
+	/* js/src/_bitreversal.js */
+
+	var _bitreversal = function _bitreversal(array, n) {
+
+		var i = 1;
+
+		array[0] = 0;
+
+		while (i < n) {
+
+			for (var j = 0; j < i; ++j) {
+
+				array[i + j] = (array[j] <<= 1) + 1;
+			}
+
+			i <<= 1;
+		}
+	};
+
+	exports._bitreversal = _bitreversal;
+
 	/* js/src/_compose.js */
 
 	var _compose = regeneratorRuntime.mark(function _compose(sigma, tau) {
@@ -600,6 +621,19 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 	};
 
 	exports.apply = apply;
+
+	/* js/src/bitreversal.js */
+
+	var bitreversal = function bitreversal(n) {
+
+		var sigma = permutation(n);
+
+		_bitreversal(sigma, n);
+
+		return sigma;
+	};
+
+	exports.bitreversal = bitreversal;
 
 	/* js/src/compose.js */
 
