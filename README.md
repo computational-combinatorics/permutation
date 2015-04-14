@@ -45,16 +45,13 @@ for ( let tau of permutation.permutations( 3 ) ) {
 }
 
 permutation.invert( [ 0 , 1 , 2 ] ) ; // [ 0 , 1 , 2 ]
-
 permutation.invert( [ 0 , 2 , 1 ] ) ; // [ 0 , 2 , 1 ]
-
 permutation.invert( [ 1 , 0 , 2 ] ) ; // [ 1 , 0 , 2 ]
-
 permutation.invert( [ 1 , 2 , 0 ] ) ; // [ 2 , 0 , 1 ]
-
 permutation.invert( [ 2 , 0 , 1 ] ) ; // [ 1 , 2 , 0 ]
-
 permutation.invert( [ 2 , 1 , 0 ] ) ; // [ 2 , 1 , 0 ]
 
 permutation.compose( "abc" , [ 2 , 0 , 1 ] ) ; // [ "c" , "a" , "b" ]
+
+permutation.bitreversal( 8 ) ; // [ 0 , 4 , 2 , 6 , 1 , 5 , 3 , 7 ]
 ```
