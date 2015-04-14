@@ -53,6 +53,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
+        "sourcePath": "/home/aureooms/dev/js/js-permutation/js/src/_bitreversal.js",
+        "projectPath": "js/src/_bitreversal.js",
+        "targetPath": "_bitreversal",
+        "pageTitle": "_bitreversal",
+        "title": "_bitreversal"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
         "sourcePath": "/home/aureooms/dev/js/js-permutation/js/src/_compose.js",
         "projectPath": "js/src/_compose.js",
         "targetPath": "_compose",
@@ -338,6 +358,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         "targetPath": "apply",
         "pageTitle": "apply",
         "title": "apply"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-permutation/js/src/bitreversal.js",
+        "projectPath": "js/src/bitreversal.js",
+        "targetPath": "bitreversal",
+        "pageTitle": "bitreversal",
+        "title": "bitreversal"
       },
       "depth": 1,
       "outline": []
