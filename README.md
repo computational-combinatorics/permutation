@@ -14,8 +14,9 @@ Permutations code bricks for JavaScript.
 [![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-permutation.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-permutation)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-permutation.svg?style=flat)](https://github.com/aureooms/js-permutation/issues)
 
-Can be managed through [bower](https://github.com/bower/bower),
-[component](https://github.com/componentjs/component), or
+Can be managed through [duo](https://github.com/duojs/duo),
+[component](https://github.com/componentjs/component),
+[bower](https://github.com/bower/bower), or
 [npm](https://github.com/npm/npm).
 
 ```js
