@@ -7,11 +7,6 @@ Permutations code bricks for JavaScript.
 next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 ```
 
-## Caveat
-
-Requires `regeneratorRuntime` to be defined, see
-[babel docs](http://babeljs.io/docs/usage/polyfill/).
-
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-permutation.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-permutation.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-permutation)
 [![Bower version](http://img.shields.io/bower/v/aureooms-js-permutation.svg?style=flat)](http://bower.io/search/?q=aureooms-js-permutation)
@@ -32,6 +27,11 @@ Can be managed through [jspm](https://github.com/jspm/jspm-cli),
 [jam](https://github.com/caolan/jam),
 [spm](https://github.com/spmjs/spm),
 and [npm](https://github.com/npm/npm).
+
+## Caveat
+
+Requires `regeneratorRuntime` to be defined, see
+[babel docs](http://babeljs.io/docs/usage/polyfill/).
 
 ## Install
 
