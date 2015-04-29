@@ -7,6 +7,7 @@
 	"homepage": "http://aureooms.github.io/js-permutation/",
 	"keywords": [
 		"bricks",
+		"ender",
 		"javascript",
 		"js",
 		"list",
@@ -30,5 +31,8 @@
 	},
 	"version": "1.1.2",
 	"description": "Permutations code bricks for JavaScript",
-	"name": "aureooms-js-permutation"
+	"name": "aureooms-js-permutation",
+	"spm": {
+		"main": "js/dist/permutation.js"
+	}
 }
