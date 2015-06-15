@@ -15,9 +15,9 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"aureooms-js-compare": "^1.4.3",
-		"aureooms-js-random": "^1.0.1",
-		"aureooms-node-package": "^4.2.3"
+		"aureooms-js-compare": "^1.4.4",
+		"aureooms-js-random": "^1.0.2",
+		"aureooms-node-package": "^4.2.5"
 	},
 	"author": "aureooms",
 	"bugs": {
