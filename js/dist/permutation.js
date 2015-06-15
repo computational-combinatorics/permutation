@@ -1,6 +1,6 @@
 "use strict";
 
-var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } };
+function _slicedToArray(arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }
 
 (function () {
 
@@ -207,9 +207,9 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 					case 20:
 						context$3$0.prev = 20;
-						context$3$0.t1 = context$3$0["catch"](3);
+						context$3$0.t0 = context$3$0["catch"](3);
 						_didIteratorError3 = true;
-						_iteratorError3 = context$3$0.t1;
+						_iteratorError3 = context$3$0.t0;
 
 					case 24:
 						context$3$0.prev = 24;
@@ -390,9 +390,9 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 					case 23:
 						context$3$0.prev = 23;
-						context$3$0.t2 = context$3$0["catch"](3);
+						context$3$0.t0 = context$3$0["catch"](3);
 						_didIteratorError6 = true;
-						_iteratorError6 = context$3$0.t2;
+						_iteratorError6 = context$3$0.t0;
 
 					case 27:
 						context$3$0.prev = 27;
@@ -563,9 +563,9 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 					case 19:
 						context$3$0.prev = 19;
-						context$3$0.t3 = context$3$0["catch"](3);
+						context$3$0.t0 = context$3$0["catch"](3);
 						_didIteratorError7 = true;
-						_iteratorError7 = context$3$0.t3;
+						_iteratorError7 = context$3$0.t0;
 
 					case 23:
 						context$3$0.prev = 23;
@@ -695,7 +695,7 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 			return regeneratorRuntime.wrap(function cycles$(context$3$0) {
 				while (1) switch (context$3$0.prev = context$3$0.next) {
 					case 0:
-						return context$3$0.delegateYield(_cycles(sigma, used(sigma.length)), "t4", 1);
+						return context$3$0.delegateYield(_cycles(sigma, used(sigma.length)), "t0", 1);
 
 					case 1:
 					case "end":
@@ -738,7 +738,7 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 			return regeneratorRuntime.wrap(function itranspositions$(context$3$0) {
 				while (1) switch (context$3$0.prev = context$3$0.next) {
 					case 0:
-						return context$3$0.delegateYield(_itranspositions(sigma, used(sigma.length)), "t5", 1);
+						return context$3$0.delegateYield(_itranspositions(sigma, used(sigma.length)), "t0", 1);
 
 					case 1:
 					case "end":
@@ -806,9 +806,9 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 
 					case 14:
 						context$3$0.prev = 14;
-						context$3$0.t6 = context$3$0["catch"](3);
+						context$3$0.t0 = context$3$0["catch"](3);
 						_didIteratorError9 = true;
-						_iteratorError9 = context$3$0.t6;
+						_iteratorError9 = context$3$0.t0;
 
 					case 18:
 						context$3$0.prev = 18;
@@ -897,7 +897,7 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 			return regeneratorRuntime.wrap(function transpositions$(context$3$0) {
 				while (1) switch (context$3$0.prev = context$3$0.next) {
 					case 0:
-						return context$3$0.delegateYield(_transpositions(cycles(sigma, used(sigma.length))), "t7", 1);
+						return context$3$0.delegateYield(_transpositions(cycles(sigma, used(sigma.length))), "t0", 1);
 
 					case 1:
 					case "end":
@@ -930,6 +930,6 @@ var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; }
 			return definition({});
 		});
 	} else if (typeof window === "object" && typeof window.document === "object") {
-		definition(window.permutation = {});
+		definition(window["permutation"] = {});
 	} else console.error("unable to detect type of module to define for aureooms-js-permutation");
 })();
