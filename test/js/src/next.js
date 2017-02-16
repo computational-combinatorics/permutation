@@ -1,6 +1,6 @@
 
 
-var compare = require( "aureooms-js-compare" ) ;
+var compare = require( "@aureooms/js-compare" ) ;
 
 test( "next" , function ( ) {
 
