@@ -926,10 +926,10 @@ function _slicedToArray(arr, i) { if (Array.isArray(arr)) { return arr; } else i
 	if (typeof exports === "object") {
 		definition(exports);
 	} else if (typeof define === "function" && define.amd) {
-		define("aureooms-js-permutation", [], function () {
+		define("@aureooms/js-permutation", [], function () {
 			return definition({});
 		});
 	} else if (typeof window === "object" && typeof window.document === "object") {
 		definition(window["permutation"] = {});
-	} else console.error("unable to detect type of module to define for aureooms-js-permutation");
+	} else console.error("unable to detect type of module to define for @aureooms/js-permutation");
 })();

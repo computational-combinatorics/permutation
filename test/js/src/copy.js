@@ -1,5 +1,5 @@
 
-var random = require( "aureooms-js-random" ) ;
+var random = require( "@aureooms/js-random" ) ;
 
 test( "copy" , function ( ) {
 
