@@ -7,7 +7,7 @@ Permutations code bricks for JavaScript.
 next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 ```
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-permutation.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-permutation.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-permutation.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-permutation)
 [![Bower version](https://img.shields.io/bower/v/@aureooms/js-permutation.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-permutation)
 [![Build Status](https://img.shields.io/travis/aureooms/js-permutation.svg?style=flat)](https://travis-ci.org/aureooms/js-permutation)
