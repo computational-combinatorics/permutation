@@ -15,8 +15,8 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"aureooms-js-compare": "^1.4.4",
-		"aureooms-js-random": "^1.0.2",
+		"@aureooms/js-compare": "^1.4.4",
+		"@aureooms/js-random": "^1.0.2",
 		"aureooms-node-package": "^4.2.5"
 	},
 	"author": "aureooms",
@@ -31,7 +31,7 @@
 	},
 	"version": "1.2.1",
 	"description": "Permutations code bricks for JavaScript",
-	"name": "aureooms-js-permutation",
+	"name": "@aureooms/js-permutation",
 	"spm": {
 		"main": "js/dist/permutation.js"
 	}
