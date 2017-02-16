@@ -7,15 +7,15 @@ Permutations code bricks for JavaScript.
 next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 ```
 
-[![NPM license](http://img.shields.io/npm/l/aureooms-js-permutation.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/aureooms-js-permutation.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-permutation)
-[![Bower version](http://img.shields.io/bower/v/aureooms-js-permutation.svg?style=flat)](http://bower.io/search/?q=aureooms-js-permutation)
+[![NPM license](http://img.shields.io/npm/l/@aureooms/js-permutation.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
+[![NPM version](http://img.shields.io/npm/v/@aureooms/js-permutation.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-permutation)
+[![Bower version](http://img.shields.io/bower/v/@aureooms/js-permutation.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-permutation)
 [![Build Status](http://img.shields.io/travis/aureooms/js-permutation.svg?style=flat)](https://travis-ci.org/aureooms/js-permutation)
 [![Coverage Status](http://img.shields.io/coveralls/aureooms/js-permutation.svg?style=flat)](https://coveralls.io/r/aureooms/js-permutation)
 [![Dependencies Status](http://img.shields.io/david/aureooms/js-permutation.svg?style=flat)](https://david-dm.org/aureooms/js-permutation#info=dependencies)
 [![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-permutation.svg?style=flat)](https://david-dm.org/aureooms/js-permutation#info=devDependencies)
 [![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-permutation.svg?style=flat)](https://codeclimate.com/github/aureooms/js-permutation)
-[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-permutation.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-permutation)
+[![NPM downloads per month](http://img.shields.io/npm/dm/@aureooms/js-permutation.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-permutation)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-permutation.svg?style=flat)](https://github.com/aureooms/js-permutation/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-permutation.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-permutation)
 
@@ -39,7 +39,7 @@ Requires `regeneratorRuntime` to be defined, see
 ```terminal
 jspm install github:aureooms/js-permutation
 # or
-jspm install npm:aureooms-js-permutation
+jspm install npm:@aureooms/js-permutation
 ```
 ### duo
 No install step needed for duo!
@@ -51,27 +51,27 @@ component install aureooms/js-permutation
 
 ### bower
 ```terminal
-bower install aureooms-js-permutation
+bower install @aureooms/js-permutation
 ```
 
 ### ender
 ```terminal
-ender add aureooms-js-permutation
+ender add @aureooms/js-permutation
 ```
 
 ### jam
 ```terminal
-jam install aureooms-js-permutation
+jam install @aureooms/js-permutation
 ```
 
 ### spm
 ```terminal
-spm install aureooms-js-permutation --save
+spm install @aureooms/js-permutation --save
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-permutation --save
+npm install @aureooms/js-permutation --save
 ```
 
 ## Require
@@ -79,7 +79,7 @@ npm install aureooms-js-permutation --save
 ```js
 let permutation = require( "github:aureooms/js-permutation" ) ;
 // or
-import permutation from 'aureooms-js-permutation' ;
+import permutation from '@aureooms/js-permutation' ;
 ```
 ### duo
 ```js
@@ -88,19 +88,19 @@ let permutation = require( "aureooms/js-permutation" ) ;
 
 ### component, ender, spm, npm
 ```js
-let permutation = require( "aureooms-js-permutation" ) ;
+let permutation = require( "@aureooms/js-permutation" ) ;
 ```
 
 ### bower
 The script tag exposes the global variable `permutation`.
 ```html
-<script src="bower_components/aureooms-js-permutation/js/dist/permutation.min.js"></script>
+<script src="bower_components/@aureooms/js-permutation/js/dist/permutation.min.js"></script>
 ```
 Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/).
 
 ### jam
 ```js
-require( [ "aureooms-js-permutation" ] , function ( permutation ) { ... } ) ;
+require( [ "@aureooms/js-permutation" ] , function ( permutation ) { ... } ) ;
 ```
 
 ## Use
