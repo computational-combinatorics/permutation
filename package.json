@@ -1,38 +1,58 @@
 {
-	"license": "AGPL-3.0",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/aureooms/js-permutation.git"
-	},
-	"homepage": "http://aureooms.github.io/js-permutation/",
-	"keywords": [
-		"bricks",
-		"ender",
-		"javascript",
-		"js",
-		"list",
-		"permutation"
-	],
-	"dependencies": {},
-	"devDependencies": {
-		"aureooms-js-compare": "^1.4.4",
-		"aureooms-js-random": "^1.0.2",
-		"aureooms-node-package": "^7.0.0"
-	},
-	"author": "aureooms",
-	"bugs": {
-		"url": "https://github.com/aureooms/js-permutation/issues"
-	},
-	"main": "js/dist/permutation.js",
-	"scripts": {
-		"doc": "./node_modules/.bin/groc",
-		"test": "./node_modules/.bin/aureooms-node-package-test",
-		"build": "./node_modules/.bin/aureooms-node-package-build"
-	},
-	"version": "1.2.1",
-	"description": "Permutations code bricks for JavaScript",
-	"name": "aureooms-js-permutation",
-	"spm": {
-		"main": "js/dist/permutation.js"
-	}
+  "name": "@aureooms/js-permutation",
+  "description": "Permutation library for JavaScript",
+  "version": "2.0.0",
+  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "ava": {
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-permutation/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@aureooms/js-compare": "^1.4.5",
+    "@aureooms/js-random": "^2.0.0",
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "codeclimate-test-reporter": "^0.4.1",
+    "coveralls": "^2.13.1",
+    "esdoc": "^0.5.2",
+    "nyc": "^10.3.0"
+  },
+  "homepage": "https://aureooms.github.io/js-permutation",
+  "keywords": [
+    "algorithm",
+    "javascript",
+    "js",
+    "list",
+    "permutation"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aureooms/js-permutation.git"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "prepublish": "npm run build",
+    "test": "ava ./test/src"
+  }
 }
