@@ -1,15 +1,7 @@
+import { _transpose } from './_transpose' ;
 
 export function _reverse ( sigma , i , j ) {
 
-	while ( i <-- j ) {
-
-		const tmp = sigma[i] ;
-		sigma[i]  = sigma[j] ;
-		sigma[j]  =      tmp ;
-
-		++i ;
-
-	}
+	while ( i <-- j ) _transpose( i++ , j , sigma ) ;
 
 }
-
