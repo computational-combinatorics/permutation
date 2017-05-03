@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">aureooms/js-permutation API Document</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/index.js | aureooms/js-permutation API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -71,25 +71,42 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-aureooms-js-permutation-https-aureooms-github-io-js-permutation-"><a href="https://aureooms.github.io/js-permutation">@aureooms/js-permutation</a></h1>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Symmetric_group_3;_Cayley_table;_matrices.svg" width="864"></p>
-<p>Permutation library for JavaScript.
-See <a href="https://aureooms.github.io/js-permutation">docs</a>.
-Parent is <a href="https://github.com/aureooms/js-algorithms">@aureooms/js-algorithms</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">import { next , reversed , identity } from &apos;@aureooms/js-permutation&apos; ;
-next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]</code>
+<div class="content" data-ice="content"><h1 data-ice="title">src/index.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export * from &apos;./_apply&apos; ;
+export * from &apos;./_bitreversal&apos; ;
+export * from &apos;./_compose&apos; ;
+export * from &apos;./_copy&apos; ;
+export * from &apos;./_cycles&apos; ;
+export * from &apos;./_identity&apos; ;
+export * from &apos;./_invert&apos; ;
+export * from &apos;./_invertcycles&apos; ;
+export * from &apos;./_itranspositions&apos; ;
+export * from &apos;./_next&apos; ;
+export * from &apos;./_permutations&apos; ;
+export * from &apos;./_reverse&apos; ;
+export * from &apos;./_transpose&apos; ;
+export * from &apos;./_transposition&apos; ;
+export * from &apos;./_transpositions&apos; ;
+export * from &apos;./_used&apos; ;
+export * from &apos;./apply&apos; ;
+export * from &apos;./bitreversal&apos; ;
+export * from &apos;./compose&apos; ;
+export * from &apos;./copy&apos; ;
+export * from &apos;./cycles&apos; ;
+export * from &apos;./identity&apos; ;
+export * from &apos;./invert&apos; ;
+export * from &apos;./itranspositions&apos; ;
+export * from &apos;./next&apos; ;
+export * from &apos;./permutation&apos; ;
+export * from &apos;./permutations&apos; ;
+export * from &apos;./reverse&apos; ;
+export * from &apos;./reversed&apos; ;
+export * from &apos;./transpose&apos; ;
+export * from &apos;./transposition&apos; ;
+export * from &apos;./transpositions&apos; ;
+export * from &apos;./used&apos; ;
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-permutation.svg?style=flat" alt="License"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-permutation"><img src="https://img.shields.io/npm/v/@aureooms/js-permutation.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-permutation"><img src="https://img.shields.io/travis/aureooms/js-permutation.svg?style=flat" alt="Build Status"></a>
-<a href="https://coveralls.io/r/aureooms/js-permutation"><img src="https://img.shields.io/coveralls/aureooms/js-permutation.svg?style=flat" alt="Coverage Status"></a>
-<a href="https://david-dm.org/aureooms/js-permutation#info=dependencies"><img src="https://img.shields.io/david/aureooms/js-permutation.svg?style=flat" alt="Dependencies Status"></a>
-<a href="https://david-dm.org/aureooms/js-permutation#info=devDependencies"><img src="https://img.shields.io/david/dev/aureooms/js-permutation.svg?style=flat" alt="devDependencies Status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-permutation"><img src="https://img.shields.io/codeclimate/github/aureooms/js-permutation.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-permutation"><img src="https://img.shields.io/npm/dm/@aureooms/js-permutation.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-permutation/issues"><img src="https://img.shields.io/github/issues/aureooms/js-permutation.svg?style=flat" alt="GitHub issues"></a>
-<a href="https://aureooms.github.io/js-permutation/source.html"><img src="https://aureooms.github.io/js-permutation/badge.svg" alt="Documentation"></a></p>
-</div>
+
 </div>
 
 <footer class="footer">
