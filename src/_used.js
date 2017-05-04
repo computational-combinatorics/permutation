@@ -6,8 +6,8 @@
  * example, for computing the cycle decomposition of an input permutation (see
  * {@link _cycles}, {@link cycles}).
  *
- * @param n The given size.
- * @param array The input array.
+ * @param {Number} n The given size.
+ * @param {Array} array The input array.
  */
 export function _used ( n , array ) {
 
