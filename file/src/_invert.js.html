@@ -73,10 +73,11 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_invert.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * Fills an input array with the inverse &lt;code&gt;rho&lt;/code&gt; of the input
+ * Fills an input array with the inverse &lt;code&gt;tau&lt;/code&gt; of the input
  * permutation &lt;code&gt;sigma&lt;/code&gt;, that is, the permutation such that
- * &lt;code&gt;compose(rho, sigma)&lt;/code&gt; returns
- * &lt;code&gt;identity(sigma.length)&lt;/code&gt;.
+ * &lt;code&gt;compose(sigma, tau)&lt;/code&gt; returns
+ * &lt;code&gt;identity(sigma.length)&lt;/code&gt;. See {@link invert} for the higher level
+ * API.
  *
  * @param {Array} sigma The input permutation.
  * @param {Number} n The size of the input permutation.
@@ -87,7 +88,6 @@ export function _invert ( sigma , n , tau ) {
 	for ( let i = 0 ; i &lt; n ; ++i ) tau[sigma[i]] = i ;
 
 }
-
 </code></pre>
 
 </div>

@@ -76,23 +76,23 @@
 import { _invert } from &apos;./_invert&apos; ;
 
 /**
- * Computes the inverse &lt;code&gt;rho&lt;/code&gt; of the input permutation
- * &lt;code&gt;sigma&lt;/code&gt;, that is, the permutation such that &lt;code&gt;compose(rho,
- * sigma)&lt;/code&gt; returns &lt;code&gt;identity(sigma.length)&lt;/code&gt;.
+ * Computes the inverse &lt;code&gt;tau&lt;/code&gt; of the input permutation
+ * &lt;code&gt;sigma&lt;/code&gt;, that is, the permutation such that &lt;code&gt;compose(sigma,
+ * tau)&lt;/code&gt; returns &lt;code&gt;identity(sigma.length)&lt;/code&gt;. Alternatives
+ * include using {@link _invertcycles} and {@link itranspositions}.
  *
  * @param {Array} sigma The input permutation.
  * @returns {Array} The inverse of the input permutation.
  */
 export function invert ( sigma ) {
 
-	const rho = permutation( sigma.length ) ;
+	const tau = permutation( sigma.length ) ;
 
-	_invert( sigma , sigma.length , rho ) ;
+	_invert( sigma , sigma.length , tau ) ;
 
-	return rho ;
+	return tau ;
 
 }
-
 </code></pre>
 
 </div>

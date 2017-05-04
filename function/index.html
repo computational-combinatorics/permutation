@@ -265,9 +265,9 @@ input <code>n</code> items.</p>
       <div>
         
         
-        <div data-ice="description"><p>Computes the inverse <code>rho</code> of the input permutation
-<code>sigma</code>, that is, the permutation such that <code>compose(rho,
-sigma)</code> returns <code>identity(sigma.length)</code>.</p>
+        <div data-ice="description"><p>Computes the inverse <code>tau</code> of the input permutation
+<code>sigma</code>, that is, the permutation such that <code>compose(sigma,
+tau)</code> returns <code>identity(sigma.length)</code>.</p>
 </div>
       </div>
     </td>
@@ -295,7 +295,8 @@ sigma)</code> returns <code>identity(sigma.length)</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p>Really no idead what this does, see also <span><a href="function/index.html#static-function-_itranspositions">_itranspositions</a></span>.</p>
+        <div data-ice="description"><p>Computes the sequence of transpositions that if applied to
+<code>sigma</code> result in <code>invert(sigma)</code>.</p>
 </div>
       </div>
     </td>
@@ -407,7 +408,7 @@ sigma)</code> returns <code>identity(sigma.length)</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p>Reverses input permutation in place.</p>
+        <div data-ice="description"><p>Reverses input permutation <strong><em>in-place</em></strong>.</p>
 </div>
       </div>
     </td>
@@ -755,9 +756,9 @@ elements.</p>
       <div>
         
         
-        <div data-ice="description"><p>Fills an input array with the inverse <code>rho</code> of the input
+        <div data-ice="description"><p>Fills an input array with the inverse <code>tau</code> of the input
 permutation <code>sigma</code>, that is, the permutation such that
-<code>compose(rho, sigma)</code> returns
+<code>compose(sigma, tau)</code> returns
 <code>identity(sigma.length)</code>.</p>
 </div>
       </div>
@@ -786,7 +787,7 @@ permutation <code>sigma</code>, that is, the permutation such that
       <div>
         
         
-        <div data-ice="description"><p>No idea what this does.</p>
+        <div data-ice="description"><p>Inverts given cycles in a given permutation <strong><em>in-place</em></strong>.</p>
 </div>
       </div>
     </td>
@@ -814,7 +815,8 @@ permutation <code>sigma</code>, that is, the permutation such that
       <div>
         
         
-        <div data-ice="description"><p>Really no idead what this does.</p>
+        <div data-ice="description"><p>Computes the sequence of transpositions that if applied to
+<code>sigma</code> result in <code>invert(sigma)</code>.</p>
 </div>
       </div>
     </td>
@@ -899,7 +901,7 @@ permutation.</p>
       <div>
         
         
-        <div data-ice="description"><p>Reverses input permutation in place from input index <code>i</code>
+        <div data-ice="description"><p>Reverses input permutation <strong><em>in-place</em></strong> from input index <code>i</code>
 (include) to input index <code>j</code> (excluded).</p>
 </div>
       </div>
@@ -1507,16 +1509,17 @@ See <span><a href="function/index.html#static-function-_cycles">_cycles</a></spa
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/invert.js.html#lineNumber12">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/invert.js.html#lineNumber13">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {invert} from &apos;<span><a href="file/src/invert.js.html#lineNumber12">@aureooms/js-permutation/src/invert.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {invert} from &apos;<span><a href="file/src/invert.js.html#lineNumber13">@aureooms/js-permutation/src/invert.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Computes the inverse <code>rho</code> of the input permutation
-<code>sigma</code>, that is, the permutation such that <code>compose(rho,
-sigma)</code> returns <code>identity(sigma.length)</code>.</p>
+  <div data-ice="description"><p>Computes the inverse <code>tau</code> of the input permutation
+<code>sigma</code>, that is, the permutation such that <code>compose(sigma,
+tau)</code> returns <code>identity(sigma.length)</code>. Alternatives
+include using <span><a href="function/index.html#static-function-_invertcycles">_invertcycles</a></span> and <span><a href="function/index.html#static-function-itranspositions">itranspositions</a></span>.</p>
 </div>
 
   
@@ -1583,14 +1586,16 @@ sigma)</code> returns <code>identity(sigma.length)</code>.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/itranspositions.js.html#lineNumber10">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/itranspositions.js.html#lineNumber15">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {itranspositions} from &apos;<span><a href="file/src/itranspositions.js.html#lineNumber10">@aureooms/js-permutation/src/itranspositions.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {itranspositions} from &apos;<span><a href="file/src/itranspositions.js.html#lineNumber15">@aureooms/js-permutation/src/itranspositions.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Really no idead what this does, see also <span><a href="function/index.html#static-function-_itranspositions">_itranspositions</a></span>.</p>
+  <div data-ice="description"><p>Computes the sequence of transpositions that if applied to
+<code>sigma</code> result in <code>invert(sigma)</code>. Uses
+<span><a href="function/index.html#static-function-_itranspositions">_itranspositions</a></span> as the underlying implementation.</p>
 </div>
 
   
@@ -1621,7 +1626,7 @@ sigma)</code> returns <code>identity(sigma.length)</code>.</p>
       <tbody>
         <tr>
           <td class="return-type" data-ice="returnType"><span>Iterator</span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>?</p>
+          <td class="return-desc" data-ice="returnDescription"><p>Iterator over the transpositions.</p>
 </td>
         </tr>
       </tbody>
@@ -1638,7 +1643,14 @@ sigma)</code> returns <code>identity(sigma.length)</code>.</p>
 
   
 
-  
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">const invert = sigma =&gt; apply( sigma.length , itranspositions( sigma ) ) ;</code></pre>
+    </div>
+</div>
 
   
 
@@ -1889,7 +1901,7 @@ elements.</p>
   <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {reverse} from &apos;<span><a href="file/src/reverse.js.html#lineNumber8">@aureooms/js-permutation/src/reverse.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Reverses input permutation in place.</p>
+  <div data-ice="description"><p>Reverses input permutation <strong><em>in-place</em></strong>.</p>
 </div>
 
   
@@ -1906,7 +1918,7 @@ elements.</p>
       <td data-ice="name" data-depth="0">sigma</td>
       <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The input permutation to reverse.</p>
+      <td data-ice="description"><p>The input permutation to reverse (modified in-place).</p>
 </td>
     </tr>
 </tbody>
@@ -2345,15 +2357,15 @@ Iterator.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/_apply.js.html#lineNumber10">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/_apply.js.html#lineNumber11">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_apply} from &apos;<span><a href="file/src/_apply.js.html#lineNumber10">@aureooms/js-permutation/src/_apply.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_apply} from &apos;<span><a href="file/src/_apply.js.html#lineNumber11">@aureooms/js-permutation/src/_apply.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Applies a given sequence (in the given order) of transpositions (given as
-index tuples) to a given permutation. The permutation is modified in place.</p>
+index tuples) to a given permutation. The permutation is modified <strong><em>in-place</em></strong>.</p>
 </div>
 
   
@@ -2377,7 +2389,8 @@ index tuples) to a given permutation. The permutation is modified in place.</p>
       <td data-ice="name" data-depth="0">sigma</td>
       <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The permutation to apply the transpositions to.</p>
+      <td data-ice="description"><p>The permutation to apply the transpositions to
+(modified in-place).</p>
 </td>
     </tr>
 </tbody>
@@ -2801,17 +2814,18 @@ elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/_invert.js.html#lineNumber11">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/_invert.js.html#lineNumber12">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_invert} from &apos;<span><a href="file/src/_invert.js.html#lineNumber11">@aureooms/js-permutation/src/_invert.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_invert} from &apos;<span><a href="file/src/_invert.js.html#lineNumber12">@aureooms/js-permutation/src/_invert.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Fills an input array with the inverse <code>rho</code> of the input
+  <div data-ice="description"><p>Fills an input array with the inverse <code>tau</code> of the input
 permutation <code>sigma</code>, that is, the permutation such that
-<code>compose(rho, sigma)</code> returns
-<code>identity(sigma.length)</code>.</p>
+<code>compose(sigma, tau)</code> returns
+<code>identity(sigma.length)</code>. See <span><a href="function/index.html#static-function-invert">invert</a></span> for the higher level
+API.</p>
 </div>
 
   
@@ -2879,14 +2893,16 @@ permutation <code>sigma</code>, that is, the permutation such that
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/_invertcycles.js.html#lineNumber9">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/_invertcycles.js.html#lineNumber19">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_invertcycles} from &apos;<span><a href="file/src/_invertcycles.js.html#lineNumber9">@aureooms/js-permutation/src/_invertcycles.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_invertcycles} from &apos;<span><a href="file/src/_invertcycles.js.html#lineNumber19">@aureooms/js-permutation/src/_invertcycles.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>No idea what this does. Probably inverts the cycles of a given permutation.</p>
+  <div data-ice="description"><p>Inverts given cycles in a given permutation <strong><em>in-place</em></strong>. Can be used as
+an alternative way of inverting an entire permutation by inverting all of
+its cycles in the identity permutation.</p>
 </div>
 
   
@@ -2910,7 +2926,7 @@ permutation <code>sigma</code>, that is, the permutation such that
       <td data-ice="name" data-depth="0">tau</td>
       <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The given permutation.</p>
+      <td data-ice="description"><p>The given permutation (modified in-place).</p>
 </td>
     </tr>
 </tbody>
@@ -2928,7 +2944,19 @@ permutation <code>sigma</code>, that is, the permutation such that
 
   
 
-  
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">const invert = sigma =&gt; {
+  const tau = identity( sigma.length ) ;
+  const cycles_sigma = cycles( sigma ) ;
+  _invertcycles( cycles_sigma , tau ) ;
+  return tau ;
+} ;</code></pre>
+    </div>
+</div>
 
   
 
@@ -2947,14 +2975,17 @@ permutation <code>sigma</code>, that is, the permutation such that
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/_itranspositions.js.html#lineNumber9">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/_itranspositions.js.html#lineNumber11">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_itranspositions} from &apos;<span><a href="file/src/_itranspositions.js.html#lineNumber9">@aureooms/js-permutation/src/_itranspositions.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_itranspositions} from &apos;<span><a href="file/src/_itranspositions.js.html#lineNumber11">@aureooms/js-permutation/src/_itranspositions.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Really no idead what this does.</p>
+  <div data-ice="description"><p>Computes the sequence of transpositions that if applied to
+<code>sigma</code> result in <code>invert(sigma)</code>. Needs an helper
+array to keep track of processed elements. See <span><a href="function/index.html#static-function-itranspositions">itranspositions</a></span> for
+higher level API.</p>
 </div>
 
   
@@ -2992,7 +3023,7 @@ permutation <code>sigma</code>, that is, the permutation such that
       <tbody>
         <tr>
           <td class="return-type" data-ice="returnType"><span>Iterator</span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>?</p>
+          <td class="return-desc" data-ice="returnDescription"><p>Iterator over the transpositions.</p>
 </td>
         </tr>
       </tbody>
@@ -3075,8 +3106,8 @@ remains untouched.</p>
       <tbody>
         <tr>
           <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>Whether the input permutation is</p>
-<p>&lt;underline&gt;NOT&lt;/underline&gt; the last for its elements.</p>
+          <td class="return-desc" data-ice="returnDescription"><p>Whether the input permutation is
+<strong><em>NOT</em></strong> the last for its elements.</p>
 </td>
         </tr>
       </tbody>
@@ -3202,7 +3233,7 @@ and the last permutation on its elements.</p>
   <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_reverse} from &apos;<span><a href="file/src/_reverse.js.html#lineNumber11">@aureooms/js-permutation/src/_reverse.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Reverses input permutation in place from input index <code>i</code>
+  <div data-ice="description"><p>Reverses input permutation <strong><em>in-place</em></strong> from input index <code>i</code>
 (include) to input index <code>j</code> (excluded).</p>
 </div>
 
@@ -3220,7 +3251,7 @@ and the last permutation on its elements.</p>
       <td data-ice="name" data-depth="0">sigma</td>
       <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The input permutation to reverse.</p>
+      <td data-ice="description"><p>The input permutation to reverse (modified in-place).</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">

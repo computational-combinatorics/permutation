@@ -3,7 +3,7 @@
     "__docId__": 0,
     "kind": "file",
     "name": "src/_apply.js",
-    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Applies a given sequence (in the given order) of transpositions (given as\n * index tuples) to a given permutation. The permutation is modified in place.\n *\n * @param {Iterable} transpositions The given transpositions to apply.\n * @param {Array} sigma The permutation to apply the transpositions to.\n */\nexport function _apply ( transpositions , sigma ) {\n\n\tfor ( const [ s , t ] of transpositions ) _transpose( s , t , sigma ) ;\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Applies a given sequence (in the given order) of transpositions (given as\n * index tuples) to a given permutation. The permutation is modified ___in-place___.\n *\n * @param {Iterable} transpositions The given transpositions to apply.\n * @param {Array} sigma The permutation to apply the transpositions to\n * (modified in-place).\n */\nexport function _apply ( transpositions , sigma ) {\n\n\tfor ( const [ s , t ] of transpositions ) _transpose( s , t , sigma ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/_apply.js",
     "access": null,
@@ -23,8 +23,8 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_apply.js",
     "importStyle": "{_apply}",
-    "description": "Applies a given sequence (in the given order) of transpositions (given as\nindex tuples) to a given permutation. The permutation is modified in place.",
-    "lineNumber": 10,
+    "description": "Applies a given sequence (in the given order) of transpositions (given as\nindex tuples) to a given permutation. The permutation is modified ___in-place___.",
+    "lineNumber": 11,
     "params": [
       {
         "nullable": null,
@@ -44,7 +44,7 @@
         "spread": false,
         "optional": false,
         "name": "sigma",
-        "description": "The permutation to apply the transpositions to."
+        "description": "The permutation to apply the transpositions to\n(modified in-place)."
       }
     ]
   },
@@ -338,7 +338,7 @@
     "__docId__": 12,
     "kind": "file",
     "name": "src/_invert.js",
-    "content": "/**\n * Fills an input array with the inverse <code>rho</code> of the input\n * permutation <code>sigma</code>, that is, the permutation such that\n * <code>compose(rho, sigma)</code> returns\n * <code>identity(sigma.length)</code>.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation.\n * @param {Array} tau The array where to put the inverse of the input permutation.\n */\nexport function _invert ( sigma , n , tau ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) tau[sigma[i]] = i ;\n\n}\n\n",
+    "content": "/**\n * Fills an input array with the inverse <code>tau</code> of the input\n * permutation <code>sigma</code>, that is, the permutation such that\n * <code>compose(sigma, tau)</code> returns\n * <code>identity(sigma.length)</code>. See {@link invert} for the higher level\n * API.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation.\n * @param {Array} tau The array where to put the inverse of the input permutation.\n */\nexport function _invert ( sigma , n , tau ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) tau[sigma[i]] = i ;\n\n}\n",
     "static": true,
     "longname": "src/_invert.js",
     "access": null,
@@ -358,8 +358,8 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_invert.js",
     "importStyle": "{_invert}",
-    "description": "Fills an input array with the inverse <code>rho</code> of the input\npermutation <code>sigma</code>, that is, the permutation such that\n<code>compose(rho, sigma)</code> returns\n<code>identity(sigma.length)</code>.",
-    "lineNumber": 11,
+    "description": "Fills an input array with the inverse <code>tau</code> of the input\npermutation <code>sigma</code>, that is, the permutation such that\n<code>compose(sigma, tau)</code> returns\n<code>identity(sigma.length)</code>. See {@link invert} for the higher level\nAPI.",
+    "lineNumber": 12,
     "params": [
       {
         "nullable": null,
@@ -397,7 +397,7 @@
     "__docId__": 14,
     "kind": "file",
     "name": "src/_invertcycles.js",
-    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * No idea what this does. Probably inverts the cycles of a given permutation.\n *\n * @param {Iterable} cycles The cycles to invert.\n * @param {Array} tau The given permutation.\n */\nexport function _invertcycles ( cycles , tau ) {\n\n\tfor ( const [ s , cycle ] of cycles ) {\n\n\t\tfor ( const t of cycle ) {\n\n\t\t\t_transpose( s , t , tau ) ;\n\n\t\t}\n\n\t}\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Inverts given cycles in a given permutation ___in-place___. Can be used as\n * an alternative way of inverting an entire permutation by inverting all of\n * its cycles in the identity permutation.\n *\n * @example\n * const invert = sigma => {\n *   const tau = identity( sigma.length ) ;\n *   const cycles_sigma = cycles( sigma ) ;\n *   _invertcycles( cycles_sigma , tau ) ;\n *   return tau ;\n * } ;\n *\n * @param {Iterable} cycles The cycles to invert.\n * @param {Array} tau The given permutation (modified in-place).\n */\nexport function _invertcycles ( cycles , tau ) {\n\n\tfor ( const [ s , cycle ] of cycles ) {\n\n\t\tfor ( const t of cycle ) _transpose( s , t , tau ) ;\n\n\t}\n\n}\n\n",
     "static": true,
     "longname": "src/_invertcycles.js",
     "access": null,
@@ -417,8 +417,11 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_invertcycles.js",
     "importStyle": "{_invertcycles}",
-    "description": "No idea what this does. Probably inverts the cycles of a given permutation.",
-    "lineNumber": 9,
+    "description": "Inverts given cycles in a given permutation ___in-place___. Can be used as\nan alternative way of inverting an entire permutation by inverting all of\nits cycles in the identity permutation.",
+    "examples": [
+      "const invert = sigma => {\n  const tau = identity( sigma.length ) ;\n  const cycles_sigma = cycles( sigma ) ;\n  _invertcycles( cycles_sigma , tau ) ;\n  return tau ;\n} ;"
+    ],
+    "lineNumber": 19,
     "params": [
       {
         "nullable": null,
@@ -438,7 +441,7 @@
         "spread": false,
         "optional": false,
         "name": "tau",
-        "description": "The given permutation."
+        "description": "The given permutation (modified in-place)."
       }
     ]
   },
@@ -446,7 +449,7 @@
     "__docId__": 16,
     "kind": "file",
     "name": "src/_itranspositions.js",
-    "content": "\n/**\n * Really no idead what this does.\n *\n * @param {Array} sigma Input permutation.\n * @param {Array} used Helper array.\n * @return {Iterator} ?\n */\nexport function* _itranspositions ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tyield [ s , image ] ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t}\n\n}\n\n",
+    "content": "/**\n * Computes the sequence of transpositions that if applied to\n * <code>sigma</code> result in <code>invert(sigma)</code>. Needs an helper\n * array to keep track of processed elements. See {@link itranspositions} for\n * higher level API.\n *\n * @param {Array} sigma Input permutation.\n * @param {Array} used Helper array.\n * @return {Iterator} Iterator over the transpositions.\n */\nexport function* _itranspositions ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tyield [ s , image ] ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t}\n\n}\n",
     "static": true,
     "longname": "src/_itranspositions.js",
     "access": null,
@@ -466,8 +469,8 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_itranspositions.js",
     "importStyle": "{_itranspositions}",
-    "description": "Really no idead what this does.",
-    "lineNumber": 9,
+    "description": "Computes the sequence of transpositions that if applied to\n<code>sigma</code> result in <code>invert(sigma)</code>. Needs an helper\narray to keep track of processed elements. See {@link itranspositions} for\nhigher level API.",
+    "lineNumber": 11,
     "params": [
       {
         "nullable": null,
@@ -496,14 +499,14 @@
         "Iterator"
       ],
       "spread": false,
-      "description": "?"
+      "description": "Iterator over the transpositions."
     }
   },
   {
     "__docId__": 18,
     "kind": "file",
     "name": "src/_next.js",
-    "content": "import { _transpose } from './_transpose' ;\nimport { _reverse } from './_reverse' ;\n\n/**\n * Updates the input permutation to the next one. Returns true unless the input\n * permutation is the last for its elements. In that case, the input permutation\n * remains untouched.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation.\n * @returns {Boolean} Whether the input permutation is\n * <underline>NOT</underline> the last for its elements.\n */\nexport function _next ( sigma , n ) {\n\n\tlet i = n - 1 ;\n\n\twhile ( i > 0 ) {\n\n\t\t--i ;\n\n\t\tif ( sigma[i] > sigma[i+1] ) continue ;\n\n\t\tlet j = n - 1 ;\n\n\t\twhile ( sigma[j] < sigma[i] ) --j ;\n\n\t\t_transpose( i , j , sigma ) ;\n\n\t\t_reverse( sigma , i + 1 , n ) ;\n\n\t\treturn true ;\n\n\t}\n\n\treturn false ;\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\nimport { _reverse } from './_reverse' ;\n\n/**\n * Updates the input permutation to the next one. Returns true unless the input\n * permutation is the last for its elements. In that case, the input permutation\n * remains untouched.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation.\n * @returns {Boolean} Whether the input permutation is\n * ___NOT___ the last for its elements.\n */\nexport function _next ( sigma , n ) {\n\n\tlet i = n - 1 ;\n\n\twhile ( i > 0 ) {\n\n\t\t--i ;\n\n\t\tif ( sigma[i] > sigma[i+1] ) continue ;\n\n\t\tlet j = n - 1 ;\n\n\t\twhile ( sigma[j] < sigma[i] ) --j ;\n\n\t\t_transpose( i , j , sigma ) ;\n\n\t\t_reverse( sigma , i + 1 , n ) ;\n\n\t\treturn true ;\n\n\t}\n\n\treturn false ;\n\n}\n\n",
     "static": true,
     "longname": "src/_next.js",
     "access": null,
@@ -528,7 +531,7 @@
     "unknown": [
       {
         "tagName": "@returns",
-        "tagValue": "{Boolean} Whether the input permutation is\n<underline>NOT</underline> the last for its elements."
+        "tagValue": "{Boolean} Whether the input permutation is\n___NOT___ the last for its elements."
       }
     ],
     "params": [
@@ -559,7 +562,7 @@
         "Boolean"
       ],
       "spread": false,
-      "description": "Whether the input permutation is\n<underline>NOT</underline> the last for its elements."
+      "description": "Whether the input permutation is\n___NOT___ the last for its elements."
     }
   },
   {
@@ -629,7 +632,7 @@
     "__docId__": 22,
     "kind": "file",
     "name": "src/_reverse.js",
-    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Reverses input permutation in place from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse.\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n */\nexport function _reverse ( sigma , i , j ) {\n\n\twhile ( i <-- j ) _transpose( i++ , j , sigma ) ;\n\n}\n",
+    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n */\nexport function _reverse ( sigma , i , j ) {\n\n\twhile ( i <-- j ) _transpose( i++ , j , sigma ) ;\n\n}\n",
     "static": true,
     "longname": "src/_reverse.js",
     "access": null,
@@ -649,7 +652,7 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_reverse.js",
     "importStyle": "{_reverse}",
-    "description": "Reverses input permutation in place from input index <code>i</code>\n(include) to input index <code>j</code> (excluded).",
+    "description": "Reverses input permutation ___in-place___ from input index <code>i</code>\n(include) to input index <code>j</code> (excluded).",
     "lineNumber": 11,
     "params": [
       {
@@ -660,7 +663,7 @@
         "spread": false,
         "optional": false,
         "name": "sigma",
-        "description": "The input permutation to reverse."
+        "description": "The input permutation to reverse (modified in-place)."
       },
       {
         "nullable": null,
@@ -1257,7 +1260,7 @@
     "__docId__": 45,
     "kind": "file",
     "name": "src/invert.js",
-    "content": "import { permutation } from './permutation' ;\nimport { _invert } from './_invert' ;\n\n/**\n * Computes the inverse <code>rho</code> of the input permutation\n * <code>sigma</code>, that is, the permutation such that <code>compose(rho,\n * sigma)</code> returns <code>identity(sigma.length)</code>.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The inverse of the input permutation.\n */\nexport function invert ( sigma ) {\n\n\tconst rho = permutation( sigma.length ) ;\n\n\t_invert( sigma , sigma.length , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { permutation } from './permutation' ;\nimport { _invert } from './_invert' ;\n\n/**\n * Computes the inverse <code>tau</code> of the input permutation\n * <code>sigma</code>, that is, the permutation such that <code>compose(sigma,\n * tau)</code> returns <code>identity(sigma.length)</code>. Alternatives\n * include using {@link _invertcycles} and {@link itranspositions}.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The inverse of the input permutation.\n */\nexport function invert ( sigma ) {\n\n\tconst tau = permutation( sigma.length ) ;\n\n\t_invert( sigma , sigma.length , tau ) ;\n\n\treturn tau ;\n\n}\n",
     "static": true,
     "longname": "src/invert.js",
     "access": null,
@@ -1277,8 +1280,8 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/invert.js",
     "importStyle": "{invert}",
-    "description": "Computes the inverse <code>rho</code> of the input permutation\n<code>sigma</code>, that is, the permutation such that <code>compose(rho,\nsigma)</code> returns <code>identity(sigma.length)</code>.",
-    "lineNumber": 12,
+    "description": "Computes the inverse <code>tau</code> of the input permutation\n<code>sigma</code>, that is, the permutation such that <code>compose(sigma,\ntau)</code> returns <code>identity(sigma.length)</code>. Alternatives\ninclude using {@link _invertcycles} and {@link itranspositions}.",
+    "lineNumber": 13,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1310,7 +1313,7 @@
     "__docId__": 47,
     "kind": "file",
     "name": "src/itranspositions.js",
-    "content": "import { _itranspositions } from './_itranspositions' ;\nimport { used } from './used' ;\n\n/**\n * Really no idead what this does, see also {@link _itranspositions}.\n *\n * @param {Array} sigma Input permutation.\n * @return {Iterator} ?\n */\nexport function* itranspositions ( sigma ) {\n\n\tyield* _itranspositions( sigma , used( sigma.length ) ) ;\n\n}\n\n",
+    "content": "import { _itranspositions } from './_itranspositions' ;\nimport { used } from './used' ;\n\n/**\n * Computes the sequence of transpositions that if applied to\n * <code>sigma</code> result in <code>invert(sigma)</code>. Uses\n * {@link _itranspositions} as the underlying implementation.\n *\n * @example\n * const invert = sigma => apply( sigma.length , itranspositions( sigma ) ) ;\n *\n * @param {Array} sigma Input permutation.\n * @return {Iterator} Iterator over the transpositions.\n */\nexport function* itranspositions ( sigma ) {\n\n\tyield* _itranspositions( sigma , used( sigma.length ) ) ;\n\n}\n",
     "static": true,
     "longname": "src/itranspositions.js",
     "access": null,
@@ -1330,8 +1333,11 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/itranspositions.js",
     "importStyle": "{itranspositions}",
-    "description": "Really no idead what this does, see also {@link _itranspositions}.",
-    "lineNumber": 10,
+    "description": "Computes the sequence of transpositions that if applied to\n<code>sigma</code> result in <code>invert(sigma)</code>. Uses\n{@link _itranspositions} as the underlying implementation.",
+    "examples": [
+      "const invert = sigma => apply( sigma.length , itranspositions( sigma ) ) ;"
+    ],
+    "lineNumber": 15,
     "params": [
       {
         "nullable": null,
@@ -1350,7 +1356,7 @@
         "Iterator"
       ],
       "spread": false,
-      "description": "?"
+      "description": "Iterator over the transpositions."
     }
   },
   {
@@ -1516,7 +1522,7 @@
     "__docId__": 55,
     "kind": "file",
     "name": "src/reverse.js",
-    "content": "import { _reverse } from './_reverse' ;\n\n/**\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n */\nexport function reverse ( sigma ) {\n\n\t_reverse( sigma , 0 , sigma.length ) ;\n\n}\n\n",
+    "content": "import { _reverse } from './_reverse' ;\n\n/**\n * Reverses input permutation ___in-place___.\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n */\nexport function reverse ( sigma ) {\n\n\t_reverse( sigma , 0 , sigma.length ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/reverse.js",
     "access": null,
@@ -1536,7 +1542,7 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/reverse.js",
     "importStyle": "{reverse}",
-    "description": "Reverses input permutation in place.",
+    "description": "Reverses input permutation ___in-place___.",
     "lineNumber": 8,
     "params": [
       {
@@ -1547,7 +1553,7 @@
         "spread": false,
         "optional": false,
         "name": "sigma",
-        "description": "The input permutation to reverse."
+        "description": "The input permutation to reverse (modified in-place)."
       }
     ]
   },

@@ -267,9 +267,9 @@ input <code>n</code> items.</p>
       <div>
         
         
-        <div data-ice="description"><p>Computes the inverse <code>rho</code> of the input permutation
-<code>sigma</code>, that is, the permutation such that <code>compose(rho,
-sigma)</code> returns <code>identity(sigma.length)</code>.</p>
+        <div data-ice="description"><p>Computes the inverse <code>tau</code> of the input permutation
+<code>sigma</code>, that is, the permutation such that <code>compose(sigma,
+tau)</code> returns <code>identity(sigma.length)</code>.</p>
 </div>
       </div>
     </td>
@@ -297,7 +297,8 @@ sigma)</code> returns <code>identity(sigma.length)</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p>Really no idead what this does, see also <span><a href="function/index.html#static-function-_itranspositions">_itranspositions</a></span>.</p>
+        <div data-ice="description"><p>Computes the sequence of transpositions that if applied to
+<code>sigma</code> result in <code>invert(sigma)</code>.</p>
 </div>
       </div>
     </td>
@@ -409,7 +410,7 @@ sigma)</code> returns <code>identity(sigma.length)</code>.</p>
       <div>
         
         
-        <div data-ice="description"><p>Reverses input permutation in place.</p>
+        <div data-ice="description"><p>Reverses input permutation <strong><em>in-place</em></strong>.</p>
 </div>
       </div>
     </td>
@@ -757,9 +758,9 @@ elements.</p>
       <div>
         
         
-        <div data-ice="description"><p>Fills an input array with the inverse <code>rho</code> of the input
+        <div data-ice="description"><p>Fills an input array with the inverse <code>tau</code> of the input
 permutation <code>sigma</code>, that is, the permutation such that
-<code>compose(rho, sigma)</code> returns
+<code>compose(sigma, tau)</code> returns
 <code>identity(sigma.length)</code>.</p>
 </div>
       </div>
@@ -788,7 +789,7 @@ permutation <code>sigma</code>, that is, the permutation such that
       <div>
         
         
-        <div data-ice="description"><p>No idea what this does.</p>
+        <div data-ice="description"><p>Inverts given cycles in a given permutation <strong><em>in-place</em></strong>.</p>
 </div>
       </div>
     </td>
@@ -816,7 +817,8 @@ permutation <code>sigma</code>, that is, the permutation such that
       <div>
         
         
-        <div data-ice="description"><p>Really no idead what this does.</p>
+        <div data-ice="description"><p>Computes the sequence of transpositions that if applied to
+<code>sigma</code> result in <code>invert(sigma)</code>.</p>
 </div>
       </div>
     </td>
@@ -901,7 +903,7 @@ permutation.</p>
       <div>
         
         
-        <div data-ice="description"><p>Reverses input permutation in place from input index <code>i</code>
+        <div data-ice="description"><p>Reverses input permutation <strong><em>in-place</em></strong> from input index <code>i</code>
 (include) to input index <code>j</code> (excluded).</p>
 </div>
       </div>

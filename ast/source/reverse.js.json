@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 231,
+  "end": 257,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 231,
+    "end": 257,
     "loc": {
       "start": {
         "line": 1,
@@ -116,9 +116,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+            "value": "*\n * Reverses input permutation ___in-place___.\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n ",
             "start": 41,
-            "end": 149,
+            "end": 175,
             "loc": {
               "start": {
                 "line": 3,
@@ -134,8 +134,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 150,
-        "end": 229,
+        "start": 176,
+        "end": 255,
         "loc": {
           "start": {
             "line": 8,
@@ -150,8 +150,8 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 157,
-          "end": 229,
+          "start": 183,
+          "end": 255,
           "loc": {
             "start": {
               "line": 8,
@@ -164,8 +164,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 166,
-            "end": 173,
+            "start": 192,
+            "end": 199,
             "loc": {
               "start": {
                 "line": 8,
@@ -186,8 +186,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 176,
-              "end": 181,
+              "start": 202,
+              "end": 207,
               "loc": {
                 "start": {
                   "line": 8,
@@ -204,8 +204,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 184,
-            "end": 229,
+            "start": 210,
+            "end": 255,
             "loc": {
               "start": {
                 "line": 8,
@@ -219,8 +219,8 @@
             "body": [
               {
                 "type": "ExpressionStatement",
-                "start": 188,
-                "end": 226,
+                "start": 214,
+                "end": 252,
                 "loc": {
                   "start": {
                     "line": 10,
@@ -233,8 +233,8 @@
                 },
                 "expression": {
                   "type": "CallExpression",
-                  "start": 188,
-                  "end": 224,
+                  "start": 214,
+                  "end": 250,
                   "loc": {
                     "start": {
                       "line": 10,
@@ -247,8 +247,8 @@
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 188,
-                    "end": 196,
+                    "start": 214,
+                    "end": 222,
                     "loc": {
                       "start": {
                         "line": 10,
@@ -265,8 +265,8 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 198,
-                      "end": 203,
+                      "start": 224,
+                      "end": 229,
                       "loc": {
                         "start": {
                           "line": 10,
@@ -282,8 +282,8 @@
                     },
                     {
                       "type": "NumericLiteral",
-                      "start": 206,
-                      "end": 207,
+                      "start": 232,
+                      "end": 233,
                       "loc": {
                         "start": {
                           "line": 10,
@@ -302,8 +302,8 @@
                     },
                     {
                       "type": "MemberExpression",
-                      "start": 210,
-                      "end": 222,
+                      "start": 236,
+                      "end": 248,
                       "loc": {
                         "start": {
                           "line": 10,
@@ -316,8 +316,8 @@
                       },
                       "object": {
                         "type": "Identifier",
-                        "start": 210,
-                        "end": 215,
+                        "start": 236,
+                        "end": 241,
                         "loc": {
                           "start": {
                             "line": 10,
@@ -333,8 +333,8 @@
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 216,
-                        "end": 222,
+                        "start": 242,
+                        "end": 248,
                         "loc": {
                           "start": {
                             "line": 10,
@@ -359,9 +359,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+              "value": "*\n * Reverses input permutation ___in-place___.\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n ",
               "start": 41,
-              "end": 149,
+              "end": 175,
               "loc": {
                 "start": {
                   "line": 3,
@@ -379,9 +379,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+            "value": "*\n * Reverses input permutation ___in-place___.\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n ",
             "start": 41,
-            "end": 149,
+            "end": 175,
             "loc": {
               "start": {
                 "line": 3,
@@ -401,9 +401,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+      "value": "*\n * Reverses input permutation ___in-place___.\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n ",
       "start": 41,
-      "end": 149,
+      "end": 175,
       "loc": {
         "start": {
           "line": 3,
@@ -602,9 +602,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+      "value": "*\n * Reverses input permutation ___in-place___.\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n ",
       "start": 41,
-      "end": 149,
+      "end": 175,
       "loc": {
         "start": {
           "line": 3,
@@ -631,8 +631,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 150,
-      "end": 156,
+      "start": 176,
+      "end": 182,
       "loc": {
         "start": {
           "line": 8,
@@ -658,8 +658,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 157,
-      "end": 165,
+      "start": 183,
+      "end": 191,
       "loc": {
         "start": {
           "line": 8,
@@ -684,8 +684,8 @@
         "binop": null
       },
       "value": "reverse",
-      "start": 166,
-      "end": 173,
+      "start": 192,
+      "end": 199,
       "loc": {
         "start": {
           "line": 8,
@@ -709,8 +709,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 174,
-      "end": 175,
+      "start": 200,
+      "end": 201,
       "loc": {
         "start": {
           "line": 8,
@@ -735,8 +735,8 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 176,
-      "end": 181,
+      "start": 202,
+      "end": 207,
       "loc": {
         "start": {
           "line": 8,
@@ -760,8 +760,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 182,
-      "end": 183,
+      "start": 208,
+      "end": 209,
       "loc": {
         "start": {
           "line": 8,
@@ -785,8 +785,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 184,
-      "end": 185,
+      "start": 210,
+      "end": 211,
       "loc": {
         "start": {
           "line": 8,
@@ -811,8 +811,8 @@
         "binop": null
       },
       "value": "_reverse",
-      "start": 188,
-      "end": 196,
+      "start": 214,
+      "end": 222,
       "loc": {
         "start": {
           "line": 10,
@@ -836,8 +836,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 196,
-      "end": 197,
+      "start": 222,
+      "end": 223,
       "loc": {
         "start": {
           "line": 10,
@@ -862,8 +862,8 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 198,
-      "end": 203,
+      "start": 224,
+      "end": 229,
       "loc": {
         "start": {
           "line": 10,
@@ -888,8 +888,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 204,
-      "end": 205,
+      "start": 230,
+      "end": 231,
       "loc": {
         "start": {
           "line": 10,
@@ -915,8 +915,8 @@
         "updateContext": null
       },
       "value": 0,
-      "start": 206,
-      "end": 207,
+      "start": 232,
+      "end": 233,
       "loc": {
         "start": {
           "line": 10,
@@ -941,8 +941,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 208,
-      "end": 209,
+      "start": 234,
+      "end": 235,
       "loc": {
         "start": {
           "line": 10,
@@ -967,8 +967,8 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 210,
-      "end": 215,
+      "start": 236,
+      "end": 241,
       "loc": {
         "start": {
           "line": 10,
@@ -993,8 +993,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 215,
-      "end": 216,
+      "start": 241,
+      "end": 242,
       "loc": {
         "start": {
           "line": 10,
@@ -1019,8 +1019,8 @@
         "binop": null
       },
       "value": "length",
-      "start": 216,
-      "end": 222,
+      "start": 242,
+      "end": 248,
       "loc": {
         "start": {
           "line": 10,
@@ -1044,8 +1044,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 223,
-      "end": 224,
+      "start": 249,
+      "end": 250,
       "loc": {
         "start": {
           "line": 10,
@@ -1070,8 +1070,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 225,
-      "end": 226,
+      "start": 251,
+      "end": 252,
       "loc": {
         "start": {
           "line": 10,
@@ -1095,8 +1095,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 228,
-      "end": 229,
+      "start": 254,
+      "end": 255,
       "loc": {
         "start": {
           "line": 12,
@@ -1121,8 +1121,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 231,
-      "end": 231,
+      "start": 257,
+      "end": 257,
       "loc": {
         "start": {
           "line": 14,

@@ -72,13 +72,15 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_itranspositions.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
-/**
- * Really no idead what this does.
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Computes the sequence of transpositions that if applied to
+ * &lt;code&gt;sigma&lt;/code&gt; result in &lt;code&gt;invert(sigma)&lt;/code&gt;. Needs an helper
+ * array to keep track of processed elements. See {@link itranspositions} for
+ * higher level API.
  *
  * @param {Array} sigma Input permutation.
  * @param {Array} used Helper array.
- * @return {Iterator} ?
+ * @return {Iterator} Iterator over the transpositions.
  */
 export function* _itranspositions ( sigma , used ) {
 
@@ -103,7 +105,6 @@ export function* _itranspositions ( sigma , used ) {
 	}
 
 }
-
 </code></pre>
 
 </div>

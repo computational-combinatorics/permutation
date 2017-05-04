@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 437,
+  "end": 463,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 437,
+    "end": 463,
     "loc": {
       "start": {
         "line": 1,
@@ -116,9 +116,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Reverses input permutation in place from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse.\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+            "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
             "start": 45,
-            "end": 336,
+            "end": 362,
             "loc": {
               "start": {
                 "line": 3,
@@ -134,8 +134,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 337,
-        "end": 436,
+        "start": 363,
+        "end": 462,
         "loc": {
           "start": {
             "line": 11,
@@ -150,8 +150,8 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 344,
-          "end": 436,
+          "start": 370,
+          "end": 462,
           "loc": {
             "start": {
               "line": 11,
@@ -164,8 +164,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 353,
-            "end": 361,
+            "start": 379,
+            "end": 387,
             "loc": {
               "start": {
                 "line": 11,
@@ -186,8 +186,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 364,
-              "end": 369,
+              "start": 390,
+              "end": 395,
               "loc": {
                 "start": {
                   "line": 11,
@@ -203,8 +203,8 @@
             },
             {
               "type": "Identifier",
-              "start": 372,
-              "end": 373,
+              "start": 398,
+              "end": 399,
               "loc": {
                 "start": {
                   "line": 11,
@@ -220,8 +220,8 @@
             },
             {
               "type": "Identifier",
-              "start": 376,
-              "end": 377,
+              "start": 402,
+              "end": 403,
               "loc": {
                 "start": {
                   "line": 11,
@@ -238,8 +238,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 380,
-            "end": 436,
+            "start": 406,
+            "end": 462,
             "loc": {
               "start": {
                 "line": 11,
@@ -253,8 +253,8 @@
             "body": [
               {
                 "type": "WhileStatement",
-                "start": 384,
-                "end": 433,
+                "start": 410,
+                "end": 459,
                 "loc": {
                   "start": {
                     "line": 13,
@@ -267,8 +267,8 @@
                 },
                 "test": {
                   "type": "BinaryExpression",
-                  "start": 392,
-                  "end": 399,
+                  "start": 418,
+                  "end": 425,
                   "loc": {
                     "start": {
                       "line": 13,
@@ -281,8 +281,8 @@
                   },
                   "left": {
                     "type": "Identifier",
-                    "start": 392,
-                    "end": 393,
+                    "start": 418,
+                    "end": 419,
                     "loc": {
                       "start": {
                         "line": 13,
@@ -299,8 +299,8 @@
                   "operator": "<",
                   "right": {
                     "type": "UpdateExpression",
-                    "start": 395,
-                    "end": 399,
+                    "start": 421,
+                    "end": 425,
                     "loc": {
                       "start": {
                         "line": 13,
@@ -315,8 +315,8 @@
                     "prefix": true,
                     "argument": {
                       "type": "Identifier",
-                      "start": 398,
-                      "end": 399,
+                      "start": 424,
+                      "end": 425,
                       "loc": {
                         "start": {
                           "line": 13,
@@ -337,8 +337,8 @@
                 },
                 "body": {
                   "type": "ExpressionStatement",
-                  "start": 402,
-                  "end": 433,
+                  "start": 428,
+                  "end": 459,
                   "loc": {
                     "start": {
                       "line": 13,
@@ -351,8 +351,8 @@
                   },
                   "expression": {
                     "type": "CallExpression",
-                    "start": 402,
-                    "end": 431,
+                    "start": 428,
+                    "end": 457,
                     "loc": {
                       "start": {
                         "line": 13,
@@ -365,8 +365,8 @@
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 402,
-                      "end": 412,
+                      "start": 428,
+                      "end": 438,
                       "loc": {
                         "start": {
                           "line": 13,
@@ -383,8 +383,8 @@
                     "arguments": [
                       {
                         "type": "UpdateExpression",
-                        "start": 414,
-                        "end": 417,
+                        "start": 440,
+                        "end": 443,
                         "loc": {
                           "start": {
                             "line": 13,
@@ -399,8 +399,8 @@
                         "prefix": false,
                         "argument": {
                           "type": "Identifier",
-                          "start": 414,
-                          "end": 415,
+                          "start": 440,
+                          "end": 441,
                           "loc": {
                             "start": {
                               "line": 13,
@@ -417,8 +417,8 @@
                       },
                       {
                         "type": "Identifier",
-                        "start": 420,
-                        "end": 421,
+                        "start": 446,
+                        "end": 447,
                         "loc": {
                           "start": {
                             "line": 13,
@@ -434,8 +434,8 @@
                       },
                       {
                         "type": "Identifier",
-                        "start": 424,
-                        "end": 429,
+                        "start": 450,
+                        "end": 455,
                         "loc": {
                           "start": {
                             "line": 13,
@@ -459,9 +459,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Reverses input permutation in place from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse.\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+              "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
               "start": 45,
-              "end": 336,
+              "end": 362,
               "loc": {
                 "start": {
                   "line": 3,
@@ -479,9 +479,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Reverses input permutation in place from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse.\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+            "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
             "start": 45,
-            "end": 336,
+            "end": 362,
             "loc": {
               "start": {
                 "line": 3,
@@ -501,9 +501,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Reverses input permutation in place from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse.\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+      "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
       "start": 45,
-      "end": 336,
+      "end": 362,
       "loc": {
         "start": {
           "line": 3,
@@ -702,9 +702,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Reverses input permutation in place from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse.\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+      "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
       "start": 45,
-      "end": 336,
+      "end": 362,
       "loc": {
         "start": {
           "line": 3,
@@ -731,8 +731,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 337,
-      "end": 343,
+      "start": 363,
+      "end": 369,
       "loc": {
         "start": {
           "line": 11,
@@ -758,8 +758,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 344,
-      "end": 352,
+      "start": 370,
+      "end": 378,
       "loc": {
         "start": {
           "line": 11,
@@ -784,8 +784,8 @@
         "binop": null
       },
       "value": "_reverse",
-      "start": 353,
-      "end": 361,
+      "start": 379,
+      "end": 387,
       "loc": {
         "start": {
           "line": 11,
@@ -809,8 +809,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 362,
-      "end": 363,
+      "start": 388,
+      "end": 389,
       "loc": {
         "start": {
           "line": 11,
@@ -835,8 +835,8 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 364,
-      "end": 369,
+      "start": 390,
+      "end": 395,
       "loc": {
         "start": {
           "line": 11,
@@ -861,8 +861,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 370,
-      "end": 371,
+      "start": 396,
+      "end": 397,
       "loc": {
         "start": {
           "line": 11,
@@ -887,8 +887,8 @@
         "binop": null
       },
       "value": "i",
-      "start": 372,
-      "end": 373,
+      "start": 398,
+      "end": 399,
       "loc": {
         "start": {
           "line": 11,
@@ -913,8 +913,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 374,
-      "end": 375,
+      "start": 400,
+      "end": 401,
       "loc": {
         "start": {
           "line": 11,
@@ -939,8 +939,8 @@
         "binop": null
       },
       "value": "j",
-      "start": 376,
-      "end": 377,
+      "start": 402,
+      "end": 403,
       "loc": {
         "start": {
           "line": 11,
@@ -964,8 +964,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 378,
-      "end": 379,
+      "start": 404,
+      "end": 405,
       "loc": {
         "start": {
           "line": 11,
@@ -989,8 +989,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 380,
-      "end": 381,
+      "start": 406,
+      "end": 407,
       "loc": {
         "start": {
           "line": 11,
@@ -1017,8 +1017,8 @@
         "updateContext": null
       },
       "value": "while",
-      "start": 384,
-      "end": 389,
+      "start": 410,
+      "end": 415,
       "loc": {
         "start": {
           "line": 13,
@@ -1042,8 +1042,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 390,
-      "end": 391,
+      "start": 416,
+      "end": 417,
       "loc": {
         "start": {
           "line": 13,
@@ -1068,8 +1068,8 @@
         "binop": null
       },
       "value": "i",
-      "start": 392,
-      "end": 393,
+      "start": 418,
+      "end": 419,
       "loc": {
         "start": {
           "line": 13,
@@ -1095,8 +1095,8 @@
         "updateContext": null
       },
       "value": "<",
-      "start": 394,
-      "end": 395,
+      "start": 420,
+      "end": 421,
       "loc": {
         "start": {
           "line": 13,
@@ -1121,8 +1121,8 @@
         "binop": null
       },
       "value": "--",
-      "start": 395,
-      "end": 397,
+      "start": 421,
+      "end": 423,
       "loc": {
         "start": {
           "line": 13,
@@ -1147,8 +1147,8 @@
         "binop": null
       },
       "value": "j",
-      "start": 398,
-      "end": 399,
+      "start": 424,
+      "end": 425,
       "loc": {
         "start": {
           "line": 13,
@@ -1172,8 +1172,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 400,
-      "end": 401,
+      "start": 426,
+      "end": 427,
       "loc": {
         "start": {
           "line": 13,
@@ -1198,8 +1198,8 @@
         "binop": null
       },
       "value": "_transpose",
-      "start": 402,
-      "end": 412,
+      "start": 428,
+      "end": 438,
       "loc": {
         "start": {
           "line": 13,
@@ -1223,8 +1223,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 412,
-      "end": 413,
+      "start": 438,
+      "end": 439,
       "loc": {
         "start": {
           "line": 13,
@@ -1249,8 +1249,8 @@
         "binop": null
       },
       "value": "i",
-      "start": 414,
-      "end": 415,
+      "start": 440,
+      "end": 441,
       "loc": {
         "start": {
           "line": 13,
@@ -1275,8 +1275,8 @@
         "binop": null
       },
       "value": "++",
-      "start": 415,
-      "end": 417,
+      "start": 441,
+      "end": 443,
       "loc": {
         "start": {
           "line": 13,
@@ -1301,8 +1301,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 418,
-      "end": 419,
+      "start": 444,
+      "end": 445,
       "loc": {
         "start": {
           "line": 13,
@@ -1327,8 +1327,8 @@
         "binop": null
       },
       "value": "j",
-      "start": 420,
-      "end": 421,
+      "start": 446,
+      "end": 447,
       "loc": {
         "start": {
           "line": 13,
@@ -1353,8 +1353,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 422,
-      "end": 423,
+      "start": 448,
+      "end": 449,
       "loc": {
         "start": {
           "line": 13,
@@ -1379,8 +1379,8 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 424,
-      "end": 429,
+      "start": 450,
+      "end": 455,
       "loc": {
         "start": {
           "line": 13,
@@ -1404,8 +1404,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 430,
-      "end": 431,
+      "start": 456,
+      "end": 457,
       "loc": {
         "start": {
           "line": 13,
@@ -1430,8 +1430,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 432,
-      "end": 433,
+      "start": 458,
+      "end": 459,
       "loc": {
         "start": {
           "line": 13,
@@ -1455,8 +1455,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 435,
-      "end": 436,
+      "start": 461,
+      "end": 462,
       "loc": {
         "start": {
           "line": 15,
@@ -1481,8 +1481,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 437,
-      "end": 437,
+      "start": 463,
+      "end": 463,
       "loc": {
         "start": {
           "line": 16,
