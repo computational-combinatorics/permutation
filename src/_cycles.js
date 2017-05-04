@@ -1,7 +1,6 @@
 
 /**
- * Computes a {@link https://en.wikipedia.org/wiki/Permutation#Cycle_notation
- * cycle decomposition} of an input permutation. This algorithm is
+ * Computes a cycle decomposition of an input permutation. This algorithm is
  * deterministic; the algorithm will procedes in a sequential manner, first
  * yielding the cycle containing the first (in input order) index of the
  * permutation, then yielding the cycle containing the first (in input order)
@@ -11,6 +10,9 @@
  * ...]</code> contains the second, third, etc. elements of the cycle.  The
  * algorithm uses an helper array to remember which elements have already been
  * encountered.
+ *
+ * @see https://en.wikipedia.org/wiki/Permutation#Cycle_notation
+ *
  * @param {Array} sigma The input permutation.
  * @param {Array} used The helper array.
  * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.
