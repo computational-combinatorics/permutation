@@ -1804,7 +1804,7 @@
     "__docId__": 65,
     "kind": "file",
     "name": "src/used.js",
-    "content": "import { _used } from './_used' ;\n\n/**\n * Generates an helper array of given size (used in {@link _cycle}, {@link cycle}).\n *\n * @param n The given size.\n * @returns {Array} The helper array of prescribed size.\n */\nexport function used ( n ) {\n\n\tconst array = new Array( n ) ;\n\n\t_used( n , array ) ;\n\n\treturn array ;\n\n}\n\n",
+    "content": "import { _used } from './_used' ;\n\n/**\n * Generates an helper array of given size (used in {@link _cycle}, {@link cycle}).\n *\n * @param {Number} n The given size.\n * @returns {Array} The helper array of prescribed size.\n */\nexport function used ( n ) {\n\n\tconst array = new Array( n ) ;\n\n\t_used( n , array ) ;\n\n\treturn array ;\n\n}\n\n",
     "static": true,
     "longname": "src/used.js",
     "access": null,
@@ -1836,7 +1836,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Number"
         ],
         "spread": false,
         "optional": false,
