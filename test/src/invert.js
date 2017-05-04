@@ -9,34 +9,28 @@ import {
 	itranspositions
 } from '../../src' ;
 
-import { shuffle } from "@aureooms/js-random" ;
+import { shuffle } from '@aureooms/js-random' ;
 
-function macro ( t , do_invert ) {
+function macro ( t , do_invert , size ) {
 
-	const m = 100 ;
+	const sigma = identity( size ) ;
 
-	for ( let n = 0 ; n < m ; ++n ) {
+	shuffle( sigma , 0 , size ) ;
 
-		const sigma = identity( n ) ;
+	const tau = do_invert( sigma ) ;
 
-		shuffle( sigma , 0 , n ) ;
+	const rho = compose( sigma , tau ) ;
 
-		const tau = do_invert( sigma ) ;
-
-		const rho = compose( sigma , tau ) ;
-
-		t.deepEqual( rho , identity( n ) , n + " : sigma ∘ tau = id" ) ;
-
-	}
+	t.deepEqual( rho , identity( size ) ) ;
 
 }
 
-macro.title = name => `invert > ${name}` ;
+macro.title = ( name , _ , size ) => `invert [${name}] (${size})` ;
 
 const implementations = [
 
-	{ name : "invert" , invert : invert } ,
-	{ name : "_invertcycles" , invert : sigma => {
+	{ name : 'invert' , invert : invert } ,
+	{ name : '_invertcycles' , invert : sigma => {
 
 		const tau = identity( sigma.length ) ;
 
@@ -48,7 +42,7 @@ const implementations = [
 
 	} } ,
 
-	{ name : "apply( itranspositions )" , invert : sigma => {
+	{ name : 'apply( itranspositions )' , invert : sigma => {
 
 		return apply( sigma.length , itranspositions( sigma ) ) ;
 
@@ -58,6 +52,6 @@ const implementations = [
 
 for ( const { name , invert : do_invert } of implementations ) {
 
-	test( name , macro , do_invert ) ;
+	for ( let n = 0 ; n < 100 ; ++n ) test( name , macro , do_invert , n ) ;
 
 }

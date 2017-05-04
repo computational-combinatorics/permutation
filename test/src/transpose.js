@@ -1,42 +1,37 @@
 import test from 'ava' ;
-import * as permutation from '../../src' ;
+import { copy , compose , identity , transpose } from '../../src' ;
+import { randint , shuffle } from '@aureooms/js-random' ;
 
-import * as random from "@aureooms/js-random" ;
+function macro ( t , size ) {
 
-test( "transpose" , t => {
+	const sigma = identity( size ) ;
 
-	var m , n , rho , sigma , tau , upsilon , a , b ;
+	shuffle( sigma , 0 , size ) ;
 
-	m = 101 ;
+	const a = randint( 0 , size ) ;
 
-	for ( n = 1 ; n < m ; ++n ) {
+	const b = randint( 0 , size ) ;
 
-		sigma = permutation.identity( n ) ;
+	const tau = transpose( sigma , a , b ) ;
 
-		random.shuffle( sigma , 0 , n ) ;
+	let rho = identity( size ) ;
 
-		a = random.randint( 0 , n ) ;
+	shuffle( rho , 0 , size ) ;
 
-		b = random.randint( 0 , n ) ;
+	let upsilon = copy( rho ) ;
 
-		tau = permutation.transpose( sigma , a , b ) ;
+	rho = compose( rho , sigma ) ;
+	upsilon = compose( upsilon , tau ) ;
 
-		rho = permutation.identity( n ) ;
+	t.deepEqual( rho[a] , upsilon[b] , 'rho[a] is upsilon[b]' ) ;
+	t.deepEqual( rho[b] , upsilon[a] , ': rho[b] is upsilon[a]' ) ;
 
-		random.shuffle( rho , 0 , n ) ;
+	upsilon = transpose( upsilon , a , b ) ;
 
-		upsilon = permutation.copy( rho ) ;
+	t.deepEqual( upsilon , rho , 'upsilon is rho after transpose' ) ;
 
-		rho = permutation.compose( rho , sigma ) ;
-		upsilon = permutation.compose( upsilon , tau ) ;
+}
 
-		t.deepEqual( rho[a] , upsilon[b] , n + " : rho[a] is upsilon[b]" ) ;
-		t.deepEqual( rho[b] , upsilon[a] , n + " : rho[b] is upsilon[a]" ) ;
+macro.title = ( _ , size ) => `transpose (${size})` ;
 
-		upsilon = permutation.transpose( upsilon , a , b ) ;
-
-		t.deepEqual( upsilon , rho , n + " : upsilon is tau after transpose" ) ;
-
-	}
-
-} ) ;
+for ( let n = 1 ; n <= 100 ; ++n ) test( macro , n ) ;

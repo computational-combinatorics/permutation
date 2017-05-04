@@ -1,24 +1,19 @@
 import test from 'ava' ;
-import * as permutation from '../../src' ;
+import { identity , reversed } from '../../src' ;
+import { shuffle } from '@aureooms/js-random' ;
 
-import * as random from "@aureooms/js-random" ;
+function macro ( t , size ) {
 
-test( "reversed" , t => {
+	const sigma = identity( size ) ;
 
-	var m , n , sigma , tau ;
+	shuffle( sigma , 0 , size ) ;
 
-	m = 100 ;
+	const tau = reversed( sigma ) ;
 
-	for ( n = 0 ; n < m ; ++n ) {
+	t.deepEqual( tau.reverse( ) , sigma ) ;
 
-		sigma = permutation.identity( n ) ;
+}
 
-		random.shuffle( sigma , 0 , n ) ;
+macro.title = ( _ , size ) => `reversed (${size})` ;
 
-		tau = permutation.reversed( sigma ) ;
-
-		t.deepEqual( tau.reverse( ) , sigma , n + " : reversed( tau ) = sigma" ) ;
-
-	}
-
-} ) ;
+for ( let n = 0 ; n < 100 ; ++n ) test( macro , n ) ;

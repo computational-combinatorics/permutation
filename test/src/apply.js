@@ -1,24 +1,23 @@
 import test from 'ava' ;
-import * as permutation from '../../src' ;
+import {
+	apply ,
+	identity ,
+	transpositions
+} from '../../src' ;
+import { shuffle } from '@aureooms/js-random' ;
 
-import * as random from "@aureooms/js-random" ;
+function macro ( t , size ) {
 
-test( "apply" , t => {
+	const sigma = identity( size ) ;
 
-	var m , n , sigma , tau ;
+	shuffle( sigma , 0 , size ) ;
 
-	m = 100 ;
+	const tau = apply( sigma.length , transpositions( sigma ) ) ;
 
-	for ( n = 0 ; n < m ; ++n ) {
+	t.deepEqual( tau , sigma ) ;
 
-		sigma = permutation.identity( n ) ;
+}
 
-		random.shuffle( sigma , 0 , n ) ;
+macro.title = ( _ , size ) => `apply (${size})` ;
 
-		tau = permutation.apply( sigma.length , permutation.transpositions( sigma ) ) ;
-
-		t.deepEqual( tau , sigma , n + " : sigma = tau" ) ;
-
-	}
-
-} ) ;
+for ( let n = 0 ; n < 100 ; ++n ) test( macro , n ) ;

@@ -1,36 +1,25 @@
 import test from 'ava' ;
-import * as permutation from '../../src' ;
+import { identity , next , permutations } from '../../src' ;
+import { fixedlexicographical , increasing } from '@aureooms/js-compare' ;
+import { issorted } from '@aureooms/js-sort' ;
+import { factorial } from '@aureooms/js-factorial' ;
 
-import * as compare from "@aureooms/js-compare" ;
+function macro ( t , size ) {
 
-test( "permutations" , t => {
+	const compare = fixedlexicographical( increasing , size ) ;
 
-	var m , n , sigma , tau , permutations , c ;
+	const pis = Array.from( permutations( size ) ) ;
 
-	m = 6 ;
+	t.is( pis.length , factorial(size) , 'n! permutations' ) ;
 
-	for ( n = 0 ; n <= m ; ++n ) {
+	t.deepEqual( pis[0] , identity( size ) , 'first permutation is id' ) ;
 
-		c = compare.fixedlexicographical( compare.increasing , n ) ;
+	t.deepEqual( next( pis[pis.length-1] ) , identity( size ) , 'next(last) is id' ) ;
 
-		permutations = permutation.permutations( n ) ;
+	t.is( issorted( compare , pis , 0 , pis.length ) , pis.length , 'permutations are in sorted order' ) ;
 
-		sigma = permutations.next( ).value ;
+}
 
-		t.deepEqual( sigma , permutation.identity( n ) , n + " first permutation is id" ) ;
+macro.title = ( _ , size ) => `permutations (${size})` ;
 
-		let it ;
-
-		while ( ! ( it = permutations.next( ) ).done ) {
-
-			tau = it.value ;
-
-			t.true( c( tau , sigma ) > 0 , [ n , sigma , tau ] ) ;
-
-			sigma = tau ;
-
-		}
-
-	}
-
-} ) ;
+for ( let n = 0 ; n <= 6 ; ++n ) test( macro , n ) ;

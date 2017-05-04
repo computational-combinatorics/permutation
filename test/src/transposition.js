@@ -1,28 +1,25 @@
 import test from 'ava' ;
-import * as permutation from '../../src' ;
+import { identity , compose , transposition } from '../../src' ;
+import { randint } from '@aureooms/js-random' ;
 
-import * as random from "@aureooms/js-random" ;
+function macro ( t , size ) {
 
-test( "transposition" , t => {
+	const id = identity( size ) ;
 
-	var m , n , rho , sigma , tau , a , b ;
+	const a = randint( 0 , size ) ;
 
-	m = 101 ;
+	const b = randint( 0 , size ) ;
 
-	for ( n = 1 ; n < m ; ++n ) {
+	const tau = transposition( size , a , b ) ;
 
-		sigma = permutation.identity( n ) ;
+	const rho = compose( tau , tau ) ;
 
-		a = random.randint( 0 , n ) ;
+	t.deepEqual( rho , id , 'tau ∘ tau = identity' ) ;
 
-		b = random.randint( 0 , n ) ;
+	// TODO add more tests
 
-		tau = permutation.transposition( n , a , b ) ;
+}
 
-		rho = permutation.compose( tau , tau ) ;
+macro.title = ( _ , size ) => `transposition (${size})` ;
 
-		t.deepEqual( rho , sigma , n + " : tau * tau is identity" ) ;
-
-	}
-
-} ) ;
+for ( let n = 1 ; n <= 100 ; ++n ) test( macro , n ) ;
