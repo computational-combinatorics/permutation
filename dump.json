@@ -223,7 +223,7 @@
     "__docId__": 8,
     "kind": "file",
     "name": "src/_cycles.js",
-    "content": "\n/**\n * Computes a {@link https://en.wikipedia.org/wiki/Permutation#Cycle_notation\n * cycle decomposition} of an input permutation. This algorithm is\n * deterministic; the algorithm will procedes in a sequential manner, first\n * yielding the cycle containing the first (in input order) index of the\n * permutation, then yielding the cycle containing the first (in input order)\n * index of the permutation that is not in the first cycle, etc. The output is\n * in the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n * <code>a</code> is the first element of the cycle and the list <code>[b, c,\n * ...]</code> contains the second, third, etc. elements of the cycle.  The\n * algorithm uses an helper array to remember which elements have already been\n * encountered.\n * @param {Array} sigma The input permutation.\n * @param {Array} used The helper array.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport function* _cycles ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\tconst cycle = [ ] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tcycle.push( image ) ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t\tyield [ s , cycle ] ;\n\n\t}\n\n}\n\n",
+    "content": "\n/**\n * Computes a cycle decomposition of an input permutation. This algorithm is\n * deterministic; the algorithm will procedes in a sequential manner, first\n * yielding the cycle containing the first (in input order) index of the\n * permutation, then yielding the cycle containing the first (in input order)\n * index of the permutation that is not in the first cycle, etc. The output is\n * in the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n * <code>a</code> is the first element of the cycle and the list <code>[b, c,\n * ...]</code> contains the second, third, etc. elements of the cycle.  The\n * algorithm uses an helper array to remember which elements have already been\n * encountered.\n *\n * @see https://en.wikipedia.org/wiki/Permutation#Cycle_notation\n *\n * @param {Array} sigma The input permutation.\n * @param {Array} used The helper array.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport function* _cycles ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\tconst cycle = [ ] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tcycle.push( image ) ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t\tyield [ s , cycle ] ;\n\n\t}\n\n}\n\n",
     "static": true,
     "longname": "src/_cycles.js",
     "access": null,
@@ -243,8 +243,11 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_cycles.js",
     "importStyle": "{_cycles}",
-    "description": "Computes a {@link https://en.wikipedia.org/wiki/Permutation#Cycle_notation\ncycle decomposition} of an input permutation. This algorithm is\ndeterministic; the algorithm will procedes in a sequential manner, first\nyielding the cycle containing the first (in input order) index of the\npermutation, then yielding the cycle containing the first (in input order)\nindex of the permutation that is not in the first cycle, etc. The output is\nin the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n<code>a</code> is the first element of the cycle and the list <code>[b, c,\n...]</code> contains the second, third, etc. elements of the cycle.  The\nalgorithm uses an helper array to remember which elements have already been\nencountered.",
-    "lineNumber": 18,
+    "description": "Computes a cycle decomposition of an input permutation. This algorithm is\ndeterministic; the algorithm will procedes in a sequential manner, first\nyielding the cycle containing the first (in input order) index of the\npermutation, then yielding the cycle containing the first (in input order)\nindex of the permutation that is not in the first cycle, etc. The output is\nin the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n<code>a</code> is the first element of the cycle and the list <code>[b, c,\n...]</code> contains the second, third, etc. elements of the cycle.  The\nalgorithm uses an helper array to remember which elements have already been\nencountered.",
+    "see": [
+      "https://en.wikipedia.org/wiki/Permutation#Cycle_notation"
+    ],
+    "lineNumber": 20,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1137,7 +1140,7 @@
     "__docId__": 40,
     "kind": "file",
     "name": "src/cycles.js",
-    "content": "import { _cycles } from './_cycles' ;\nimport { used } from './used' ;\n\n\n/**\n * Computes the cycle decomposition of the input permutation.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport function* cycles ( sigma ) {\n\n\tyield* _cycles( sigma , used( sigma.length ) ) ;\n\n}\n\n",
+    "content": "import { _cycles } from './_cycles' ;\nimport { used } from './used' ;\n\n\n/**\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport function* cycles ( sigma ) {\n\n\tyield* _cycles( sigma , used( sigma.length ) ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/cycles.js",
     "access": null,
@@ -1157,8 +1160,8 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/cycles.js",
     "importStyle": "{cycles}",
-    "description": "Computes the cycle decomposition of the input permutation.\nSee {@link _cycles} for implementation.",
-    "lineNumber": 12,
+    "description": "Computes a cycle decomposition of the input permutation. For a given input,\nthe algorithm used will always yield the same cycle decomposition.\nSee {@link _cycles} for implementation.",
+    "lineNumber": 13,
     "unknown": [
       {
         "tagName": "@returns",

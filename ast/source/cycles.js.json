@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 401,
+  "end": 488,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 18,
+      "line": 19,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 401,
+    "end": 488,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 18,
+        "line": 19,
         "column": 0
       }
     },
@@ -202,16 +202,16 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Computes the cycle decomposition of the input permutation.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+            "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
             "start": 72,
-            "end": 309,
+            "end": 396,
             "loc": {
               "start": {
                 "line": 5,
                 "column": 0
               },
               "end": {
-                "line": 11,
+                "line": 12,
                 "column": 3
               }
             }
@@ -220,15 +220,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 310,
-        "end": 399,
+        "start": 397,
+        "end": 486,
         "loc": {
           "start": {
-            "line": 12,
+            "line": 13,
             "column": 0
           },
           "end": {
-            "line": 16,
+            "line": 17,
             "column": 1
           }
         },
@@ -236,29 +236,29 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 317,
-          "end": 399,
+          "start": 404,
+          "end": 486,
           "loc": {
             "start": {
-              "line": 12,
+              "line": 13,
               "column": 7
             },
             "end": {
-              "line": 16,
+              "line": 17,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 327,
-            "end": 333,
+            "start": 414,
+            "end": 420,
             "loc": {
               "start": {
-                "line": 12,
+                "line": 13,
                 "column": 17
               },
               "end": {
-                "line": 12,
+                "line": 13,
                 "column": 23
               },
               "identifierName": "cycles"
@@ -272,15 +272,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 336,
-              "end": 341,
+              "start": 423,
+              "end": 428,
               "loc": {
                 "start": {
-                  "line": 12,
+                  "line": 13,
                   "column": 26
                 },
                 "end": {
-                  "line": 12,
+                  "line": 13,
                   "column": 31
                 },
                 "identifierName": "sigma"
@@ -290,73 +290,73 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 344,
-            "end": 399,
+            "start": 431,
+            "end": 486,
             "loc": {
               "start": {
-                "line": 12,
+                "line": 13,
                 "column": 34
               },
               "end": {
-                "line": 16,
+                "line": 17,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ExpressionStatement",
-                "start": 348,
-                "end": 396,
+                "start": 435,
+                "end": 483,
                 "loc": {
                   "start": {
-                    "line": 14,
+                    "line": 15,
                     "column": 1
                   },
                   "end": {
-                    "line": 14,
+                    "line": 15,
                     "column": 49
                   }
                 },
                 "expression": {
                   "type": "YieldExpression",
-                  "start": 348,
-                  "end": 394,
+                  "start": 435,
+                  "end": 481,
                   "loc": {
                     "start": {
-                      "line": 14,
+                      "line": 15,
                       "column": 1
                     },
                     "end": {
-                      "line": 14,
+                      "line": 15,
                       "column": 47
                     }
                   },
                   "delegate": true,
                   "argument": {
                     "type": "CallExpression",
-                    "start": 355,
-                    "end": 394,
+                    "start": 442,
+                    "end": 481,
                     "loc": {
                       "start": {
-                        "line": 14,
+                        "line": 15,
                         "column": 8
                       },
                       "end": {
-                        "line": 14,
+                        "line": 15,
                         "column": 47
                       }
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 355,
-                      "end": 362,
+                      "start": 442,
+                      "end": 449,
                       "loc": {
                         "start": {
-                          "line": 14,
+                          "line": 15,
                           "column": 8
                         },
                         "end": {
-                          "line": 14,
+                          "line": 15,
                           "column": 15
                         },
                         "identifierName": "_cycles"
@@ -366,15 +366,15 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 364,
-                        "end": 369,
+                        "start": 451,
+                        "end": 456,
                         "loc": {
                           "start": {
-                            "line": 14,
+                            "line": 15,
                             "column": 17
                           },
                           "end": {
-                            "line": 14,
+                            "line": 15,
                             "column": 22
                           },
                           "identifierName": "sigma"
@@ -383,29 +383,29 @@
                       },
                       {
                         "type": "CallExpression",
-                        "start": 372,
-                        "end": 392,
+                        "start": 459,
+                        "end": 479,
                         "loc": {
                           "start": {
-                            "line": 14,
+                            "line": 15,
                             "column": 25
                           },
                           "end": {
-                            "line": 14,
+                            "line": 15,
                             "column": 45
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 372,
-                          "end": 376,
+                          "start": 459,
+                          "end": 463,
                           "loc": {
                             "start": {
-                              "line": 14,
+                              "line": 15,
                               "column": 25
                             },
                             "end": {
-                              "line": 14,
+                              "line": 15,
                               "column": 29
                             },
                             "identifierName": "used"
@@ -415,29 +415,29 @@
                         "arguments": [
                           {
                             "type": "MemberExpression",
-                            "start": 378,
-                            "end": 390,
+                            "start": 465,
+                            "end": 477,
                             "loc": {
                               "start": {
-                                "line": 14,
+                                "line": 15,
                                 "column": 31
                               },
                               "end": {
-                                "line": 14,
+                                "line": 15,
                                 "column": 43
                               }
                             },
                             "object": {
                               "type": "Identifier",
-                              "start": 378,
-                              "end": 383,
+                              "start": 465,
+                              "end": 470,
                               "loc": {
                                 "start": {
-                                  "line": 14,
+                                  "line": 15,
                                   "column": 31
                                 },
                                 "end": {
-                                  "line": 14,
+                                  "line": 15,
                                   "column": 36
                                 },
                                 "identifierName": "sigma"
@@ -446,15 +446,15 @@
                             },
                             "property": {
                               "type": "Identifier",
-                              "start": 384,
-                              "end": 390,
+                              "start": 471,
+                              "end": 477,
                               "loc": {
                                 "start": {
-                                  "line": 14,
+                                  "line": 15,
                                   "column": 37
                                 },
                                 "end": {
-                                  "line": 14,
+                                  "line": 15,
                                   "column": 43
                                 },
                                 "identifierName": "length"
@@ -475,16 +475,16 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Computes the cycle decomposition of the input permutation.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+              "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
               "start": 72,
-              "end": 309,
+              "end": 396,
               "loc": {
                 "start": {
                   "line": 5,
                   "column": 0
                 },
                 "end": {
-                  "line": 11,
+                  "line": 12,
                   "column": 3
                 }
               }
@@ -495,16 +495,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Computes the cycle decomposition of the input permutation.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+            "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
             "start": 72,
-            "end": 309,
+            "end": 396,
             "loc": {
               "start": {
                 "line": 5,
                 "column": 0
               },
               "end": {
-                "line": 11,
+                "line": 12,
                 "column": 3
               }
             }
@@ -517,16 +517,16 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Computes the cycle decomposition of the input permutation.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+      "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
       "start": 72,
-      "end": 309,
+      "end": 396,
       "loc": {
         "start": {
           "line": 5,
           "column": 0
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 3
         }
       }
@@ -901,16 +901,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Computes the cycle decomposition of the input permutation.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+      "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
       "start": 72,
-      "end": 309,
+      "end": 396,
       "loc": {
         "start": {
           "line": 5,
           "column": 0
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 3
         }
       }
@@ -930,15 +930,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 310,
-      "end": 316,
+      "start": 397,
+      "end": 403,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 6
         }
       }
@@ -957,15 +957,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 317,
-      "end": 325,
+      "start": 404,
+      "end": 412,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 7
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 15
         }
       }
@@ -984,15 +984,15 @@
         "updateContext": null
       },
       "value": "*",
-      "start": 325,
-      "end": 326,
+      "start": 412,
+      "end": 413,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 15
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 16
         }
       }
@@ -1010,15 +1010,15 @@
         "binop": null
       },
       "value": "cycles",
-      "start": 327,
-      "end": 333,
+      "start": 414,
+      "end": 420,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 17
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 23
         }
       }
@@ -1035,15 +1035,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 334,
-      "end": 335,
+      "start": 421,
+      "end": 422,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 24
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 25
         }
       }
@@ -1061,15 +1061,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 336,
-      "end": 341,
+      "start": 423,
+      "end": 428,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 26
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 31
         }
       }
@@ -1086,15 +1086,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 342,
-      "end": 343,
+      "start": 429,
+      "end": 430,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 32
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 33
         }
       }
@@ -1111,15 +1111,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 344,
-      "end": 345,
+      "start": 431,
+      "end": 432,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 34
         },
         "end": {
-          "line": 12,
+          "line": 13,
           "column": 35
         }
       }
@@ -1139,15 +1139,15 @@
         "updateContext": null
       },
       "value": "yield",
-      "start": 348,
-      "end": 353,
+      "start": 435,
+      "end": 440,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 1
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 6
         }
       }
@@ -1166,15 +1166,15 @@
         "updateContext": null
       },
       "value": "*",
-      "start": 353,
-      "end": 354,
+      "start": 440,
+      "end": 441,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 6
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 7
         }
       }
@@ -1192,15 +1192,15 @@
         "binop": null
       },
       "value": "_cycles",
-      "start": 355,
-      "end": 362,
+      "start": 442,
+      "end": 449,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 8
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 15
         }
       }
@@ -1217,15 +1217,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 362,
-      "end": 363,
+      "start": 449,
+      "end": 450,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 15
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 16
         }
       }
@@ -1243,15 +1243,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 364,
-      "end": 369,
+      "start": 451,
+      "end": 456,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 17
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 22
         }
       }
@@ -1269,15 +1269,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 370,
-      "end": 371,
+      "start": 457,
+      "end": 458,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 23
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 24
         }
       }
@@ -1295,15 +1295,15 @@
         "binop": null
       },
       "value": "used",
-      "start": 372,
-      "end": 376,
+      "start": 459,
+      "end": 463,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 25
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 29
         }
       }
@@ -1320,15 +1320,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 376,
-      "end": 377,
+      "start": 463,
+      "end": 464,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 29
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 30
         }
       }
@@ -1346,15 +1346,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 378,
-      "end": 383,
+      "start": 465,
+      "end": 470,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 31
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 36
         }
       }
@@ -1372,15 +1372,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 383,
-      "end": 384,
+      "start": 470,
+      "end": 471,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 36
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 37
         }
       }
@@ -1398,15 +1398,15 @@
         "binop": null
       },
       "value": "length",
-      "start": 384,
-      "end": 390,
+      "start": 471,
+      "end": 477,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 37
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 43
         }
       }
@@ -1423,15 +1423,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 391,
-      "end": 392,
+      "start": 478,
+      "end": 479,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 44
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 45
         }
       }
@@ -1448,15 +1448,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 393,
-      "end": 394,
+      "start": 480,
+      "end": 481,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 46
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 47
         }
       }
@@ -1474,15 +1474,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 395,
-      "end": 396,
+      "start": 482,
+      "end": 483,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 48
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 49
         }
       }
@@ -1499,15 +1499,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 398,
-      "end": 399,
+      "start": 485,
+      "end": 486,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 17,
           "column": 1
         }
       }
@@ -1525,15 +1525,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 401,
-      "end": 401,
+      "start": 488,
+      "end": 488,
       "loc": {
         "start": {
-          "line": 18,
+          "line": 19,
           "column": 0
         },
         "end": {
-          "line": 18,
+          "line": 19,
           "column": 0
         }
       }
