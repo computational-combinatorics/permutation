@@ -1,59 +1,63 @@
 import test from 'ava' ;
-import * as permutation from '../../src' ;
+import {
+	_invertcycles ,
+	apply ,
+	compose ,
+	cycles ,
+	identity ,
+	invert ,
+	itranspositions
+} from '../../src' ;
 
-import * as random from "@aureooms/js-random" ;
+import { shuffle } from "@aureooms/js-random" ;
 
-var t = function ( name , invert ) {
+function macro ( t , do_invert ) {
 
-	test( "invert > " + name , t => {
+	const m = 100 ;
 
-		var m , n , rho , sigma , tau ;
+	for ( let n = 0 ; n < m ; ++n ) {
 
-		m = 100 ;
+		const sigma = identity( n ) ;
 
-		for ( n = 0 ; n < m ; ++n ) {
+		shuffle( sigma , 0 , n ) ;
 
-			sigma = permutation.identity( n ) ;
+		const tau = do_invert( sigma ) ;
 
-			random.shuffle( sigma , 0 , n ) ;
+		const rho = compose( sigma , tau ) ;
 
-			tau = invert( sigma ) ;
+		t.deepEqual( rho , identity( n ) , n + " : sigma ∘ tau = id" ) ;
 
-			rho = permutation.compose( sigma , tau ) ;
+	}
 
-			t.deepEqual( rho , permutation.identity( n ) , n + " : sigma * tau = id" ) ;
+}
 
-		}
+macro.title = name => `invert > ${name}` ;
 
-	} ) ;
+const implementations = [
 
-} ;
+	{ name : "invert" , invert : invert } ,
+	{ name : "_invertcycles" , invert : sigma => {
 
-var algorithms = [
+		const tau = identity( sigma.length ) ;
 
-	{ name : "invert" , invert : permutation.invert } ,
-	{ name : "_invertcycles" , invert : function ( sigma ) {
+		const cycles_sigma = cycles( sigma ) ;
 
-		var tau = permutation.identity( sigma.length ) ;
-
-		var cycles = permutation.cycles( sigma ) ;
-
-		permutation._invertcycles( cycles , tau ) ;
+		_invertcycles( cycles_sigma , tau ) ;
 
 		return tau ;
 
 	} } ,
 
-	{ name : "apply( itranspositions )" , invert : function ( sigma ) {
+	{ name : "apply( itranspositions )" , invert : sigma => {
 
-		return permutation.apply( sigma.length , permutation.itranspositions( sigma ) ) ;
+		return apply( sigma.length , itranspositions( sigma ) ) ;
 
 	} }
 
 ] ;
 
-algorithms.forEach( function ( algorithm ) {
+for ( const { name , invert : do_invert } of implementations ) {
 
-	t( algorithm.name , algorithm.invert ) ;
+	test( name , macro , do_invert ) ;
 
-} ) ;
+}

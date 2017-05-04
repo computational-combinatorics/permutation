@@ -9,7 +9,7 @@ import { _reverse } from './_reverse' ;
  * @param {Array} sigma The input permutation.
  * @param {Number} n The size of the input permutation.
  * @returns {Boolean} Whether the input permutation is
- * <underline>NOT</underline> the last for its elements.
+ * ___NOT___ the last for its elements.
  */
 export function _next ( sigma , n ) {
 
