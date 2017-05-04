@@ -3,7 +3,7 @@
     "__docId__": 0,
     "kind": "file",
     "name": "src/_apply.js",
-    "content": "import { _transpose } from './_transpose' ;\n\nexport function _apply ( transpositions , sigma ) {\n\n\tfor ( const [ s , t ] of transpositions ) {\n\n\t\t_transpose( s , t , sigma ) ;\n\n\t}\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Applies a given sequence (in the given order) of transpositions (given as\n * index tuples) to a given permutation. The permutation is modified in place.\n *\n * @param transpositions The given transpositions to apply.\n * @param sigma The permutation to apply the transpositions to.\n */\nexport function _apply ( transpositions , sigma ) {\n\n\tfor ( const [ s , t ] of transpositions ) _transpose( s , t , sigma ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/_apply.js",
     "access": null,
@@ -23,27 +23,28 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_apply.js",
     "importStyle": "{_apply}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Applies a given sequence (in the given order) of transpositions (given as\nindex tuples) to a given permutation. The permutation is modified in place.",
+    "lineNumber": 10,
     "params": [
       {
-        "name": "transpositions",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "transpositions",
+        "description": "The given transpositions to apply."
       },
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The permutation to apply the transpositions to."
       }
     ]
   },
@@ -51,7 +52,7 @@
     "__docId__": 2,
     "kind": "file",
     "name": "src/_bitreversal.js",
-    "content": "\nexport function _bitreversal ( array , n ) {\n\n\tlet i = 1 ;\n\n\tarray[0] = 0 ;\n\n\twhile ( i < n ) {\n\n\t\tfor ( let j = 0 ; j < i ; ++j ) {\n\n\t\t\tarray[i+j] = ( array[j] <<= 1 ) + 1 ;\n\n\t\t}\n\n\t\ti <<= 1 ;\n\n\t}\n\n}\n\n",
+    "content": "\n/**\n * Fills an input array with the bitreversal permutation for input\n * <code>n</code> items. The array is filled starting at index <code>0</code>\n * and ending at index <code>n-1</code>. Note that <code>n</code> MUST be a\n * power of <code>2</code>.\n *\n * @param {Array} array The array to fill.\n * @param {Number} n The size of the permutation, must be a power of 2.\n */\nexport function _bitreversal ( array , n ) {\n\n\tlet i = 1 ;\n\n\tarray[0] = 0 ;\n\n\twhile ( i < n ) {\n\n\t\tfor ( let j = 0 ; j < i ; ++j ) {\n\n\t\t\tarray[i+j] = ( array[j] <<= 1 ) + 1 ;\n\n\t\t}\n\n\t\ti <<= 1 ;\n\n\t}\n\n}\n\n",
     "static": true,
     "longname": "src/_bitreversal.js",
     "access": null,
@@ -71,27 +72,28 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_bitreversal.js",
     "importStyle": "{_bitreversal}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Fills an input array with the bitreversal permutation for input\n<code>n</code> items. The array is filled starting at index <code>0</code>\nand ending at index <code>n-1</code>. Note that <code>n</code> MUST be a\npower of <code>2</code>.",
+    "lineNumber": 11,
     "params": [
       {
-        "name": "array",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "The array to fill."
       },
       {
-        "name": "n",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation, must be a power of 2."
       }
     ]
   },
@@ -99,7 +101,7 @@
     "__docId__": 4,
     "kind": "file",
     "name": "src/_compose.js",
-    "content": "\nexport function* _compose ( sigma , tau ) {\n\n\tfor ( const t of tau ) yield sigma[t] ;\n\n}\n\n",
+    "content": "\n/**\n * Compose two input permutations. The resulting permutation is output as an\n * iterator of indices instead of an array of indices.\n *\n * @param {Array} sigma The first input permutation.\n * @param {Array} tau The second input permutation.\n * @returns {Iterator} An iterator over the items of the resulting permutation.\n */\nexport function* _compose ( sigma , tau ) {\n\n\tfor ( const t of tau ) yield sigma[t] ;\n\n}\n\n",
     "static": true,
     "longname": "src/_compose.js",
     "access": null,
@@ -119,35 +121,50 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_compose.js",
     "importStyle": "{_compose}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
+    "description": "Compose two input permutations. The resulting permutation is output as an\niterator of indices instead of an array of indices.",
+    "lineNumber": 10,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterator} An iterator over the items of the resulting permutation."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The first input permutation."
       },
       {
-        "name": "tau",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The second input permutation."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "An iterator over the items of the resulting permutation."
+    }
   },
   {
     "__docId__": 6,
     "kind": "file",
     "name": "src/_copy.js",
-    "content": "\nexport function _copy ( sigma , n , tau ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) {\n\n\t\ttau[i] = sigma[i] ;\n\n\t}\n\n}\n\n",
+    "content": "\n/**\n * Copy an input permutation to an output array.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation to copy.\n * @param {Array} tau The output array.\n */\nexport function _copy ( sigma , n , tau ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) tau[i] = sigma[i] ;\n\n}\n\n",
     "static": true,
     "longname": "src/_copy.js",
     "access": null,
@@ -167,33 +184,38 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_copy.js",
     "importStyle": "{_copy}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Copy an input permutation to an output array.",
+    "lineNumber": 9,
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "sigma",
-        "types": [
-          "*"
-        ]
+        "description": "The input permutation."
       },
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "n",
-        "types": [
-          "*"
-        ]
+        "description": "The size of the input permutation to copy."
       },
       {
-        "name": "tau",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The output array."
       }
     ]
   },
@@ -201,7 +223,7 @@
     "__docId__": 8,
     "kind": "file",
     "name": "src/_cycles.js",
-    "content": "\nexport function* _cycles ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\tconst cycle = [ ] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tcycle.push( image ) ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t\tyield [ s , cycle ] ;\n\n\t}\n\n}\n\n",
+    "content": "\n/**\n * Computes a {@link https://en.wikipedia.org/wiki/Permutation#Cycle_notation\n * cycle decomposition} of an input permutation. This algorithm is\n * deterministic; the algorithm will procedes in a sequential manner, first\n * yielding the cycle containing the first (in input order) index of the\n * permutation, then yielding the cycle containing the first (in input order)\n * index of the permutation that is not in the first cycle, etc. The output is\n * in the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n * <code>a</code> is the first element of the cycle and the list <code>[b, c,\n * ...]</code> contains the second, third, etc. elements of the cycle.  The\n * algorithm uses an helper array to remember which elements have already been\n * encountered.\n * @param {Array} sigma The input permutation.\n * @param {Array} used The helper array.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport function* _cycles ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\tconst cycle = [ ] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tcycle.push( image ) ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t\tyield [ s , cycle ] ;\n\n\t}\n\n}\n\n",
     "static": true,
     "longname": "src/_cycles.js",
     "access": null,
@@ -221,35 +243,50 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_cycles.js",
     "importStyle": "{_cycles}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
+    "description": "Computes a {@link https://en.wikipedia.org/wiki/Permutation#Cycle_notation\ncycle decomposition} of an input permutation. This algorithm is\ndeterministic; the algorithm will procedes in a sequential manner, first\nyielding the cycle containing the first (in input order) index of the\npermutation, then yielding the cycle containing the first (in input order)\nindex of the permutation that is not in the first cycle, etc. The output is\nin the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n<code>a</code> is the first element of the cycle and the list <code>[b, c,\n...]</code> contains the second, third, etc. elements of the cycle.  The\nalgorithm uses an helper array to remember which elements have already been\nencountered.",
+    "lineNumber": 18,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       },
       {
-        "name": "used",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "used",
+        "description": "The helper array."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "The cycles <code>[a, [b, c, ...]]</code> for sigma."
+    }
   },
   {
     "__docId__": 10,
     "kind": "file",
     "name": "src/_identity.js",
-    "content": "\nexport function _identity ( sigma , n ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) {\n\n\t\tsigma[i] = i ;\n\n\t}\n\n}\n\n",
+    "content": "\n/**\n * Fills an input array with the identity permutation on input <code>n</code>\n * elements.\n *\n * @param sigma The input array.\n * @param n The size to use for the permutation.\n */\nexport function _identity ( sigma , n ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) sigma[i] = i ;\n\n}\n\n",
     "static": true,
     "longname": "src/_identity.js",
     "access": null,
@@ -269,27 +306,28 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_identity.js",
     "importStyle": "{_identity}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Fills an input array with the identity permutation on input <code>n</code>\nelements.",
+    "lineNumber": 9,
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input array."
       },
       {
-        "name": "n",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size to use for the permutation."
       }
     ]
   },
@@ -297,7 +335,7 @@
     "__docId__": 12,
     "kind": "file",
     "name": "src/_invert.js",
-    "content": "\nexport function _invert ( sigma , n , tau ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) {\n\n\t\ttau[sigma[i]] = i ;\n\n\t}\n\n}\n\n",
+    "content": "/**\n * Fills an input array with the inverse <code>rho</code> of the input\n * permutation <code>sigma</code>, that is, the permutation such that\n * <code>compose(rho, sigma)</code> returns\n * <code>identity(sigma.length)</code>.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation.\n * @param {Array} tau The array where to put the inverse of the input permutation.\n */\nexport function _invert ( sigma , n , tau ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) tau[sigma[i]] = i ;\n\n}\n\n",
     "static": true,
     "longname": "src/_invert.js",
     "access": null,
@@ -317,33 +355,38 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_invert.js",
     "importStyle": "{_invert}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Fills an input array with the inverse <code>rho</code> of the input\npermutation <code>sigma</code>, that is, the permutation such that\n<code>compose(rho, sigma)</code> returns\n<code>identity(sigma.length)</code>.",
+    "lineNumber": 11,
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "sigma",
-        "types": [
-          "*"
-        ]
+        "description": "The input permutation."
       },
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "n",
-        "types": [
-          "*"
-        ]
+        "description": "The size of the input permutation."
       },
       {
-        "name": "tau",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The array where to put the inverse of the input permutation."
       }
     ]
   },
@@ -351,7 +394,7 @@
     "__docId__": 14,
     "kind": "file",
     "name": "src/_invertcycles.js",
-    "content": "import { _transpose } from './_transpose' ;\n\nexport function _invertcycles ( cycles , tau ) {\n\n\tfor ( const [ s , cycle ] of cycles ) {\n\n\t\tfor ( const t of cycle ) {\n\n\t\t\t_transpose( s , t , tau ) ;\n\n\t\t}\n\n\t}\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * No idea what this does. Probably inverts the cycles of a given permutation.\n *\n * @param {Iterable} cycles The cycles to invert.\n * @param {Array} tau The given permutation.\n */\nexport function _invertcycles ( cycles , tau ) {\n\n\tfor ( const [ s , cycle ] of cycles ) {\n\n\t\tfor ( const t of cycle ) {\n\n\t\t\t_transpose( s , t , tau ) ;\n\n\t\t}\n\n\t}\n\n}\n\n",
     "static": true,
     "longname": "src/_invertcycles.js",
     "access": null,
@@ -371,27 +414,28 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_invertcycles.js",
     "importStyle": "{_invertcycles}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "No idea what this does. Probably inverts the cycles of a given permutation.",
+    "lineNumber": 9,
     "params": [
       {
-        "name": "cycles",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cycles",
+        "description": "The cycles to invert."
       },
       {
-        "name": "tau",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The given permutation."
       }
     ]
   },
@@ -399,7 +443,7 @@
     "__docId__": 16,
     "kind": "file",
     "name": "src/_itranspositions.js",
-    "content": "\nexport function* _itranspositions ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tyield [ s , image ] ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t}\n\n}\n\n",
+    "content": "\n/**\n * Really no idead what this does.\n *\n * @param {Array} sigma Input permutation.\n * @param {Array} used Helper array.\n * @return {Iterator} ?\n */\nexport function* _itranspositions ( sigma , used ) {\n\n\tfor ( const s of sigma ) {\n\n\t\tif ( used[s] ) continue ;\n\n\t\tused[s] = true ;\n\n\t\tlet image = sigma[s] ;\n\n\t\twhile ( image !== s ) {\n\n\t\t\tused[image] = true ;\n\n\t\t\tyield [ s , image ] ;\n\n\t\t\timage = sigma[image] ;\n\n\t\t}\n\n\t}\n\n}\n\n",
     "static": true,
     "longname": "src/_itranspositions.js",
     "access": null,
@@ -419,35 +463,44 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_itranspositions.js",
     "importStyle": "{_itranspositions}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Really no idead what this does.",
+    "lineNumber": 9,
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "Input permutation."
       },
       {
-        "name": "used",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "used",
+        "description": "Helper array."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "?"
+    }
   },
   {
     "__docId__": 18,
     "kind": "file",
     "name": "src/_next.js",
-    "content": "import { _transpose } from './_transpose' ;\nimport { _reverse } from './_reverse' ;\n\nexport function _next ( sigma , n ) {\n\n\tlet i = n - 1 ;\n\n\twhile ( i > 0 ) {\n\n\t\t--i ;\n\n\t\tif ( sigma[i] > sigma[i+1] ) continue ;\n\n\t\tlet j = n - 1 ;\n\n\t\twhile ( sigma[j] < sigma[i] ) --j ;\n\n\t\t_transpose( i , j , sigma ) ;\n\n\t\t_reverse( sigma , i + 1 , n ) ;\n\n\t\treturn true ;\n\n\t}\n\n\treturn false ;\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\nimport { _reverse } from './_reverse' ;\n\n/**\n * Updates the input permutation to the next one. Returns true unless the input\n * permutation is the last for its elements. In that case, the input permutation\n * remains untouched.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation.\n * @returns {Boolean} Whether the input permutation is\n * <underline>NOT</underline> the last for its elements.\n */\nexport function _next ( sigma , n ) {\n\n\tlet i = n - 1 ;\n\n\twhile ( i > 0 ) {\n\n\t\t--i ;\n\n\t\tif ( sigma[i] > sigma[i+1] ) continue ;\n\n\t\tlet j = n - 1 ;\n\n\t\twhile ( sigma[j] < sigma[i] ) --j ;\n\n\t\t_transpose( i , j , sigma ) ;\n\n\t\t_reverse( sigma , i + 1 , n ) ;\n\n\t\treturn true ;\n\n\t}\n\n\treturn false ;\n\n}\n\n",
     "static": true,
     "longname": "src/_next.js",
     "access": null,
@@ -467,40 +520,50 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_next.js",
     "importStyle": "{_next}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Updates the input permutation to the next one. Returns true unless the input\npermutation is the last for its elements. In that case, the input permutation\nremains untouched.",
+    "lineNumber": 14,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Boolean} Whether the input permutation is\n<underline>NOT</underline> the last for its elements."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       },
       {
-        "name": "n",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the input permutation."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "boolean"
-      ]
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "Whether the input permutation is\n<underline>NOT</underline> the last for its elements."
     }
   },
   {
     "__docId__": 20,
     "kind": "file",
     "name": "src/_permutations.js",
-    "content": "import { _next } from './_next' ;\n\nexport function* _permutations ( sigma , n ) {\n\n\tdo { yield sigma ; } while ( _next( sigma , n ) ) ;\n\n}\n\n",
+    "content": "import { _next } from './_next' ;\n\n/**\n * Yields all permutations starting from a given one and ending at the last\n * permutation.\n *\n * @param {Array} sigma The starting permutation.\n * @param {Number} n The size of the permutation.\n * @returns {Iterator} Iterator over all permutations between the starting one\n * and the last permutation on its elements.\n */\nexport function* _permutations ( sigma , n ) {\n\n\tdo { yield sigma ; } while ( _next( sigma , n ) ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/_permutations.js",
     "access": null,
@@ -520,35 +583,50 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_permutations.js",
     "importStyle": "{_permutations}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "Yields all permutations starting from a given one and ending at the last\npermutation.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterator} Iterator over all permutations between the starting one\nand the last permutation on its elements."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The starting permutation."
       },
       {
-        "name": "n",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "Iterator over all permutations between the starting one\nand the last permutation on its elements."
+    }
   },
   {
     "__docId__": 22,
     "kind": "file",
     "name": "src/_reverse.js",
-    "content": "import { _transpose } from './_transpose' ;\n\nexport function _reverse ( sigma , i , j ) {\n\n\twhile ( i <-- j ) _transpose( i++ , j , sigma ) ;\n\n}\n",
+    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Reverses input permutation in place from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse.\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n */\nexport function _reverse ( sigma , i , j ) {\n\n\twhile ( i <-- j ) _transpose( i++ , j , sigma ) ;\n\n}\n",
     "static": true,
     "longname": "src/_reverse.js",
     "access": null,
@@ -568,33 +646,38 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_reverse.js",
     "importStyle": "{_reverse}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Reverses input permutation in place from input index <code>i</code>\n(include) to input index <code>j</code> (excluded).",
+    "lineNumber": 11,
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "sigma",
-        "types": [
-          "*"
-        ]
+        "description": "The input permutation to reverse."
       },
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "i",
-        "types": [
-          "*"
-        ]
+        "description": "The left bound (included)."
       },
       {
-        "name": "j",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "j",
+        "description": "The right bound (excluded)."
       }
     ]
   },
@@ -602,7 +685,7 @@
     "__docId__": 24,
     "kind": "file",
     "name": "src/_transpose.js",
-    "content": "\nexport function _transpose ( a , b , sigma ) {\n\n\tconst tmp = sigma[a] ;\n\tsigma[a]  = sigma[b] ;\n\tsigma[b]  =      tmp ;\n\n}\n\n",
+    "content": "\n/**\n * Transpose elements of input index <code>a</code> and <code>b</code> in the\n * input permutation.\n *\n * @param {Number} a The first input index.\n * @param {Number} b The second input index.\n * @param {Array} sigma The input permutation.\n */\nexport function _transpose ( a , b , sigma ) {\n\n\tconst tmp = sigma[a] ;\n\tsigma[a]  = sigma[b] ;\n\tsigma[b]  =      tmp ;\n\n}\n\n",
     "static": true,
     "longname": "src/_transpose.js",
     "access": null,
@@ -622,33 +705,38 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_transpose.js",
     "importStyle": "{_transpose}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Transpose elements of input index <code>a</code> and <code>b</code> in the\ninput permutation.",
+    "lineNumber": 10,
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "a",
-        "types": [
-          "*"
-        ]
+        "description": "The first input index."
       },
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "b",
-        "types": [
-          "*"
-        ]
+        "description": "The second input index."
       },
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       }
     ]
   },
@@ -656,7 +744,7 @@
     "__docId__": 26,
     "kind": "file",
     "name": "src/_transposition.js",
-    "content": "\nexport function _transposition ( a , b , sigma ) {\n\n\tsigma[a] = b ;\n\tsigma[b] = a ;\n\n}\n\n",
+    "content": "\n/**\n * Helper method for {@link transposition}.\n * Transposes <code>a</code> with <code>b</code> in <code>sigma</code> provided\n * <code>sigma[a] === a</code> and <code>sigma[b] === b</code>.\n *\n * @param {Number} a First index.\n * @param {Number} b Second index.\n * @param {Array} sigma Input permutation.\n */\nexport function _transposition ( a , b , sigma ) {\n\n\tsigma[a] = b ;\n\tsigma[b] = a ;\n\n}\n\n",
     "static": true,
     "longname": "src/_transposition.js",
     "access": null,
@@ -676,33 +764,38 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_transposition.js",
     "importStyle": "{_transposition}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Helper method for {@link transposition}.\nTransposes <code>a</code> with <code>b</code> in <code>sigma</code> provided\n<code>sigma[a] === a</code> and <code>sigma[b] === b</code>.",
+    "lineNumber": 11,
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "a",
-        "types": [
-          "*"
-        ]
+        "description": "First index."
       },
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "b",
-        "types": [
-          "*"
-        ]
+        "description": "Second index."
       },
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "Input permutation."
       }
     ]
   },
@@ -710,7 +803,7 @@
     "__docId__": 28,
     "kind": "file",
     "name": "src/_transpositions.js",
-    "content": "export function* _transpositions ( cycles ) {\n\n\tfor ( const [ s , cycle ] of cycles ) {\n\n\t\twhile ( cycle.length ) yield [ s , cycle.pop( ) ] ;\n\n\t}\n\n}\n\n",
+    "content": "/**\n * Computes the transposition decomposition of some permutation given its cycle\n * decomposition.\n *\n * @param {Array} cycles The cycle decomposition of some permutation.\n * @returns {Iterator} The transposition decomposition of the permutation\n * defined by the input cycles.\n */\nexport function* _transpositions ( cycles ) {\n\n\tfor ( const [ s , cycle ] of cycles ) {\n\n\t\twhile ( cycle.length ) yield [ s , cycle.pop( ) ] ;\n\n\t}\n\n}\n",
     "static": true,
     "longname": "src/_transpositions.js",
     "access": null,
@@ -730,29 +823,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_transpositions.js",
     "importStyle": "{_transpositions}",
-    "description": null,
-    "lineNumber": 1,
-    "undocument": true,
+    "description": "Computes the transposition decomposition of some permutation given its cycle\ndecomposition.",
+    "lineNumber": 9,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterator} The transposition decomposition of the permutation\ndefined by the input cycles."
       }
     ],
     "params": [
       {
-        "name": "cycles",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cycles",
+        "description": "The cycle decomposition of some permutation."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "The transposition decomposition of the permutation\ndefined by the input cycles."
+    }
   },
   {
     "__docId__": 30,
     "kind": "file",
     "name": "src/_used.js",
-    "content": "\nexport function _used ( n , array ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) array[i] = false ;\n\n}\n\n",
+    "content": "\n/**\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param n The given size.\n * @param array The input array.\n */\nexport function _used ( n , array ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) array[i] = false ;\n\n}\n\n",
     "static": true,
     "longname": "src/_used.js",
     "access": null,
@@ -772,27 +876,28 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_used.js",
     "importStyle": "{_used}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "For a given size <code>n</code>, fills an input array with\n<code>false</code>. Starting at index <code>0</code>, ending at index\n<code>n-1</code>. This array is used as a helper in other function. For\nexample, for computing the cycle decomposition of an input permutation (see\n{@link _cycles}, {@link cycles}).",
+    "lineNumber": 12,
     "params": [
       {
-        "name": "n",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The given size."
       },
       {
-        "name": "array",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "The input array."
       }
     ]
   },
@@ -800,7 +905,7 @@
     "__docId__": 32,
     "kind": "file",
     "name": "src/apply.js",
-    "content": "import { identity } from './identity' ;\nimport { _apply } from './_apply' ;\n\nexport function apply ( n , transpositions ) {\n\n\tconst rho = identity( n ) ;\n\n\t_apply( transpositions , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { identity } from './identity' ;\nimport { _apply } from './_apply' ;\n\n/**\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param n The size of the identity permutation to apply the transpositions\n * to.\n * @param transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n */\nexport function apply ( n , transpositions ) {\n\n\tconst rho = identity( n ) ;\n\n\t_apply( transpositions , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/apply.js",
     "access": null,
@@ -820,40 +925,50 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/apply.js",
     "importStyle": "{apply}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Apply a given sequence (in the given order) of transpositions (given as\nindex tuples) to the identity permutation over input <code>n</code> elements.",
+    "lineNumber": 13,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The resulting permutation."
       }
     ],
     "params": [
       {
-        "name": "n",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the identity permutation to apply the transpositions\nto."
       },
       {
-        "name": "transpositions",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "transpositions",
+        "description": "The given transpositions to apply."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The resulting permutation."
     }
   },
   {
     "__docId__": 34,
     "kind": "file",
     "name": "src/bitreversal.js",
-    "content": "import { permutation } from './permutation' ;\nimport { _bitreversal } from './_bitreversal' ;\n\nexport function bitreversal ( n ) {\n\n\tconst sigma = permutation( n ) ;\n\n\t_bitreversal( sigma , n ) ;\n\n\treturn sigma ;\n\n}\n\n",
+    "content": "import { permutation } from './permutation' ;\nimport { _bitreversal } from './_bitreversal' ;\n\n/**\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {Number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n */\nexport function bitreversal ( n ) {\n\n\tconst sigma = permutation( n ) ;\n\n\t_bitreversal( sigma , n ) ;\n\n\treturn sigma ;\n\n}\n\n",
     "static": true,
     "longname": "src/bitreversal.js",
     "access": null,
@@ -873,34 +988,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/bitreversal.js",
     "importStyle": "{bitreversal}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Returns a newly allocated array containing the bitreversal permutation for\ninput <code>n</code> items. Note that <code>n</code> MUST be a power of\n<code>2</code>.",
+    "lineNumber": 13,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The bitreversal permutation of size <code>n</code>."
       }
     ],
     "params": [
       {
-        "name": "n",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation, must be a power of\n<code>2</code>."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The bitreversal permutation of size <code>n</code>."
     }
   },
   {
     "__docId__": 36,
     "kind": "file",
     "name": "src/compose.js",
-    "content": "import { permutation } from './permutation' ;\nimport { _compose } from './_compose' ;\n\nexport function compose ( sigma , tau ) {\n\n\tconst rho = permutation( sigma.length ) ;\n\n\tlet i = 0 ;\n\n\tfor ( const r of _compose( sigma , tau ) ) {\n\n\t\trho[i] = r ;\n\t\t++i ;\n\n\t}\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { permutation } from './permutation' ;\nimport { _compose } from './_compose' ;\n\n/**\n * Compose two input permutations. The resulting permutation is output as an\n * array of indices.\n *\n * @param {Array} sigma The first input permutation.\n * @param {Array} tau The second input permutation.\n * @returns {Array} The resulting permutation as an array.\n */\nexport function compose ( sigma , tau ) {\n\n\t// TODO replace with Array.from( _compose...\n\n\tconst rho = permutation( sigma.length ) ;\n\n\tlet i = 0 ;\n\n\tfor ( const r of _compose( sigma , tau ) ) {\n\n\t\trho[i] = r ;\n\t\t++i ;\n\n\t}\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/compose.js",
     "access": null,
@@ -920,40 +1041,50 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/compose.js",
     "importStyle": "{compose}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Compose two input permutations. The resulting permutation is output as an\narray of indices.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The resulting permutation as an array."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The first input permutation."
       },
       {
-        "name": "tau",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The second input permutation."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The resulting permutation as an array."
     }
   },
   {
     "__docId__": 38,
     "kind": "file",
     "name": "src/copy.js",
-    "content": "import { permutation } from './permutation' ;\nimport { _copy } from './_copy' ;\n\nexport function copy ( sigma ) {\n\n\tconst rho = permutation( sigma.length ) ;\n\n\t_copy( sigma , sigma.length , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { permutation } from './permutation' ;\nimport { _copy } from './_copy' ;\n\n/**\n * Make a copy of the input permutation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The copy.\n */\nexport function copy ( sigma ) {\n\n\tconst rho = permutation( sigma.length ) ;\n\n\t_copy( sigma , sigma.length , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/copy.js",
     "access": null,
@@ -973,34 +1104,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/copy.js",
     "importStyle": "{copy}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Make a copy of the input permutation.",
+    "lineNumber": 10,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The copy."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The copy."
     }
   },
   {
     "__docId__": 40,
     "kind": "file",
     "name": "src/cycles.js",
-    "content": "import { _cycles } from './_cycles' ;\nimport { used } from './used' ;\n\nexport function* cycles ( sigma ) {\n\n\tyield* _cycles( sigma , used( sigma.length ) ) ;\n\n}\n\n",
+    "content": "import { _cycles } from './_cycles' ;\nimport { used } from './used' ;\n\n\n/**\n * Computes the cycle decomposition of the input permutation.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport function* cycles ( sigma ) {\n\n\tyield* _cycles( sigma , used( sigma.length ) ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/cycles.js",
     "access": null,
@@ -1020,29 +1157,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/cycles.js",
     "importStyle": "{cycles}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Computes the cycle decomposition of the input permutation.\nSee {@link _cycles} for implementation.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "The cycles <code>[a, [b, c, ...]]</code> for sigma."
+    }
   },
   {
     "__docId__": 42,
     "kind": "file",
     "name": "src/identity.js",
-    "content": "import { permutation } from './permutation' ;\nimport { _identity } from './_identity' ;\n\nexport function identity ( n ) {\n\n\tconst rho = permutation( n ) ;\n\n\t_identity( rho , n ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { permutation } from './permutation' ;\nimport { _identity } from './_identity' ;\n\n/**\n * Returns the identity permutation of a given size.\n *\n * @param {Number} n The size of the permutation to return.\n * @returns {Array} The identity permutation on <code>n</code> elements.\n */\nexport function identity ( n ) {\n\n\tconst rho = permutation( n ) ;\n\n\t_identity( rho , n ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/identity.js",
     "access": null,
@@ -1062,27 +1210,33 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/identity.js",
     "importStyle": "{identity}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Returns the identity permutation of a given size.",
+    "lineNumber": 10,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The identity permutation on <code>n</code> elements."
       }
     ],
     "params": [
       {
-        "name": "n",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation to return."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The identity permutation on <code>n</code> elements."
     }
   },
   {
@@ -1100,7 +1254,7 @@
     "__docId__": 45,
     "kind": "file",
     "name": "src/invert.js",
-    "content": "import { permutation } from './permutation' ;\nimport { _invert } from './_invert' ;\n\nexport function invert ( sigma ) {\n\n\tconst rho = permutation( sigma.length ) ;\n\n\t_invert( sigma , sigma.length , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { permutation } from './permutation' ;\nimport { _invert } from './_invert' ;\n\n/**\n * Computes the inverse <code>rho</code> of the input permutation\n * <code>sigma</code>, that is, the permutation such that <code>compose(rho,\n * sigma)</code> returns <code>identity(sigma.length)</code>.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The inverse of the input permutation.\n */\nexport function invert ( sigma ) {\n\n\tconst rho = permutation( sigma.length ) ;\n\n\t_invert( sigma , sigma.length , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/invert.js",
     "access": null,
@@ -1120,34 +1274,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/invert.js",
     "importStyle": "{invert}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Computes the inverse <code>rho</code> of the input permutation\n<code>sigma</code>, that is, the permutation such that <code>compose(rho,\nsigma)</code> returns <code>identity(sigma.length)</code>.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The inverse of the input permutation."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The inverse of the input permutation."
     }
   },
   {
     "__docId__": 47,
     "kind": "file",
     "name": "src/itranspositions.js",
-    "content": "import { _itranspositions } from './_itranspositions' ;\nimport { used } from './used' ;\n\nexport function* itranspositions ( sigma ) {\n\n\tyield* _itranspositions( sigma , used( sigma.length ) ) ;\n\n}\n\n",
+    "content": "import { _itranspositions } from './_itranspositions' ;\nimport { used } from './used' ;\n\n/**\n * Really no idead what this does, see also {@link _itranspositions}.\n *\n * @param {Array} sigma Input permutation.\n * @return {Iterator} ?\n */\nexport function* itranspositions ( sigma ) {\n\n\tyield* _itranspositions( sigma , used( sigma.length ) ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/itranspositions.js",
     "access": null,
@@ -1167,29 +1327,34 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/itranspositions.js",
     "importStyle": "{itranspositions}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Really no idead what this does, see also {@link _itranspositions}.",
+    "lineNumber": 10,
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "Input permutation."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "?"
+    }
   },
   {
     "__docId__": 49,
     "kind": "file",
     "name": "src/next.js",
-    "content": "import { copy } from './copy' ;\nimport { _next } from './_next' ;\nimport { reverse } from './reverse' ;\n\nexport function next ( sigma ) {\n\n\tconst rho = copy( sigma ) ;\n\n\tif ( ! _next( rho , rho.length ) ) reverse( rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { copy } from './copy' ;\nimport { _next } from './_next' ;\nimport { reverse } from './reverse' ;\n\n/**\n * Computes the permutation that follows the input permutation. If the input\n * permutation is the last for its elements, return the first for its elements.\n * The input permutation is not altered.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The next permutation.\n */\nexport function next ( sigma ) {\n\n\tconst rho = copy( sigma ) ;\n\n\tif ( ! _next( rho , rho.length ) ) reverse( rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/next.js",
     "access": null,
@@ -1209,34 +1374,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/next.js",
     "importStyle": "{next}",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
+    "description": "Computes the permutation that follows the input permutation. If the input\npermutation is the last for its elements, return the first for its elements.\nThe input permutation is not altered.",
+    "lineNumber": 13,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The next permutation."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The next permutation."
     }
   },
   {
     "__docId__": 51,
     "kind": "file",
     "name": "src/permutation.js",
-    "content": "export function permutation ( n ) {\n\n\treturn new Array( n ) ;\n\n}\n",
+    "content": "/**\n * Allocates a new permutation of given input size.\n *\n * @param {Number} n The size of the permutation to allocate.\n * @returns {Array} The allocated permutation.\n */\nexport function permutation ( n ) {\n\n\treturn new Array( n ) ;\n\n}\n",
     "static": true,
     "longname": "src/permutation.js",
     "access": null,
@@ -1256,34 +1427,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/permutation.js",
     "importStyle": "{permutation}",
-    "description": null,
-    "lineNumber": 1,
-    "undocument": true,
+    "description": "Allocates a new permutation of given input size.",
+    "lineNumber": 7,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The allocated permutation."
       }
     ],
     "params": [
       {
-        "name": "n",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation to allocate."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The allocated permutation."
     }
   },
   {
     "__docId__": 53,
     "kind": "file",
     "name": "src/permutations.js",
-    "content": "import { identity } from './identity' ;\nimport { _permutations } from './_permutations' ;\nimport { copy } from './copy' ;\n\nexport function* permutations ( n ) {\n\n\tfor ( const permutation of _permutations( identity( n ) , n ) ) {\n\n\t\tyield copy( permutation ) ;\n\n\t}\n\n}\n\n",
+    "content": "import { identity } from './identity' ;\nimport { _permutations } from './_permutations' ;\nimport { copy } from './copy' ;\n\n/**\n * Generate all permutations on <code>n</code> elements.\n *\n * @param {Number} n The size of the permutations to generate.\n * @returns {Iterator} Iterator that yields all permutations on <code>n</code>\n * elements.\n */\nexport function* permutations ( n ) {\n\n\tfor ( const permutation of _permutations( identity( n ) , n ) ) {\n\n\t\tyield copy( permutation ) ;\n\n\t}\n\n}\n\n",
     "static": true,
     "longname": "src/permutations.js",
     "access": null,
@@ -1303,29 +1480,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/permutations.js",
     "importStyle": "{permutations}",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
+    "description": "Generate all permutations on <code>n</code> elements.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterator} Iterator that yields all permutations on <code>n</code>\nelements."
       }
     ],
     "params": [
       {
-        "name": "n",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutations to generate."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "Iterator that yields all permutations on <code>n</code>\nelements."
+    }
   },
   {
     "__docId__": 55,
     "kind": "file",
     "name": "src/reverse.js",
-    "content": "import { _reverse } from './_reverse' ;\n\nexport function reverse ( sigma ) {\n\n\t_reverse( sigma , 0 , sigma.length ) ;\n\n}\n\n",
+    "content": "import { _reverse } from './_reverse' ;\n\n/**\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n */\nexport function reverse ( sigma ) {\n\n\t_reverse( sigma , 0 , sigma.length ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/reverse.js",
     "access": null,
@@ -1345,21 +1533,18 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/reverse.js",
     "importStyle": "{reverse}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Reverses input permutation in place.",
+    "lineNumber": 8,
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation to reverse."
       }
     ]
   },
@@ -1367,7 +1552,7 @@
     "__docId__": 57,
     "kind": "file",
     "name": "src/reversed.js",
-    "content": "import { copy } from './copy' ;\nimport { reverse } from './reverse' ;\n\nexport function reversed ( sigma ) {\n\n\tconst rho = copy( sigma ) ;\n\n\treverse( rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { copy } from './copy' ;\nimport { reverse } from './reverse' ;\n\n/**\n * Outputs a new permutation that is the reverse of the input permutation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The reverse of the input permutation.\n */\nexport function reversed ( sigma ) {\n\n\tconst rho = copy( sigma ) ;\n\n\treverse( rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/reversed.js",
     "access": null,
@@ -1387,34 +1572,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/reversed.js",
     "importStyle": "{reversed}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Outputs a new permutation that is the reverse of the input permutation.",
+    "lineNumber": 10,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The reverse of the input permutation."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The reverse of the input permutation."
     }
   },
   {
     "__docId__": 59,
     "kind": "file",
     "name": "src/transpose.js",
-    "content": "import { copy } from './copy' ;\nimport { _transpose } from './_transpose' ;\n\nexport function transpose ( sigma , a , b ) {\n\n\tconst rho = copy( sigma ) ;\n\n\t_transpose( a , b , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { copy } from './copy' ;\nimport { _transpose } from './_transpose' ;\n\n/**\n * Creates a copy of the input permutation, applies an input transpose,\n * then returns the result.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} a The first index of the transpose.\n * @param {Number} b The second index of the transpose.\n * @returns {Array} The result.\n */\nexport function transpose ( sigma , a , b ) {\n\n\tconst rho = copy( sigma ) ;\n\n\t_transpose( a , b , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/transpose.js",
     "access": null,
@@ -1434,46 +1625,60 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/transpose.js",
     "importStyle": "{transpose}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Creates a copy of the input permutation, applies an input transpose,\nthen returns the result.",
+    "lineNumber": 13,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The result."
       }
     ],
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "sigma",
-        "types": [
-          "*"
-        ]
+        "description": "The input permutation."
       },
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "a",
-        "types": [
-          "*"
-        ]
+        "description": "The first index of the transpose."
       },
       {
-        "name": "b",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "b",
+        "description": "The second index of the transpose."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The result."
     }
   },
   {
     "__docId__": 61,
     "kind": "file",
     "name": "src/transposition.js",
-    "content": "import { identity } from './identity' ;\nimport { _transposition } from './_transposition' ;\n\nexport function transposition ( n , a , b ) {\n\n\tconst rho = identity( n ) ;\n\n\t_transposition( a , b , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { identity } from './identity' ;\nimport { _transposition } from './_transposition' ;\n\n/**\n * Outputs the permutation on input <code>n</code> numbers that only transposes\n * two input elements <code>a</code> and <code>b</code>.\n *\n * @param {Number} n The size of the permutation to output.\n * @param {Number} a The first index to swap.\n * @param {Number} b The second index to swap.\n * @returns {undefined}\n */\nexport function transposition ( n , a , b ) {\n\n\tconst rho = identity( n ) ;\n\n\t_transposition( a , b , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/transposition.js",
     "access": null,
@@ -1493,46 +1698,60 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/transposition.js",
     "importStyle": "{transposition}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "Outputs the permutation on input <code>n</code> numbers that only transposes\ntwo input elements <code>a</code> and <code>b</code>.",
+    "lineNumber": 13,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{undefined}"
       }
     ],
     "params": [
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "n",
-        "types": [
-          "*"
-        ]
+        "description": "The size of the permutation to output."
       },
       {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
         "name": "a",
-        "types": [
-          "*"
-        ]
+        "description": "The first index to swap."
       },
       {
-        "name": "b",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "b",
+        "description": "The second index to swap."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
     }
   },
   {
     "__docId__": 63,
     "kind": "file",
     "name": "src/transpositions.js",
-    "content": "import { _transpositions } from './_transpositions' ;\nimport { cycles } from './cycles' ;\nimport { used } from './used' ;\n\nexport function* transpositions ( sigma ) {\n\n\tyield* _transpositions( cycles( sigma , used( sigma.length ) ) ) ;\n\n}\n\n",
+    "content": "import { _transpositions } from './_transpositions' ;\nimport { cycles } from './cycles' ;\nimport { used } from './used' ;\n\n/**\n * Computes the transposition decomposition of the input permutation as an\n * Iterator.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The transposition decomposition of <code>sigma</code>.\n */\nexport function* transpositions ( sigma ) {\n\n\tyield* _transpositions( cycles( sigma , used( sigma.length ) ) ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/transpositions.js",
     "access": null,
@@ -1552,29 +1771,40 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/transpositions.js",
     "importStyle": "{transpositions}",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
+    "description": "Computes the transposition decomposition of the input permutation as an\nIterator.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterator} The transposition decomposition of <code>sigma</code>."
       }
     ],
     "params": [
       {
-        "name": "sigma",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "The transposition decomposition of <code>sigma</code>."
+    }
   },
   {
     "__docId__": 65,
     "kind": "file",
     "name": "src/used.js",
-    "content": "import { _used } from './_used' ;\n\nexport function used ( n ) {\n\n\tconst array = new Array( n ) ;\n\n\t_used( n , array ) ;\n\n\treturn array ;\n\n}\n\n",
+    "content": "import { _used } from './_used' ;\n\n/**\n * Generates an helper array of given size (used in {@link _cycle}, {@link cycle}).\n *\n * @param n The given size.\n * @returns {Array} The helper array of prescribed size.\n */\nexport function used ( n ) {\n\n\tconst array = new Array( n ) ;\n\n\t_used( n , array ) ;\n\n\treturn array ;\n\n}\n\n",
     "static": true,
     "longname": "src/used.js",
     "access": null,
@@ -1594,27 +1824,33 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/used.js",
     "importStyle": "{used}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "Generates an helper array of given size (used in {@link _cycle}, {@link cycle}).",
+    "lineNumber": 9,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Array} The helper array of prescribed size."
       }
     ],
     "params": [
       {
-        "name": "n",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The given size."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "The helper array of prescribed size."
     }
   },
   {

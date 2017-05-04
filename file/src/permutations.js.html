@@ -76,6 +76,13 @@
 import { _permutations } from &apos;./_permutations&apos; ;
 import { copy } from &apos;./copy&apos; ;
 
+/**
+ * Generate all permutations on &lt;code&gt;n&lt;/code&gt; elements.
+ *
+ * @param {Number} n The size of the permutations to generate.
+ * @returns {Iterator} Iterator that yields all permutations on &lt;code&gt;n&lt;/code&gt;
+ * elements.
+ */
 export function* permutations ( n ) {
 
 	for ( const permutation of _permutations( identity( n ) , n ) ) {

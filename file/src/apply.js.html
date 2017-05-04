@@ -75,6 +75,15 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { identity } from &apos;./identity&apos; ;
 import { _apply } from &apos;./_apply&apos; ;
 
+/**
+ * Apply a given sequence (in the given order) of transpositions (given as
+ * index tuples) to the identity permutation over input &lt;code&gt;n&lt;/code&gt; elements.
+ *
+ * @param n The size of the identity permutation to apply the transpositions
+ * to.
+ * @param transpositions The given transpositions to apply.
+ * @returns {Array} The resulting permutation.
+ */
 export function apply ( n , transpositions ) {
 
 	const rho = identity( n ) ;

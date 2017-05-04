@@ -75,6 +75,12 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { permutation } from &apos;./permutation&apos; ;
 import { _copy } from &apos;./_copy&apos; ;
 
+/**
+ * Make a copy of the input permutation.
+ *
+ * @param {Array} sigma The input permutation.
+ * @returns {Array} The copy.
+ */
 export function copy ( sigma ) {
 
 	const rho = permutation( sigma.length ) ;

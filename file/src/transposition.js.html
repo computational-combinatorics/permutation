@@ -75,6 +75,15 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { identity } from &apos;./identity&apos; ;
 import { _transposition } from &apos;./_transposition&apos; ;
 
+/**
+ * Outputs the permutation on input &lt;code&gt;n&lt;/code&gt; numbers that only transposes
+ * two input elements &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;.
+ *
+ * @param {Number} n The size of the permutation to output.
+ * @param {Number} a The first index to swap.
+ * @param {Number} b The second index to swap.
+ * @returns {undefined}
+ */
 export function transposition ( n , a , b ) {
 
 	const rho = identity( n ) ;

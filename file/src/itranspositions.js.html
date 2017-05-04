@@ -75,6 +75,12 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { _itranspositions } from &apos;./_itranspositions&apos; ;
 import { used } from &apos;./used&apos; ;
 
+/**
+ * Really no idead what this does, see also {@link _itranspositions}.
+ *
+ * @param {Array} sigma Input permutation.
+ * @return {Iterator} ?
+ */
 export function* itranspositions ( sigma ) {
 
 	yield* _itranspositions( sigma , used( sigma.length ) ) ;

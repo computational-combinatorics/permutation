@@ -73,6 +73,14 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_transpose.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/**
+ * Transpose elements of input index &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; in the
+ * input permutation.
+ *
+ * @param {Number} a The first input index.
+ * @param {Number} b The second input index.
+ * @param {Array} sigma The input permutation.
+ */
 export function _transpose ( a , b , sigma ) {
 
 	const tmp = sigma[a] ;

@@ -74,6 +74,12 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/used.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { _used } from &apos;./_used&apos; ;
 
+/**
+ * Generates an helper array of given size (used in {@link _cycle}, {@link cycle}).
+ *
+ * @param n The given size.
+ * @returns {Array} The helper array of prescribed size.
+ */
 export function used ( n ) {
 
 	const array = new Array( n ) ;

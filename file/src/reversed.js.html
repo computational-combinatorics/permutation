@@ -75,6 +75,12 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { copy } from &apos;./copy&apos; ;
 import { reverse } from &apos;./reverse&apos; ;
 
+/**
+ * Outputs a new permutation that is the reverse of the input permutation.
+ *
+ * @param {Array} sigma The input permutation.
+ * @returns {Array} The reverse of the input permutation.
+ */
 export function reversed ( sigma ) {
 
 	const rho = copy( sigma ) ;

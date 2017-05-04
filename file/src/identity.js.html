@@ -75,6 +75,12 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { permutation } from &apos;./permutation&apos; ;
 import { _identity } from &apos;./_identity&apos; ;
 
+/**
+ * Returns the identity permutation of a given size.
+ *
+ * @param {Number} n The size of the permutation to return.
+ * @returns {Array} The identity permutation on &lt;code&gt;n&lt;/code&gt; elements.
+ */
 export function identity ( n ) {
 
 	const rho = permutation( n ) ;

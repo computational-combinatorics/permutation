@@ -73,6 +73,15 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_bitreversal.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/**
+ * Fills an input array with the bitreversal permutation for input
+ * &lt;code&gt;n&lt;/code&gt; items. The array is filled starting at index &lt;code&gt;0&lt;/code&gt;
+ * and ending at index &lt;code&gt;n-1&lt;/code&gt;. Note that &lt;code&gt;n&lt;/code&gt; MUST be a
+ * power of &lt;code&gt;2&lt;/code&gt;.
+ *
+ * @param {Array} array The array to fill.
+ * @param {Number} n The size of the permutation, must be a power of 2.
+ */
 export function _bitreversal ( array , n ) {
 
 	let i = 1 ;

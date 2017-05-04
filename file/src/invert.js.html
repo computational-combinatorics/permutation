@@ -75,6 +75,14 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { permutation } from &apos;./permutation&apos; ;
 import { _invert } from &apos;./_invert&apos; ;
 
+/**
+ * Computes the inverse &lt;code&gt;rho&lt;/code&gt; of the input permutation
+ * &lt;code&gt;sigma&lt;/code&gt;, that is, the permutation such that &lt;code&gt;compose(rho,
+ * sigma)&lt;/code&gt; returns &lt;code&gt;identity(sigma.length)&lt;/code&gt;.
+ *
+ * @param {Array} sigma The input permutation.
+ * @returns {Array} The inverse of the input permutation.
+ */
 export function invert ( sigma ) {
 
 	const rho = permutation( sigma.length ) ;

@@ -73,13 +73,16 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_identity.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/**
+ * Fills an input array with the identity permutation on input &lt;code&gt;n&lt;/code&gt;
+ * elements.
+ *
+ * @param sigma The input array.
+ * @param n The size to use for the permutation.
+ */
 export function _identity ( sigma , n ) {
 
-	for ( let i = 0 ; i &lt; n ; ++i ) {
-
-		sigma[i] = i ;
-
-	}
+	for ( let i = 0 ; i &lt; n ; ++i ) sigma[i] = i ;
 
 }
 

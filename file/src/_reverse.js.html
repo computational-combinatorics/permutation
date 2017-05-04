@@ -74,6 +74,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/_reverse.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { _transpose } from &apos;./_transpose&apos; ;
 
+/**
+ * Reverses input permutation in place from input index &lt;code&gt;i&lt;/code&gt;
+ * (include) to input index &lt;code&gt;j&lt;/code&gt; (excluded).
+ *
+ * @param {Array} sigma The input permutation to reverse.
+ * @param {Number} i The left bound (included).
+ * @param {Number} j The right bound (excluded).
+ */
 export function _reverse ( sigma , i , j ) {
 
 	while ( i &lt;-- j ) _transpose( i++ , j , sigma ) ;

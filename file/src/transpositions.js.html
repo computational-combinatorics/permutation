@@ -76,6 +76,13 @@
 import { cycles } from &apos;./cycles&apos; ;
 import { used } from &apos;./used&apos; ;
 
+/**
+ * Computes the transposition decomposition of the input permutation as an
+ * Iterator.
+ *
+ * @param {Array} sigma The input permutation.
+ * @returns {Iterator} The transposition decomposition of &lt;code&gt;sigma&lt;/code&gt;.
+ */
 export function* transpositions ( sigma ) {
 
 	yield* _transpositions( cycles( sigma , used( sigma.length ) ) ) ;

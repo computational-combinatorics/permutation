@@ -73,6 +73,15 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_transposition.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/**
+ * Helper method for {@link transposition}.
+ * Transposes &lt;code&gt;a&lt;/code&gt; with &lt;code&gt;b&lt;/code&gt; in &lt;code&gt;sigma&lt;/code&gt; provided
+ * &lt;code&gt;sigma[a] === a&lt;/code&gt; and &lt;code&gt;sigma[b] === b&lt;/code&gt;.
+ *
+ * @param {Number} a First index.
+ * @param {Number} b Second index.
+ * @param {Array} sigma Input permutation.
+ */
 export function _transposition ( a , b , sigma ) {
 
 	sigma[a] = b ;

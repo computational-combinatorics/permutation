@@ -75,6 +75,16 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { _transpose } from &apos;./_transpose&apos; ;
 import { _reverse } from &apos;./_reverse&apos; ;
 
+/**
+ * Updates the input permutation to the next one. Returns true unless the input
+ * permutation is the last for its elements. In that case, the input permutation
+ * remains untouched.
+ *
+ * @param {Array} sigma The input permutation.
+ * @param {Number} n The size of the input permutation.
+ * @returns {Boolean} Whether the input permutation is
+ * &lt;underline&gt;NOT&lt;/underline&gt; the last for its elements.
+ */
 export function _next ( sigma , n ) {
 
 	let i = n - 1 ;

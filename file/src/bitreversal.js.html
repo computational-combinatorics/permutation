@@ -75,6 +75,15 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { permutation } from &apos;./permutation&apos; ;
 import { _bitreversal } from &apos;./_bitreversal&apos; ;
 
+/**
+ * Returns a newly allocated array containing the bitreversal permutation for
+ * input &lt;code&gt;n&lt;/code&gt; items. Note that &lt;code&gt;n&lt;/code&gt; MUST be a power of
+ * &lt;code&gt;2&lt;/code&gt;.
+ *
+ * @param {Number} n The size of the permutation, must be a power of
+ * &lt;code&gt;2&lt;/code&gt;.
+ * @returns {Array} The bitreversal permutation of size &lt;code&gt;n&lt;/code&gt;.
+ */
 export function bitreversal ( n ) {
 
 	const sigma = permutation( n ) ;

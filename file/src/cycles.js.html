@@ -75,6 +75,14 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { _cycles } from &apos;./_cycles&apos; ;
 import { used } from &apos;./used&apos; ;
 
+
+/**
+ * Computes the cycle decomposition of the input permutation.
+ * See {@link _cycles} for implementation.
+ *
+ * @param {Array} sigma The input permutation.
+ * @returns {Iterator} The cycles &lt;code&gt;[a, [b, c, ...]]&lt;/code&gt; for sigma.
+ */
 export function* cycles ( sigma ) {
 
 	yield* _cycles( sigma , used( sigma.length ) ) ;

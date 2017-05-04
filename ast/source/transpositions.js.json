@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 240,
+  "end": 464,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 11,
+      "line": 18,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 240,
+    "end": 464,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 11,
+        "line": 18,
         "column": 0
       }
     },
@@ -284,19 +284,37 @@
             "raw": "'./used'"
           },
           "value": "./used"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Computes the transposition decomposition of the input permutation as an\n * Iterator.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The transposition decomposition of <code>sigma</code>.\n ",
+            "start": 123,
+            "end": 346,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 0
+              },
+              "end": {
+                "line": 11,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 123,
-        "end": 238,
+        "start": 347,
+        "end": 462,
         "loc": {
           "start": {
-            "line": 5,
+            "line": 12,
             "column": 0
           },
           "end": {
-            "line": 9,
+            "line": 16,
             "column": 1
           }
         },
@@ -304,34 +322,35 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 130,
-          "end": 238,
+          "start": 354,
+          "end": 462,
           "loc": {
             "start": {
-              "line": 5,
+              "line": 12,
               "column": 7
             },
             "end": {
-              "line": 9,
+              "line": 16,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 140,
-            "end": 154,
+            "start": 364,
+            "end": 378,
             "loc": {
               "start": {
-                "line": 5,
+                "line": 12,
                 "column": 17
               },
               "end": {
-                "line": 5,
+                "line": 12,
                 "column": 31
               },
               "identifierName": "transpositions"
             },
-            "name": "transpositions"
+            "name": "transpositions",
+            "leadingComments": null
           },
           "generator": true,
           "expression": false,
@@ -339,15 +358,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 157,
-              "end": 162,
+              "start": 381,
+              "end": 386,
               "loc": {
                 "start": {
-                  "line": 5,
+                  "line": 12,
                   "column": 34
                 },
                 "end": {
-                  "line": 5,
+                  "line": 12,
                   "column": 39
                 },
                 "identifierName": "sigma"
@@ -357,73 +376,73 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 165,
-            "end": 238,
+            "start": 389,
+            "end": 462,
             "loc": {
               "start": {
-                "line": 5,
+                "line": 12,
                 "column": 42
               },
               "end": {
-                "line": 9,
+                "line": 16,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ExpressionStatement",
-                "start": 169,
-                "end": 235,
+                "start": 393,
+                "end": 459,
                 "loc": {
                   "start": {
-                    "line": 7,
+                    "line": 14,
                     "column": 1
                   },
                   "end": {
-                    "line": 7,
+                    "line": 14,
                     "column": 67
                   }
                 },
                 "expression": {
                   "type": "YieldExpression",
-                  "start": 169,
-                  "end": 233,
+                  "start": 393,
+                  "end": 457,
                   "loc": {
                     "start": {
-                      "line": 7,
+                      "line": 14,
                       "column": 1
                     },
                     "end": {
-                      "line": 7,
+                      "line": 14,
                       "column": 65
                     }
                   },
                   "delegate": true,
                   "argument": {
                     "type": "CallExpression",
-                    "start": 176,
-                    "end": 233,
+                    "start": 400,
+                    "end": 457,
                     "loc": {
                       "start": {
-                        "line": 7,
+                        "line": 14,
                         "column": 8
                       },
                       "end": {
-                        "line": 7,
+                        "line": 14,
                         "column": 65
                       }
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 176,
-                      "end": 191,
+                      "start": 400,
+                      "end": 415,
                       "loc": {
                         "start": {
-                          "line": 7,
+                          "line": 14,
                           "column": 8
                         },
                         "end": {
-                          "line": 7,
+                          "line": 14,
                           "column": 23
                         },
                         "identifierName": "_transpositions"
@@ -433,29 +452,29 @@
                     "arguments": [
                       {
                         "type": "CallExpression",
-                        "start": 193,
-                        "end": 231,
+                        "start": 417,
+                        "end": 455,
                         "loc": {
                           "start": {
-                            "line": 7,
+                            "line": 14,
                             "column": 25
                           },
                           "end": {
-                            "line": 7,
+                            "line": 14,
                             "column": 63
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 193,
-                          "end": 199,
+                          "start": 417,
+                          "end": 423,
                           "loc": {
                             "start": {
-                              "line": 7,
+                              "line": 14,
                               "column": 25
                             },
                             "end": {
-                              "line": 7,
+                              "line": 14,
                               "column": 31
                             },
                             "identifierName": "cycles"
@@ -465,15 +484,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 201,
-                            "end": 206,
+                            "start": 425,
+                            "end": 430,
                             "loc": {
                               "start": {
-                                "line": 7,
+                                "line": 14,
                                 "column": 33
                               },
                               "end": {
-                                "line": 7,
+                                "line": 14,
                                 "column": 38
                               },
                               "identifierName": "sigma"
@@ -482,29 +501,29 @@
                           },
                           {
                             "type": "CallExpression",
-                            "start": 209,
-                            "end": 229,
+                            "start": 433,
+                            "end": 453,
                             "loc": {
                               "start": {
-                                "line": 7,
+                                "line": 14,
                                 "column": 41
                               },
                               "end": {
-                                "line": 7,
+                                "line": 14,
                                 "column": 61
                               }
                             },
                             "callee": {
                               "type": "Identifier",
-                              "start": 209,
-                              "end": 213,
+                              "start": 433,
+                              "end": 437,
                               "loc": {
                                 "start": {
-                                  "line": 7,
+                                  "line": 14,
                                   "column": 41
                                 },
                                 "end": {
-                                  "line": 7,
+                                  "line": 14,
                                   "column": 45
                                 },
                                 "identifierName": "used"
@@ -514,29 +533,29 @@
                             "arguments": [
                               {
                                 "type": "MemberExpression",
-                                "start": 215,
-                                "end": 227,
+                                "start": 439,
+                                "end": 451,
                                 "loc": {
                                   "start": {
-                                    "line": 7,
+                                    "line": 14,
                                     "column": 47
                                   },
                                   "end": {
-                                    "line": 7,
+                                    "line": 14,
                                     "column": 59
                                   }
                                 },
                                 "object": {
                                   "type": "Identifier",
-                                  "start": 215,
-                                  "end": 220,
+                                  "start": 439,
+                                  "end": 444,
                                   "loc": {
                                     "start": {
-                                      "line": 7,
+                                      "line": 14,
                                       "column": 47
                                     },
                                     "end": {
-                                      "line": 7,
+                                      "line": 14,
                                       "column": 52
                                     },
                                     "identifierName": "sigma"
@@ -545,15 +564,15 @@
                                 },
                                 "property": {
                                   "type": "Identifier",
-                                  "start": 221,
-                                  "end": 227,
+                                  "start": 445,
+                                  "end": 451,
                                   "loc": {
                                     "start": {
-                                      "line": 7,
+                                      "line": 14,
                                       "column": 53
                                     },
                                     "end": {
-                                      "line": 7,
+                                      "line": 14,
                                       "column": 59
                                     },
                                     "identifierName": "length"
@@ -573,14 +592,66 @@
             ],
             "directives": []
           },
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Computes the transposition decomposition of the input permutation as an\n * Iterator.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The transposition decomposition of <code>sigma</code>.\n ",
+              "start": 123,
+              "end": 346,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 0
+                },
+                "end": {
+                  "line": 11,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Computes the transposition decomposition of the input permutation as an\n * Iterator.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The transposition decomposition of <code>sigma</code>.\n ",
+            "start": 123,
+            "end": 346,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 0
+              },
+              "end": {
+                "line": 11,
+                "column": 3
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Computes the transposition decomposition of the input permutation as an\n * Iterator.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The transposition decomposition of <code>sigma</code>.\n ",
+      "start": 123,
+      "end": 346,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -1132,6 +1203,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * Computes the transposition decomposition of the input permutation as an\n * Iterator.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The transposition decomposition of <code>sigma</code>.\n ",
+      "start": 123,
+      "end": 346,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "export",
         "keyword": "export",
@@ -1146,15 +1233,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 123,
-      "end": 129,
+      "start": 347,
+      "end": 353,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 0
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 6
         }
       }
@@ -1173,15 +1260,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 130,
-      "end": 138,
+      "start": 354,
+      "end": 362,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 7
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 15
         }
       }
@@ -1200,15 +1287,15 @@
         "updateContext": null
       },
       "value": "*",
-      "start": 138,
-      "end": 139,
+      "start": 362,
+      "end": 363,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 15
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 16
         }
       }
@@ -1226,15 +1313,15 @@
         "binop": null
       },
       "value": "transpositions",
-      "start": 140,
-      "end": 154,
+      "start": 364,
+      "end": 378,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 17
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 31
         }
       }
@@ -1251,15 +1338,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 155,
-      "end": 156,
+      "start": 379,
+      "end": 380,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 32
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 33
         }
       }
@@ -1277,15 +1364,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 157,
-      "end": 162,
+      "start": 381,
+      "end": 386,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 34
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 39
         }
       }
@@ -1302,15 +1389,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 163,
-      "end": 164,
+      "start": 387,
+      "end": 388,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 40
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 41
         }
       }
@@ -1327,15 +1414,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 165,
-      "end": 166,
+      "start": 389,
+      "end": 390,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 12,
           "column": 42
         },
         "end": {
-          "line": 5,
+          "line": 12,
           "column": 43
         }
       }
@@ -1355,15 +1442,15 @@
         "updateContext": null
       },
       "value": "yield",
-      "start": 169,
-      "end": 174,
+      "start": 393,
+      "end": 398,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 1
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 6
         }
       }
@@ -1382,15 +1469,15 @@
         "updateContext": null
       },
       "value": "*",
-      "start": 174,
-      "end": 175,
+      "start": 398,
+      "end": 399,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 6
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 7
         }
       }
@@ -1408,15 +1495,15 @@
         "binop": null
       },
       "value": "_transpositions",
-      "start": 176,
-      "end": 191,
+      "start": 400,
+      "end": 415,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 8
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 23
         }
       }
@@ -1433,15 +1520,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 191,
-      "end": 192,
+      "start": 415,
+      "end": 416,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 23
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 24
         }
       }
@@ -1459,15 +1546,15 @@
         "binop": null
       },
       "value": "cycles",
-      "start": 193,
-      "end": 199,
+      "start": 417,
+      "end": 423,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 25
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 31
         }
       }
@@ -1484,15 +1571,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 199,
-      "end": 200,
+      "start": 423,
+      "end": 424,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 31
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 32
         }
       }
@@ -1510,15 +1597,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 201,
-      "end": 206,
+      "start": 425,
+      "end": 430,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 33
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 38
         }
       }
@@ -1536,15 +1623,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 207,
-      "end": 208,
+      "start": 431,
+      "end": 432,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 39
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 40
         }
       }
@@ -1562,15 +1649,15 @@
         "binop": null
       },
       "value": "used",
-      "start": 209,
-      "end": 213,
+      "start": 433,
+      "end": 437,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 41
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 45
         }
       }
@@ -1587,15 +1674,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 213,
-      "end": 214,
+      "start": 437,
+      "end": 438,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 45
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 46
         }
       }
@@ -1613,15 +1700,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 215,
-      "end": 220,
+      "start": 439,
+      "end": 444,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 47
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 52
         }
       }
@@ -1639,15 +1726,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 220,
-      "end": 221,
+      "start": 444,
+      "end": 445,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 52
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 53
         }
       }
@@ -1665,15 +1752,15 @@
         "binop": null
       },
       "value": "length",
-      "start": 221,
-      "end": 227,
+      "start": 445,
+      "end": 451,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 53
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 59
         }
       }
@@ -1690,15 +1777,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 228,
-      "end": 229,
+      "start": 452,
+      "end": 453,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 60
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 61
         }
       }
@@ -1715,15 +1802,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 230,
-      "end": 231,
+      "start": 454,
+      "end": 455,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 62
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 63
         }
       }
@@ -1740,15 +1827,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 232,
-      "end": 233,
+      "start": 456,
+      "end": 457,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 64
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 65
         }
       }
@@ -1766,15 +1853,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 234,
-      "end": 235,
+      "start": 458,
+      "end": 459,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 14,
           "column": 66
         },
         "end": {
-          "line": 7,
+          "line": 14,
           "column": 67
         }
       }
@@ -1791,15 +1878,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 237,
-      "end": 238,
+      "start": 461,
+      "end": 462,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 9,
+          "line": 16,
           "column": 1
         }
       }
@@ -1817,15 +1904,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 240,
-      "end": 240,
+      "start": 464,
+      "end": 464,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 11,
+          "line": 18,
           "column": 0
         }
       }

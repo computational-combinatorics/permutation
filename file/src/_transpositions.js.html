@@ -72,7 +72,15 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_transpositions.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export function* _transpositions ( cycles ) {
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Computes the transposition decomposition of some permutation given its cycle
+ * decomposition.
+ *
+ * @param {Array} cycles The cycle decomposition of some permutation.
+ * @returns {Iterator} The transposition decomposition of the permutation
+ * defined by the input cycles.
+ */
+export function* _transpositions ( cycles ) {
 
 	for ( const [ s , cycle ] of cycles ) {
 
@@ -81,7 +89,6 @@
 	}
 
 }
-
 </code></pre>
 
 </div>

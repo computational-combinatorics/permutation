@@ -73,6 +73,16 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/_used.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/**
+ * For a given size &lt;code&gt;n&lt;/code&gt;, fills an input array with
+ * &lt;code&gt;false&lt;/code&gt;. Starting at index &lt;code&gt;0&lt;/code&gt;, ending at index
+ * &lt;code&gt;n-1&lt;/code&gt;. This array is used as a helper in other function. For
+ * example, for computing the cycle decomposition of an input permutation (see
+ * {@link _cycles}, {@link cycles}).
+ *
+ * @param n The given size.
+ * @param array The input array.
+ */
 export function _used ( n , array ) {
 
 	for ( let i = 0 ; i &lt; n ; ++i ) array[i] = false ;

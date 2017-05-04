@@ -75,6 +75,15 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { copy } from &apos;./copy&apos; ;
 import { _transpose } from &apos;./_transpose&apos; ;
 
+/**
+ * Creates a copy of the input permutation, applies an input transpose,
+ * then returns the result.
+ *
+ * @param {Array} sigma The input permutation.
+ * @param {Number} a The first index of the transpose.
+ * @param {Number} b The second index of the transpose.
+ * @returns {Array} The result.
+ */
 export function transpose ( sigma , a , b ) {
 
 	const rho = copy( sigma ) ;

@@ -1,238 +1,172 @@
 {
-  "coverage": "0%",
+  "coverage": "100%",
   "expectCount": 33,
-  "actualCount": 0,
+  "actualCount": 33,
   "files": {
     "src/_apply.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_bitreversal.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_compose.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_copy.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_cycles.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_identity.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_invert.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_invertcycles.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_itranspositions.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_next.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_permutations.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_reverse.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_transpose.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_transposition.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_transpositions.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/_used.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/apply.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/bitreversal.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/compose.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/copy.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/cycles.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/identity.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/invert.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/itranspositions.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/next.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/permutation.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/permutations.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/reverse.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/reversed.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/transpose.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/transposition.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/transpositions.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/used.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     }
   }
 }

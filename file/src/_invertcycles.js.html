@@ -74,6 +74,12 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/_invertcycles.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { _transpose } from &apos;./_transpose&apos; ;
 
+/**
+ * No idea what this does. Probably inverts the cycles of a given permutation.
+ *
+ * @param {Iterable} cycles The cycles to invert.
+ * @param {Array} tau The given permutation.
+ */
 export function _invertcycles ( cycles , tau ) {
 
 	for ( const [ s , cycle ] of cycles ) {

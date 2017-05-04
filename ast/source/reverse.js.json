@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 122,
+  "end": 231,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 9,
+      "line": 14,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 122,
+    "end": 231,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 9,
+        "line": 14,
         "column": 0
       }
     },
@@ -112,19 +112,37 @@
             "raw": "'./_reverse'"
           },
           "value": "./_reverse"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+            "start": 41,
+            "end": 149,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 41,
-        "end": 120,
+        "start": 150,
+        "end": 229,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 8,
             "column": 0
           },
           "end": {
-            "line": 7,
+            "line": 12,
             "column": 1
           }
         },
@@ -132,34 +150,35 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 48,
-          "end": 120,
+          "start": 157,
+          "end": 229,
           "loc": {
             "start": {
-              "line": 3,
+              "line": 8,
               "column": 7
             },
             "end": {
-              "line": 7,
+              "line": 12,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 57,
-            "end": 64,
+            "start": 166,
+            "end": 173,
             "loc": {
               "start": {
-                "line": 3,
+                "line": 8,
                 "column": 16
               },
               "end": {
-                "line": 3,
+                "line": 8,
                 "column": 23
               },
               "identifierName": "reverse"
             },
-            "name": "reverse"
+            "name": "reverse",
+            "leadingComments": null
           },
           "generator": false,
           "expression": false,
@@ -167,15 +186,15 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 67,
-              "end": 72,
+              "start": 176,
+              "end": 181,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 8,
                   "column": 26
                 },
                 "end": {
-                  "line": 3,
+                  "line": 8,
                   "column": 31
                 },
                 "identifierName": "sigma"
@@ -185,58 +204,58 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 75,
-            "end": 120,
+            "start": 184,
+            "end": 229,
             "loc": {
               "start": {
-                "line": 3,
+                "line": 8,
                 "column": 34
               },
               "end": {
-                "line": 7,
+                "line": 12,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ExpressionStatement",
-                "start": 79,
-                "end": 117,
+                "start": 188,
+                "end": 226,
                 "loc": {
                   "start": {
-                    "line": 5,
+                    "line": 10,
                     "column": 1
                   },
                   "end": {
-                    "line": 5,
+                    "line": 10,
                     "column": 39
                   }
                 },
                 "expression": {
                   "type": "CallExpression",
-                  "start": 79,
-                  "end": 115,
+                  "start": 188,
+                  "end": 224,
                   "loc": {
                     "start": {
-                      "line": 5,
+                      "line": 10,
                       "column": 1
                     },
                     "end": {
-                      "line": 5,
+                      "line": 10,
                       "column": 37
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 79,
-                    "end": 87,
+                    "start": 188,
+                    "end": 196,
                     "loc": {
                       "start": {
-                        "line": 5,
+                        "line": 10,
                         "column": 1
                       },
                       "end": {
-                        "line": 5,
+                        "line": 10,
                         "column": 9
                       },
                       "identifierName": "_reverse"
@@ -246,15 +265,15 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 89,
-                      "end": 94,
+                      "start": 198,
+                      "end": 203,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 10,
                           "column": 11
                         },
                         "end": {
-                          "line": 5,
+                          "line": 10,
                           "column": 16
                         },
                         "identifierName": "sigma"
@@ -263,15 +282,15 @@
                     },
                     {
                       "type": "NumericLiteral",
-                      "start": 97,
-                      "end": 98,
+                      "start": 206,
+                      "end": 207,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 10,
                           "column": 19
                         },
                         "end": {
-                          "line": 5,
+                          "line": 10,
                           "column": 20
                         }
                       },
@@ -283,29 +302,29 @@
                     },
                     {
                       "type": "MemberExpression",
-                      "start": 101,
-                      "end": 113,
+                      "start": 210,
+                      "end": 222,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 10,
                           "column": 23
                         },
                         "end": {
-                          "line": 5,
+                          "line": 10,
                           "column": 35
                         }
                       },
                       "object": {
                         "type": "Identifier",
-                        "start": 101,
-                        "end": 106,
+                        "start": 210,
+                        "end": 215,
                         "loc": {
                           "start": {
-                            "line": 5,
+                            "line": 10,
                             "column": 23
                           },
                           "end": {
-                            "line": 5,
+                            "line": 10,
                             "column": 28
                           },
                           "identifierName": "sigma"
@@ -314,15 +333,15 @@
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 107,
-                        "end": 113,
+                        "start": 216,
+                        "end": 222,
                         "loc": {
                           "start": {
-                            "line": 5,
+                            "line": 10,
                             "column": 29
                           },
                           "end": {
-                            "line": 5,
+                            "line": 10,
                             "column": 35
                           },
                           "identifierName": "length"
@@ -337,14 +356,66 @@
             ],
             "directives": []
           },
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+              "start": 41,
+              "end": 149,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 0
+                },
+                "end": {
+                  "line": 7,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+            "start": 41,
+            "end": 149,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 3
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+      "start": 41,
+      "end": 149,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -530,6 +601,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * Reverses input permutation in place.\n *\n * @param {Array} sigma The input permutation to reverse.\n ",
+      "start": 41,
+      "end": 149,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "export",
         "keyword": "export",
@@ -544,15 +631,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 41,
-      "end": 47,
+      "start": 150,
+      "end": 156,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 8,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 8,
           "column": 6
         }
       }
@@ -571,15 +658,15 @@
         "binop": null
       },
       "value": "function",
-      "start": 48,
-      "end": 56,
+      "start": 157,
+      "end": 165,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 8,
           "column": 7
         },
         "end": {
-          "line": 3,
+          "line": 8,
           "column": 15
         }
       }
@@ -597,15 +684,15 @@
         "binop": null
       },
       "value": "reverse",
-      "start": 57,
-      "end": 64,
+      "start": 166,
+      "end": 173,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 8,
           "column": 16
         },
         "end": {
-          "line": 3,
+          "line": 8,
           "column": 23
         }
       }
@@ -622,15 +709,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 65,
-      "end": 66,
+      "start": 174,
+      "end": 175,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 8,
           "column": 24
         },
         "end": {
-          "line": 3,
+          "line": 8,
           "column": 25
         }
       }
@@ -648,15 +735,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 67,
-      "end": 72,
+      "start": 176,
+      "end": 181,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 8,
           "column": 26
         },
         "end": {
-          "line": 3,
+          "line": 8,
           "column": 31
         }
       }
@@ -673,15 +760,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 73,
-      "end": 74,
+      "start": 182,
+      "end": 183,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 8,
           "column": 32
         },
         "end": {
-          "line": 3,
+          "line": 8,
           "column": 33
         }
       }
@@ -698,15 +785,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 75,
-      "end": 76,
+      "start": 184,
+      "end": 185,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 8,
           "column": 34
         },
         "end": {
-          "line": 3,
+          "line": 8,
           "column": 35
         }
       }
@@ -724,15 +811,15 @@
         "binop": null
       },
       "value": "_reverse",
-      "start": 79,
-      "end": 87,
+      "start": 188,
+      "end": 196,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 1
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 9
         }
       }
@@ -749,15 +836,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 87,
-      "end": 88,
+      "start": 196,
+      "end": 197,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 9
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 10
         }
       }
@@ -775,15 +862,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 89,
-      "end": 94,
+      "start": 198,
+      "end": 203,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 11
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 16
         }
       }
@@ -801,15 +888,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 95,
-      "end": 96,
+      "start": 204,
+      "end": 205,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 17
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 18
         }
       }
@@ -828,15 +915,15 @@
         "updateContext": null
       },
       "value": 0,
-      "start": 97,
-      "end": 98,
+      "start": 206,
+      "end": 207,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 19
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 20
         }
       }
@@ -854,15 +941,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 99,
-      "end": 100,
+      "start": 208,
+      "end": 209,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 21
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 22
         }
       }
@@ -880,15 +967,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 101,
-      "end": 106,
+      "start": 210,
+      "end": 215,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 23
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 28
         }
       }
@@ -906,15 +993,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 106,
-      "end": 107,
+      "start": 215,
+      "end": 216,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 28
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 29
         }
       }
@@ -932,15 +1019,15 @@
         "binop": null
       },
       "value": "length",
-      "start": 107,
-      "end": 113,
+      "start": 216,
+      "end": 222,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 29
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 35
         }
       }
@@ -957,15 +1044,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 114,
-      "end": 115,
+      "start": 223,
+      "end": 224,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 36
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 37
         }
       }
@@ -983,15 +1070,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 116,
-      "end": 117,
+      "start": 225,
+      "end": 226,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 10,
           "column": 38
         },
         "end": {
-          "line": 5,
+          "line": 10,
           "column": 39
         }
       }
@@ -1008,15 +1095,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 119,
-      "end": 120,
+      "start": 228,
+      "end": 229,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 12,
           "column": 0
         },
         "end": {
-          "line": 7,
+          "line": 12,
           "column": 1
         }
       }
@@ -1034,15 +1121,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 122,
-      "end": 122,
+      "start": 231,
+      "end": 231,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 14,
           "column": 0
         },
         "end": {
-          "line": 9,
+          "line": 14,
           "column": 0
         }
       }
