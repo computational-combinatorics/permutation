@@ -506,7 +506,7 @@
     "__docId__": 18,
     "kind": "file",
     "name": "src/_next.js",
-    "content": "import { _transpose } from './_transpose' ;\nimport { _reverse } from './_reverse' ;\n\n/**\n * Updates the input permutation to the next one. Returns true unless the input\n * permutation is the last for its elements. In that case, the input permutation\n * remains untouched.\n *\n * @param {Array} sigma The input permutation.\n * @param {Number} n The size of the input permutation.\n * @returns {Boolean} Whether the input permutation is\n * ___NOT___ the last for its elements.\n */\nexport function _next ( sigma , n ) {\n\n\tlet i = n - 1 ;\n\n\twhile ( i > 0 ) {\n\n\t\t--i ;\n\n\t\tif ( sigma[i] > sigma[i+1] ) continue ;\n\n\t\tlet j = n - 1 ;\n\n\t\twhile ( sigma[j] < sigma[i] ) --j ;\n\n\t\t_transpose( i , j , sigma ) ;\n\n\t\t_reverse( sigma , i + 1 , n ) ;\n\n\t\treturn true ;\n\n\t}\n\n\treturn false ;\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\nimport { _reverse } from './_reverse' ;\n\n/**\n * Updates the input permutation to the next one ___in-place___. Returns true\n * unless the input permutation is the last for its elements. In that case, the\n * input permutation remains untouched.\n *\n * @param {Array} sigma The input permutation (modified in-place).\n * @param {Number} n The size of the input permutation.\n * @returns {Boolean} Whether the input permutation is\n * __NOT__ the last for its elements.\n */\nexport function _next ( sigma , n ) {\n\n\tlet i = n - 1 ;\n\n\twhile ( i > 0 ) {\n\n\t\t--i ;\n\n\t\tif ( sigma[i] > sigma[i+1] ) continue ;\n\n\t\tlet j = n - 1 ;\n\n\t\twhile ( sigma[j] < sigma[i] ) --j ;\n\n\t\t_transpose( i , j , sigma ) ;\n\n\t\t_reverse( sigma , i + 1 , n ) ;\n\n\t\treturn true ;\n\n\t}\n\n\treturn false ;\n\n}\n\n",
     "static": true,
     "longname": "src/_next.js",
     "access": null,
@@ -526,12 +526,12 @@
     "export": true,
     "importPath": "@aureooms/js-permutation/src/_next.js",
     "importStyle": "{_next}",
-    "description": "Updates the input permutation to the next one. Returns true unless the input\npermutation is the last for its elements. In that case, the input permutation\nremains untouched.",
+    "description": "Updates the input permutation to the next one ___in-place___. Returns true\nunless the input permutation is the last for its elements. In that case, the\ninput permutation remains untouched.",
     "lineNumber": 14,
     "unknown": [
       {
         "tagName": "@returns",
-        "tagValue": "{Boolean} Whether the input permutation is\n___NOT___ the last for its elements."
+        "tagValue": "{Boolean} Whether the input permutation is\n__NOT__ the last for its elements."
       }
     ],
     "params": [
@@ -543,7 +543,7 @@
         "spread": false,
         "optional": false,
         "name": "sigma",
-        "description": "The input permutation."
+        "description": "The input permutation (modified in-place)."
       },
       {
         "nullable": null,
@@ -562,7 +562,7 @@
         "Boolean"
       ],
       "spread": false,
-      "description": "Whether the input permutation is\n___NOT___ the last for its elements."
+      "description": "Whether the input permutation is\n__NOT__ the last for its elements."
     }
   },
   {

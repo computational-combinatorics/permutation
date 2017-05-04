@@ -76,14 +76,14 @@
 import { _reverse } from &apos;./_reverse&apos; ;
 
 /**
- * Updates the input permutation to the next one. Returns true unless the input
- * permutation is the last for its elements. In that case, the input permutation
- * remains untouched.
+ * Updates the input permutation to the next one ___in-place___. Returns true
+ * unless the input permutation is the last for its elements. In that case, the
+ * input permutation remains untouched.
  *
- * @param {Array} sigma The input permutation.
+ * @param {Array} sigma The input permutation (modified in-place).
  * @param {Number} n The size of the input permutation.
  * @returns {Boolean} Whether the input permutation is
- * ___NOT___ the last for its elements.
+ * __NOT__ the last for its elements.
  */
 export function _next ( sigma , n ) {
 

@@ -844,7 +844,7 @@ permutation <code>sigma</code>, that is, the permutation such that
       <div>
         
         
-        <div data-ice="description"><p>Updates the input permutation to the next one.</p>
+        <div data-ice="description"><p>Updates the input permutation to the next one <strong><em>in-place</em></strong>.</p>
 </div>
       </div>
     </td>
@@ -3066,9 +3066,9 @@ higher level API.</p>
   <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_next} from &apos;<span><a href="file/src/_next.js.html#lineNumber14">@aureooms/js-permutation/src/_next.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Updates the input permutation to the next one. Returns true unless the input
-permutation is the last for its elements. In that case, the input permutation
-remains untouched.</p>
+  <div data-ice="description"><p>Updates the input permutation to the next one <strong><em>in-place</em></strong>. Returns true
+unless the input permutation is the last for its elements. In that case, the
+input permutation remains untouched.</p>
 </div>
 
   
@@ -3085,7 +3085,7 @@ remains untouched.</p>
       <td data-ice="name" data-depth="0">sigma</td>
       <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The input permutation.</p>
+      <td data-ice="description"><p>The input permutation (modified in-place).</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
@@ -3107,7 +3107,7 @@ remains untouched.</p>
         <tr>
           <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
           <td class="return-desc" data-ice="returnDescription"><p>Whether the input permutation is
-<strong><em>NOT</em></strong> the last for its elements.</p>
+<strong>NOT</strong> the last for its elements.</p>
 </td>
         </tr>
       </tbody>
