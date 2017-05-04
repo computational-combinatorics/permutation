@@ -1,4 +1,13 @@
 
+/**
+ * Fills an input array with the bitreversal permutation for input
+ * <code>n</code> items. The array is filled starting at index <code>0</code>
+ * and ending at index <code>n-1</code>. Note that <code>n</code> MUST be a
+ * power of <code>2</code>.
+ *
+ * @param {Array} array The array to fill.
+ * @param {Number} n The size of the permutation, must be a power of 2.
+ */
 export function _bitreversal ( array , n ) {
 
 	let i = 1 ;

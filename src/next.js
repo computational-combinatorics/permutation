@@ -2,6 +2,14 @@ import { copy } from './copy' ;
 import { _next } from './_next' ;
 import { reverse } from './reverse' ;
 
+/**
+ * Computes the permutation that follows the input permutation. If the input
+ * permutation is the last for its elements, return the first for its elements.
+ * The input permutation is not altered.
+ *
+ * @param {Array} sigma The input permutation.
+ * @returns {Array} The next permutation.
+ */
 export function next ( sigma ) {
 
 	const rho = copy( sigma ) ;

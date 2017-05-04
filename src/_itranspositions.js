@@ -1,4 +1,11 @@
 
+/**
+ * Really no idead what this does.
+ *
+ * @param {Array} sigma Input permutation.
+ * @param {Array} used Helper array.
+ * @return {Iterator} ?
+ */
 export function* _itranspositions ( sigma , used ) {
 
 	for ( const s of sigma ) {

@@ -1,6 +1,16 @@
 import { _transpose } from './_transpose' ;
 import { _reverse } from './_reverse' ;
 
+/**
+ * Updates the input permutation to the next one. Returns true unless the input
+ * permutation is the last for its elements. In that case, the input permutation
+ * remains untouched.
+ *
+ * @param {Array} sigma The input permutation.
+ * @param {Number} n The size of the input permutation.
+ * @returns {Boolean} Whether the input permutation is
+ * <underline>NOT</underline> the last for its elements.
+ */
 export function _next ( sigma , n ) {
 
 	let i = n - 1 ;
