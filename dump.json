@@ -3,7 +3,7 @@
     "__docId__": 0,
     "kind": "file",
     "name": "src/_apply.js",
-    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Applies a given sequence (in the given order) of transpositions (given as\n * index tuples) to a given permutation. The permutation is modified in place.\n *\n * @param transpositions The given transpositions to apply.\n * @param sigma The permutation to apply the transpositions to.\n */\nexport function _apply ( transpositions , sigma ) {\n\n\tfor ( const [ s , t ] of transpositions ) _transpose( s , t , sigma ) ;\n\n}\n\n",
+    "content": "import { _transpose } from './_transpose' ;\n\n/**\n * Applies a given sequence (in the given order) of transpositions (given as\n * index tuples) to a given permutation. The permutation is modified in place.\n *\n * @param {Iterable} transpositions The given transpositions to apply.\n * @param {Array} sigma The permutation to apply the transpositions to.\n */\nexport function _apply ( transpositions , sigma ) {\n\n\tfor ( const [ s , t ] of transpositions ) _transpose( s , t , sigma ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/_apply.js",
     "access": null,
@@ -29,7 +29,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Iterable"
         ],
         "spread": false,
         "optional": false,
@@ -39,7 +39,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Array"
         ],
         "spread": false,
         "optional": false,
@@ -286,7 +286,7 @@
     "__docId__": 10,
     "kind": "file",
     "name": "src/_identity.js",
-    "content": "\n/**\n * Fills an input array with the identity permutation on input <code>n</code>\n * elements.\n *\n * @param sigma The input array.\n * @param n The size to use for the permutation.\n */\nexport function _identity ( sigma , n ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) sigma[i] = i ;\n\n}\n\n",
+    "content": "\n/**\n * Fills an input array with the identity permutation on input <code>n</code>\n * elements.\n *\n * @param {Array} sigma The input array.\n * @param {Number} n The size to use for the permutation.\n */\nexport function _identity ( sigma , n ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) sigma[i] = i ;\n\n}\n\n",
     "static": true,
     "longname": "src/_identity.js",
     "access": null,
@@ -312,7 +312,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Array"
         ],
         "spread": false,
         "optional": false,
@@ -322,7 +322,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Number"
         ],
         "spread": false,
         "optional": false,
@@ -856,7 +856,7 @@
     "__docId__": 30,
     "kind": "file",
     "name": "src/_used.js",
-    "content": "\n/**\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param n The given size.\n * @param array The input array.\n */\nexport function _used ( n , array ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) array[i] = false ;\n\n}\n\n",
+    "content": "\n/**\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param {Number} n The given size.\n * @param {Array} array The input array.\n */\nexport function _used ( n , array ) {\n\n\tfor ( let i = 0 ; i < n ; ++i ) array[i] = false ;\n\n}\n\n",
     "static": true,
     "longname": "src/_used.js",
     "access": null,
@@ -882,7 +882,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Number"
         ],
         "spread": false,
         "optional": false,
@@ -892,7 +892,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Array"
         ],
         "spread": false,
         "optional": false,
@@ -905,7 +905,7 @@
     "__docId__": 32,
     "kind": "file",
     "name": "src/apply.js",
-    "content": "import { identity } from './identity' ;\nimport { _apply } from './_apply' ;\n\n/**\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param n The size of the identity permutation to apply the transpositions\n * to.\n * @param transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n */\nexport function apply ( n , transpositions ) {\n\n\tconst rho = identity( n ) ;\n\n\t_apply( transpositions , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
+    "content": "import { identity } from './identity' ;\nimport { _apply } from './_apply' ;\n\n/**\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param {Number} n The size of the identity permutation to apply the transpositions\n * to.\n * @param {Iterable} transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n */\nexport function apply ( n , transpositions ) {\n\n\tconst rho = identity( n ) ;\n\n\t_apply( transpositions , rho ) ;\n\n\treturn rho ;\n\n}\n\n",
     "static": true,
     "longname": "src/apply.js",
     "access": null,
@@ -937,7 +937,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Number"
         ],
         "spread": false,
         "optional": false,
@@ -947,7 +947,7 @@
       {
         "nullable": null,
         "types": [
-          "*"
+          "Iterable"
         ],
         "spread": false,
         "optional": false,

@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 566,
+  "end": 586,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 566,
+    "end": 586,
     "loc": {
       "start": {
         "line": 1,
@@ -202,9 +202,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param n The size of the identity permutation to apply the transpositions\n * to.\n * @param transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
+            "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param {Number} n The size of the identity permutation to apply the transpositions\n * to.\n * @param {Iterable} transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
             "start": 77,
-            "end": 434,
+            "end": 454,
             "loc": {
               "start": {
                 "line": 4,
@@ -220,8 +220,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 435,
-        "end": 564,
+        "start": 455,
+        "end": 584,
         "loc": {
           "start": {
             "line": 13,
@@ -236,8 +236,8 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 442,
-          "end": 564,
+          "start": 462,
+          "end": 584,
           "loc": {
             "start": {
               "line": 13,
@@ -250,8 +250,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 451,
-            "end": 456,
+            "start": 471,
+            "end": 476,
             "loc": {
               "start": {
                 "line": 13,
@@ -272,8 +272,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 459,
-              "end": 460,
+              "start": 479,
+              "end": 480,
               "loc": {
                 "start": {
                   "line": 13,
@@ -289,8 +289,8 @@
             },
             {
               "type": "Identifier",
-              "start": 463,
-              "end": 477,
+              "start": 483,
+              "end": 497,
               "loc": {
                 "start": {
                   "line": 13,
@@ -307,8 +307,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 480,
-            "end": 564,
+            "start": 500,
+            "end": 584,
             "loc": {
               "start": {
                 "line": 13,
@@ -322,8 +322,8 @@
             "body": [
               {
                 "type": "VariableDeclaration",
-                "start": 484,
-                "end": 511,
+                "start": 504,
+                "end": 531,
                 "loc": {
                   "start": {
                     "line": 15,
@@ -337,8 +337,8 @@
                 "declarations": [
                   {
                     "type": "VariableDeclarator",
-                    "start": 490,
-                    "end": 509,
+                    "start": 510,
+                    "end": 529,
                     "loc": {
                       "start": {
                         "line": 15,
@@ -351,8 +351,8 @@
                     },
                     "id": {
                       "type": "Identifier",
-                      "start": 490,
-                      "end": 493,
+                      "start": 510,
+                      "end": 513,
                       "loc": {
                         "start": {
                           "line": 15,
@@ -368,8 +368,8 @@
                     },
                     "init": {
                       "type": "CallExpression",
-                      "start": 496,
-                      "end": 509,
+                      "start": 516,
+                      "end": 529,
                       "loc": {
                         "start": {
                           "line": 15,
@@ -382,8 +382,8 @@
                       },
                       "callee": {
                         "type": "Identifier",
-                        "start": 496,
-                        "end": 504,
+                        "start": 516,
+                        "end": 524,
                         "loc": {
                           "start": {
                             "line": 15,
@@ -400,8 +400,8 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 506,
-                          "end": 507,
+                          "start": 526,
+                          "end": 527,
                           "loc": {
                             "start": {
                               "line": 15,
@@ -423,8 +423,8 @@
               },
               {
                 "type": "ExpressionStatement",
-                "start": 514,
-                "end": 546,
+                "start": 534,
+                "end": 566,
                 "loc": {
                   "start": {
                     "line": 17,
@@ -437,8 +437,8 @@
                 },
                 "expression": {
                   "type": "CallExpression",
-                  "start": 514,
-                  "end": 544,
+                  "start": 534,
+                  "end": 564,
                   "loc": {
                     "start": {
                       "line": 17,
@@ -451,8 +451,8 @@
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 514,
-                    "end": 520,
+                    "start": 534,
+                    "end": 540,
                     "loc": {
                       "start": {
                         "line": 17,
@@ -469,8 +469,8 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 522,
-                      "end": 536,
+                      "start": 542,
+                      "end": 556,
                       "loc": {
                         "start": {
                           "line": 17,
@@ -486,8 +486,8 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 539,
-                      "end": 542,
+                      "start": 559,
+                      "end": 562,
                       "loc": {
                         "start": {
                           "line": 17,
@@ -506,8 +506,8 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 549,
-                "end": 561,
+                "start": 569,
+                "end": 581,
                 "loc": {
                   "start": {
                     "line": 19,
@@ -520,8 +520,8 @@
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 556,
-                  "end": 559,
+                  "start": 576,
+                  "end": 579,
                   "loc": {
                     "start": {
                       "line": 19,
@@ -542,9 +542,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param n The size of the identity permutation to apply the transpositions\n * to.\n * @param transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
+              "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param {Number} n The size of the identity permutation to apply the transpositions\n * to.\n * @param {Iterable} transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
               "start": 77,
-              "end": 434,
+              "end": 454,
               "loc": {
                 "start": {
                   "line": 4,
@@ -562,9 +562,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param n The size of the identity permutation to apply the transpositions\n * to.\n * @param transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
+            "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param {Number} n The size of the identity permutation to apply the transpositions\n * to.\n * @param {Iterable} transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
             "start": 77,
-            "end": 434,
+            "end": 454,
             "loc": {
               "start": {
                 "line": 4,
@@ -584,9 +584,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param n The size of the identity permutation to apply the transpositions\n * to.\n * @param transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
+      "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param {Number} n The size of the identity permutation to apply the transpositions\n * to.\n * @param {Iterable} transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
       "start": 77,
-      "end": 434,
+      "end": 454,
       "loc": {
         "start": {
           "line": 4,
@@ -968,9 +968,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param n The size of the identity permutation to apply the transpositions\n * to.\n * @param transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
+      "value": "*\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param {Number} n The size of the identity permutation to apply the transpositions\n * to.\n * @param {Iterable} transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n ",
       "start": 77,
-      "end": 434,
+      "end": 454,
       "loc": {
         "start": {
           "line": 4,
@@ -997,8 +997,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 435,
-      "end": 441,
+      "start": 455,
+      "end": 461,
       "loc": {
         "start": {
           "line": 13,
@@ -1024,8 +1024,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 442,
-      "end": 450,
+      "start": 462,
+      "end": 470,
       "loc": {
         "start": {
           "line": 13,
@@ -1050,8 +1050,8 @@
         "binop": null
       },
       "value": "apply",
-      "start": 451,
-      "end": 456,
+      "start": 471,
+      "end": 476,
       "loc": {
         "start": {
           "line": 13,
@@ -1075,8 +1075,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 457,
-      "end": 458,
+      "start": 477,
+      "end": 478,
       "loc": {
         "start": {
           "line": 13,
@@ -1101,8 +1101,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 459,
-      "end": 460,
+      "start": 479,
+      "end": 480,
       "loc": {
         "start": {
           "line": 13,
@@ -1127,8 +1127,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 461,
-      "end": 462,
+      "start": 481,
+      "end": 482,
       "loc": {
         "start": {
           "line": 13,
@@ -1153,8 +1153,8 @@
         "binop": null
       },
       "value": "transpositions",
-      "start": 463,
-      "end": 477,
+      "start": 483,
+      "end": 497,
       "loc": {
         "start": {
           "line": 13,
@@ -1178,8 +1178,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 478,
-      "end": 479,
+      "start": 498,
+      "end": 499,
       "loc": {
         "start": {
           "line": 13,
@@ -1203,8 +1203,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 480,
-      "end": 481,
+      "start": 500,
+      "end": 501,
       "loc": {
         "start": {
           "line": 13,
@@ -1231,8 +1231,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 484,
-      "end": 489,
+      "start": 504,
+      "end": 509,
       "loc": {
         "start": {
           "line": 15,
@@ -1257,8 +1257,8 @@
         "binop": null
       },
       "value": "rho",
-      "start": 490,
-      "end": 493,
+      "start": 510,
+      "end": 513,
       "loc": {
         "start": {
           "line": 15,
@@ -1284,8 +1284,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 494,
-      "end": 495,
+      "start": 514,
+      "end": 515,
       "loc": {
         "start": {
           "line": 15,
@@ -1310,8 +1310,8 @@
         "binop": null
       },
       "value": "identity",
-      "start": 496,
-      "end": 504,
+      "start": 516,
+      "end": 524,
       "loc": {
         "start": {
           "line": 15,
@@ -1335,8 +1335,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 504,
-      "end": 505,
+      "start": 524,
+      "end": 525,
       "loc": {
         "start": {
           "line": 15,
@@ -1361,8 +1361,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 506,
-      "end": 507,
+      "start": 526,
+      "end": 527,
       "loc": {
         "start": {
           "line": 15,
@@ -1386,8 +1386,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 508,
-      "end": 509,
+      "start": 528,
+      "end": 529,
       "loc": {
         "start": {
           "line": 15,
@@ -1412,8 +1412,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 510,
-      "end": 511,
+      "start": 530,
+      "end": 531,
       "loc": {
         "start": {
           "line": 15,
@@ -1438,8 +1438,8 @@
         "binop": null
       },
       "value": "_apply",
-      "start": 514,
-      "end": 520,
+      "start": 534,
+      "end": 540,
       "loc": {
         "start": {
           "line": 17,
@@ -1463,8 +1463,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 520,
-      "end": 521,
+      "start": 540,
+      "end": 541,
       "loc": {
         "start": {
           "line": 17,
@@ -1489,8 +1489,8 @@
         "binop": null
       },
       "value": "transpositions",
-      "start": 522,
-      "end": 536,
+      "start": 542,
+      "end": 556,
       "loc": {
         "start": {
           "line": 17,
@@ -1515,8 +1515,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 537,
-      "end": 538,
+      "start": 557,
+      "end": 558,
       "loc": {
         "start": {
           "line": 17,
@@ -1541,8 +1541,8 @@
         "binop": null
       },
       "value": "rho",
-      "start": 539,
-      "end": 542,
+      "start": 559,
+      "end": 562,
       "loc": {
         "start": {
           "line": 17,
@@ -1566,8 +1566,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 543,
-      "end": 544,
+      "start": 563,
+      "end": 564,
       "loc": {
         "start": {
           "line": 17,
@@ -1592,8 +1592,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 545,
-      "end": 546,
+      "start": 565,
+      "end": 566,
       "loc": {
         "start": {
           "line": 17,
@@ -1620,8 +1620,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 549,
-      "end": 555,
+      "start": 569,
+      "end": 575,
       "loc": {
         "start": {
           "line": 19,
@@ -1646,8 +1646,8 @@
         "binop": null
       },
       "value": "rho",
-      "start": 556,
-      "end": 559,
+      "start": 576,
+      "end": 579,
       "loc": {
         "start": {
           "line": 19,
@@ -1672,8 +1672,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 560,
-      "end": 561,
+      "start": 580,
+      "end": 581,
       "loc": {
         "start": {
           "line": 19,
@@ -1697,8 +1697,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 563,
-      "end": 564,
+      "start": 583,
+      "end": 584,
       "loc": {
         "start": {
           "line": 21,
@@ -1723,8 +1723,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 566,
-      "end": 566,
+      "start": 586,
+      "end": 586,
       "loc": {
         "start": {
           "line": 23,

@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 494,
+  "end": 511,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 494,
+    "end": 511,
     "loc": {
       "start": {
         "line": 1,
@@ -30,8 +30,8 @@
     "body": [
       {
         "type": "ExportNamedDeclaration",
-        "start": 399,
-        "end": 492,
+        "start": 416,
+        "end": 509,
         "loc": {
           "start": {
             "line": 12,
@@ -46,8 +46,8 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 406,
-          "end": 492,
+          "start": 423,
+          "end": 509,
           "loc": {
             "start": {
               "line": 12,
@@ -60,8 +60,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 415,
-            "end": 420,
+            "start": 432,
+            "end": 437,
             "loc": {
               "start": {
                 "line": 12,
@@ -82,8 +82,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 423,
-              "end": 424,
+              "start": 440,
+              "end": 441,
               "loc": {
                 "start": {
                   "line": 12,
@@ -99,8 +99,8 @@
             },
             {
               "type": "Identifier",
-              "start": 427,
-              "end": 432,
+              "start": 444,
+              "end": 449,
               "loc": {
                 "start": {
                   "line": 12,
@@ -117,8 +117,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 435,
-            "end": 492,
+            "start": 452,
+            "end": 509,
             "loc": {
               "start": {
                 "line": 12,
@@ -132,8 +132,8 @@
             "body": [
               {
                 "type": "ForStatement",
-                "start": 439,
-                "end": 489,
+                "start": 456,
+                "end": 506,
                 "loc": {
                   "start": {
                     "line": 14,
@@ -146,8 +146,8 @@
                 },
                 "init": {
                   "type": "VariableDeclaration",
-                  "start": 445,
-                  "end": 454,
+                  "start": 462,
+                  "end": 471,
                   "loc": {
                     "start": {
                       "line": 14,
@@ -161,8 +161,8 @@
                   "declarations": [
                     {
                       "type": "VariableDeclarator",
-                      "start": 449,
-                      "end": 454,
+                      "start": 466,
+                      "end": 471,
                       "loc": {
                         "start": {
                           "line": 14,
@@ -175,8 +175,8 @@
                       },
                       "id": {
                         "type": "Identifier",
-                        "start": 449,
-                        "end": 450,
+                        "start": 466,
+                        "end": 467,
                         "loc": {
                           "start": {
                             "line": 14,
@@ -192,8 +192,8 @@
                       },
                       "init": {
                         "type": "NumericLiteral",
-                        "start": 453,
-                        "end": 454,
+                        "start": 470,
+                        "end": 471,
                         "loc": {
                           "start": {
                             "line": 14,
@@ -216,8 +216,8 @@
                 },
                 "test": {
                   "type": "BinaryExpression",
-                  "start": 457,
-                  "end": 462,
+                  "start": 474,
+                  "end": 479,
                   "loc": {
                     "start": {
                       "line": 14,
@@ -230,8 +230,8 @@
                   },
                   "left": {
                     "type": "Identifier",
-                    "start": 457,
-                    "end": 458,
+                    "start": 474,
+                    "end": 475,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -248,8 +248,8 @@
                   "operator": "<",
                   "right": {
                     "type": "Identifier",
-                    "start": 461,
-                    "end": 462,
+                    "start": 478,
+                    "end": 479,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -266,8 +266,8 @@
                 },
                 "update": {
                   "type": "UpdateExpression",
-                  "start": 465,
-                  "end": 468,
+                  "start": 482,
+                  "end": 485,
                   "loc": {
                     "start": {
                       "line": 14,
@@ -282,8 +282,8 @@
                   "prefix": true,
                   "argument": {
                     "type": "Identifier",
-                    "start": 467,
-                    "end": 468,
+                    "start": 484,
+                    "end": 485,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -303,8 +303,8 @@
                 },
                 "body": {
                   "type": "ExpressionStatement",
-                  "start": 471,
-                  "end": 489,
+                  "start": 488,
+                  "end": 506,
                   "loc": {
                     "start": {
                       "line": 14,
@@ -317,8 +317,8 @@
                   },
                   "expression": {
                     "type": "AssignmentExpression",
-                    "start": 471,
-                    "end": 487,
+                    "start": 488,
+                    "end": 504,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -332,8 +332,8 @@
                     "operator": "=",
                     "left": {
                       "type": "MemberExpression",
-                      "start": 471,
-                      "end": 479,
+                      "start": 488,
+                      "end": 496,
                       "loc": {
                         "start": {
                           "line": 14,
@@ -346,8 +346,8 @@
                       },
                       "object": {
                         "type": "Identifier",
-                        "start": 471,
-                        "end": 476,
+                        "start": 488,
+                        "end": 493,
                         "loc": {
                           "start": {
                             "line": 14,
@@ -363,8 +363,8 @@
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 477,
-                        "end": 478,
+                        "start": 494,
+                        "end": 495,
                         "loc": {
                           "start": {
                             "line": 14,
@@ -382,8 +382,8 @@
                     },
                     "right": {
                       "type": "BooleanLiteral",
-                      "start": 482,
-                      "end": 487,
+                      "start": 499,
+                      "end": 504,
                       "loc": {
                         "start": {
                           "line": 14,
@@ -405,9 +405,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param n The given size.\n * @param array The input array.\n ",
+              "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param {Number} n The given size.\n * @param {Array} array The input array.\n ",
               "start": 1,
-              "end": 398,
+              "end": 415,
               "loc": {
                 "start": {
                   "line": 2,
@@ -425,9 +425,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param n The given size.\n * @param array The input array.\n ",
+            "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param {Number} n The given size.\n * @param {Array} array The input array.\n ",
             "start": 1,
-            "end": 398,
+            "end": 415,
             "loc": {
               "start": {
                 "line": 2,
@@ -447,9 +447,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param n The given size.\n * @param array The input array.\n ",
+      "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param {Number} n The given size.\n * @param {Array} array The input array.\n ",
       "start": 1,
-      "end": 398,
+      "end": 415,
       "loc": {
         "start": {
           "line": 2,
@@ -465,9 +465,9 @@
   "tokens": [
     {
       "type": "CommentBlock",
-      "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param n The given size.\n * @param array The input array.\n ",
+      "value": "*\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param {Number} n The given size.\n * @param {Array} array The input array.\n ",
       "start": 1,
-      "end": 398,
+      "end": 415,
       "loc": {
         "start": {
           "line": 2,
@@ -494,8 +494,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 399,
-      "end": 405,
+      "start": 416,
+      "end": 422,
       "loc": {
         "start": {
           "line": 12,
@@ -521,8 +521,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 406,
-      "end": 414,
+      "start": 423,
+      "end": 431,
       "loc": {
         "start": {
           "line": 12,
@@ -547,8 +547,8 @@
         "binop": null
       },
       "value": "_used",
-      "start": 415,
-      "end": 420,
+      "start": 432,
+      "end": 437,
       "loc": {
         "start": {
           "line": 12,
@@ -572,8 +572,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 421,
-      "end": 422,
+      "start": 438,
+      "end": 439,
       "loc": {
         "start": {
           "line": 12,
@@ -598,8 +598,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 423,
-      "end": 424,
+      "start": 440,
+      "end": 441,
       "loc": {
         "start": {
           "line": 12,
@@ -624,8 +624,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 425,
-      "end": 426,
+      "start": 442,
+      "end": 443,
       "loc": {
         "start": {
           "line": 12,
@@ -650,8 +650,8 @@
         "binop": null
       },
       "value": "array",
-      "start": 427,
-      "end": 432,
+      "start": 444,
+      "end": 449,
       "loc": {
         "start": {
           "line": 12,
@@ -675,8 +675,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 433,
-      "end": 434,
+      "start": 450,
+      "end": 451,
       "loc": {
         "start": {
           "line": 12,
@@ -700,8 +700,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 435,
-      "end": 436,
+      "start": 452,
+      "end": 453,
       "loc": {
         "start": {
           "line": 12,
@@ -728,8 +728,8 @@
         "updateContext": null
       },
       "value": "for",
-      "start": 439,
-      "end": 442,
+      "start": 456,
+      "end": 459,
       "loc": {
         "start": {
           "line": 14,
@@ -753,8 +753,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 443,
-      "end": 444,
+      "start": 460,
+      "end": 461,
       "loc": {
         "start": {
           "line": 14,
@@ -781,8 +781,8 @@
         "updateContext": null
       },
       "value": "let",
-      "start": 445,
-      "end": 448,
+      "start": 462,
+      "end": 465,
       "loc": {
         "start": {
           "line": 14,
@@ -807,8 +807,8 @@
         "binop": null
       },
       "value": "i",
-      "start": 449,
-      "end": 450,
+      "start": 466,
+      "end": 467,
       "loc": {
         "start": {
           "line": 14,
@@ -834,8 +834,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 451,
-      "end": 452,
+      "start": 468,
+      "end": 469,
       "loc": {
         "start": {
           "line": 14,
@@ -861,8 +861,8 @@
         "updateContext": null
       },
       "value": 0,
-      "start": 453,
-      "end": 454,
+      "start": 470,
+      "end": 471,
       "loc": {
         "start": {
           "line": 14,
@@ -887,8 +887,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 455,
-      "end": 456,
+      "start": 472,
+      "end": 473,
       "loc": {
         "start": {
           "line": 14,
@@ -913,8 +913,8 @@
         "binop": null
       },
       "value": "i",
-      "start": 457,
-      "end": 458,
+      "start": 474,
+      "end": 475,
       "loc": {
         "start": {
           "line": 14,
@@ -940,8 +940,8 @@
         "updateContext": null
       },
       "value": "<",
-      "start": 459,
-      "end": 460,
+      "start": 476,
+      "end": 477,
       "loc": {
         "start": {
           "line": 14,
@@ -966,8 +966,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 461,
-      "end": 462,
+      "start": 478,
+      "end": 479,
       "loc": {
         "start": {
           "line": 14,
@@ -992,8 +992,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 463,
-      "end": 464,
+      "start": 480,
+      "end": 481,
       "loc": {
         "start": {
           "line": 14,
@@ -1018,8 +1018,8 @@
         "binop": null
       },
       "value": "++",
-      "start": 465,
-      "end": 467,
+      "start": 482,
+      "end": 484,
       "loc": {
         "start": {
           "line": 14,
@@ -1044,8 +1044,8 @@
         "binop": null
       },
       "value": "i",
-      "start": 467,
-      "end": 468,
+      "start": 484,
+      "end": 485,
       "loc": {
         "start": {
           "line": 14,
@@ -1069,8 +1069,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 469,
-      "end": 470,
+      "start": 486,
+      "end": 487,
       "loc": {
         "start": {
           "line": 14,
@@ -1095,8 +1095,8 @@
         "binop": null
       },
       "value": "array",
-      "start": 471,
-      "end": 476,
+      "start": 488,
+      "end": 493,
       "loc": {
         "start": {
           "line": 14,
@@ -1121,8 +1121,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 476,
-      "end": 477,
+      "start": 493,
+      "end": 494,
       "loc": {
         "start": {
           "line": 14,
@@ -1147,8 +1147,8 @@
         "binop": null
       },
       "value": "i",
-      "start": 477,
-      "end": 478,
+      "start": 494,
+      "end": 495,
       "loc": {
         "start": {
           "line": 14,
@@ -1173,8 +1173,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 478,
-      "end": 479,
+      "start": 495,
+      "end": 496,
       "loc": {
         "start": {
           "line": 14,
@@ -1200,8 +1200,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 480,
-      "end": 481,
+      "start": 497,
+      "end": 498,
       "loc": {
         "start": {
           "line": 14,
@@ -1228,8 +1228,8 @@
         "updateContext": null
       },
       "value": "false",
-      "start": 482,
-      "end": 487,
+      "start": 499,
+      "end": 504,
       "loc": {
         "start": {
           "line": 14,
@@ -1254,8 +1254,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 488,
-      "end": 489,
+      "start": 505,
+      "end": 506,
       "loc": {
         "start": {
           "line": 14,
@@ -1279,8 +1279,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 491,
-      "end": 492,
+      "start": 508,
+      "end": 509,
       "loc": {
         "start": {
           "line": 16,
@@ -1305,8 +1305,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 494,
-      "end": 494,
+      "start": 511,
+      "end": 511,
       "loc": {
         "start": {
           "line": 18,

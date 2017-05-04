@@ -89,7 +89,7 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-apply">apply</a></span></span><span data-ice="signature">(n: <span>*</span>, transpositions: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+          <span data-ice="name"><span><a href="function/index.html#static-function-apply">apply</a></span></span><span data-ice="signature">(n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>, transpositions: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
         </p>
       </div>
       <div>
@@ -578,7 +578,7 @@ Iterator.</p>
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_apply">_apply</a></span></span><span data-ice="signature">(transpositions: <span>*</span>, sigma: <span>*</span>)</span>
+          <span data-ice="name"><span><a href="function/index.html#static-function-_apply">_apply</a></span></span><span data-ice="signature">(transpositions: <span>Iterable</span>, sigma: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>)</span>
         </p>
       </div>
       <div>
@@ -721,7 +721,7 @@ cycle decomposition} of an input permutation.</p>
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_identity">_identity</a></span></span><span data-ice="signature">(sigma: <span>*</span>, n: <span>*</span>)</span>
+          <span data-ice="name"><span><a href="function/index.html#static-function-_identity">_identity</a></span></span><span data-ice="signature">(sigma: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>)</span>
         </p>
       </div>
       <div>
@@ -1009,7 +1009,7 @@ decomposition.</p>
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_used">_used</a></span></span><span data-ice="signature">(n: <span>*</span>, array: <span>*</span>)</span>
+          <span data-ice="name"><span><a href="function/index.html#static-function-_used">_used</a></span></span><span data-ice="signature">(n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>, array: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>)</span>
         </p>
       </div>
       <div>
@@ -1038,7 +1038,7 @@ decomposition.</p>
     
     
     
-    <span data-ice="name">apply</span><span data-ice="signature">(n: <span>*</span>, transpositions: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span data-ice="name">apply</span><span data-ice="signature">(n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>, transpositions: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
     <span class="right-info">
       
       
@@ -1065,7 +1065,7 @@ index tuples) to the identity permutation over input <code>n</code> elements.</p
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The size of the identity permutation to apply the transpositions
 to.</p>
@@ -1073,7 +1073,7 @@ to.</p>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">transpositions</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span>Iterable</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The given transpositions to apply.</p>
 </td>
@@ -2341,7 +2341,7 @@ Iterator.</p>
     
     
     
-    <span data-ice="name">_apply</span><span data-ice="signature">(transpositions: <span>*</span>, sigma: <span>*</span>)</span>
+    <span data-ice="name">_apply</span><span data-ice="signature">(transpositions: <span>Iterable</span>, sigma: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>)</span>
     <span class="right-info">
       
       
@@ -2368,14 +2368,14 @@ index tuples) to a given permutation. The permutation is modified in place.</p>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">transpositions</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span>Iterable</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The given transpositions to apply.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">sigma</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The permutation to apply the transpositions to.</p>
 </td>
@@ -2729,7 +2729,7 @@ encountered.</p>
     
     
     
-    <span data-ice="name">_identity</span><span data-ice="signature">(sigma: <span>*</span>, n: <span>*</span>)</span>
+    <span data-ice="name">_identity</span><span data-ice="signature">(sigma: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>)</span>
     <span class="right-info">
       
       
@@ -2756,14 +2756,14 @@ elements.</p>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">sigma</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The input array.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The size to use for the permutation.</p>
 </td>
@@ -3497,7 +3497,7 @@ defined by the input cycles.</p>
     
     
     
-    <span data-ice="name">_used</span><span data-ice="signature">(n: <span>*</span>, array: <span>*</span>)</span>
+    <span data-ice="name">_used</span><span data-ice="signature">(n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>, array: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>)</span>
     <span class="right-info">
       
       
@@ -3527,14 +3527,14 @@ example, for computing the cycle decomposition of an input permutation (see
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The given size.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">array</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The input array.</p>
 </td>
