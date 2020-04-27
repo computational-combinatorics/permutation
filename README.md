@@ -12,13 +12,17 @@ import { next , reversed , identity } from '@aureooms/js-permutation' ;
 next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-permutation.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@aureooms/js-permutation.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-permutation)
-[![Build Status](https://img.shields.io/travis/aureooms/js-permutation.svg?style=flat)](https://travis-ci.org/aureooms/js-permutation)
-[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-permutation.svg?style=flat)](https://coveralls.io/r/aureooms/js-permutation)
-[![Dependencies Status](https://img.shields.io/david/aureooms/js-permutation.svg?style=flat)](https://david-dm.org/aureooms/js-permutation#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-permutation.svg?style=flat)](https://david-dm.org/aureooms/js-permutation#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-permutation.svg?style=flat)](https://codeclimate.com/github/aureooms/js-permutation)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-permutation.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-permutation)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-permutation.svg?style=flat)](https://github.com/aureooms/js-permutation/issues)
+[![License](https://img.shields.io/github/license/aureooms/js-permutation.svg)](https://raw.githubusercontent.com/aureooms/js-permutation/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-permutation.svg)](https://www.npmjs.org/package/@aureooms/js-permutation)
+[![Build](https://img.shields.io/travis/aureooms/js-permutation/master.svg)](https://travis-ci.org/aureooms/js-permutation/branches)
+[![Dependencies](https://img.shields.io/david/aureooms/js-permutation.svg)](https://david-dm.org/aureooms/js-permutation)
+[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-permutation.svg)](https://david-dm.org/aureooms/js-permutation?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-permutation.svg)](https://github.com/aureooms/js-permutation/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-permutation.svg)](https://www.npmjs.org/package/@aureooms/js-permutation)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-permutation/master.svg)](https://codecov.io/gh/aureooms/js-permutation)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/trends/technical_debt)
 [![Documentation](https://aureooms.github.io/js-permutation/badge.svg)](https://aureooms.github.io/js-permutation/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-permutation)](https://bundlephobia.com/result?p=@aureooms/js-permutation)
