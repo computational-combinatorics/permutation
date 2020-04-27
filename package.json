@@ -67,7 +67,7 @@
     "url": "https://github.com/aureooms/js-permutation.git"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "rm -rf lib && babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
     "prepublish": "npm run build",
     "test": "ava",
