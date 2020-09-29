@@ -1,4 +1,4 @@
-[@aureooms/js-permutation](https://aureooms.github.io/js-permutation)
+:seat: [@aureooms/js-permutation](https://aureooms.github.io/js-permutation)
 ==
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Symmetric_group_3;_Cayley_table;_matrices.svg" width="864">
