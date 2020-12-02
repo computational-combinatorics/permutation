@@ -1,7 +1,16 @@
 :seat: [@aureooms/js-permutation](https://aureooms.github.io/js-permutation)
 ==
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Symmetric_group_3;_Cayley_table;_matrices.svg" width="864">
+<p align="center">
+<a href="https://commons.wikimedia.org/wiki/File:Symmetric_group_3;_Cayley_table;_matrices.svg">
+<img alt="Symmetric group of order 3" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Symmetric_group_3;_Cayley_table;_matrices.svg" width="440">
+</a><br/>
+<a href="https://en.wikipedia.org/wiki/User:Watchduck">
+User:Watchduck
+</a>
+/
+<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+</p>
 
 Permutation library for JavaScript.
 See [docs](https://aureooms.github.io/js-permutation).
