@@ -1,4 +1,4 @@
-:seat: [@aureooms/js-permutation](https://aureooms.github.io/js-permutation)
+:seat: [@aureooms/js-permutation](https://make-github-pseudonymous-again.github.io/js-permutation)
 ==
 
 <p align="center">
@@ -13,7 +13,7 @@ User:Watchduck
 </p>
 
 Permutation library for JavaScript.
-See [docs](https://aureooms.github.io/js-permutation).
+See [docs](https://make-github-pseudonymous-again.github.io/js-permutation).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 
 ```js
@@ -33,5 +33,5 @@ next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-permutation/main.svg)](https://codecov.io/gh/aureooms/js-permutation)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-permutation/badge.svg)](https://aureooms.github.io/js-permutation/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-permutation/badge.svg)](https://make-github-pseudonymous-again.github.io/js-permutation/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-permutation)](https://bundlephobia.com/result?p=@aureooms/js-permutation)
