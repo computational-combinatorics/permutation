@@ -14,24 +14,24 @@ User:Watchduck
 
 Permutation library for JavaScript.
 See [docs](https://make-github-pseudonymous-again.github.io/js-permutation).
-Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
+Parent is [@aureooms/js-algorithms](https://github.com/make-github-pseudonymous-again/js-algorithms).
 
 ```js
 import { next , reversed , identity } from '@aureooms/js-permutation' ;
 next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-permutation.svg)](https://raw.githubusercontent.com/aureooms/js-permutation/main/LICENSE)
+[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-permutation.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-permutation/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-permutation.svg)](https://www.npmjs.org/package/@aureooms/js-permutation)
-[![Build](https://img.shields.io/travis/aureooms/js-permutation/main.svg)](https://travis-ci.org/aureooms/js-permutation/branches)
-[![Dependencies](https://img.shields.io/david/aureooms/js-permutation.svg)](https://david-dm.org/aureooms/js-permutation)
-[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-permutation.svg)](https://david-dm.org/aureooms/js-permutation?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-permutation.svg)](https://github.com/aureooms/js-permutation/issues)
+[![Build](https://img.shields.io/travis/make-github-pseudonymous-again/js-permutation/main.svg)](https://travis-ci.org/make-github-pseudonymous-again/js-permutation/branches)
+[![Dependencies](https://img.shields.io/david/make-github-pseudonymous-again/js-permutation.svg)](https://david-dm.org/make-github-pseudonymous-again/js-permutation)
+[![Dev dependencies](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-permutation.svg)](https://david-dm.org/make-github-pseudonymous-again/js-permutation?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-permutation.svg)](https://github.com/make-github-pseudonymous-again/js-permutation/issues)
 [![Downloads](https://img.shields.io/npm/dm/@aureooms/js-permutation.svg)](https://www.npmjs.org/package/@aureooms/js-permutation)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-permutation/main.svg)](https://codecov.io/gh/aureooms/js-permutation)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-permutation.svg)](https://codeclimate.com/github/aureooms/js-permutation/trends/technical_debt)
+[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-permutation.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-permutation/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-permutation.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-permutation/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-permutation/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-permutation)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-permutation.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-permutation/trends/technical_debt)
 [![Documentation](https://make-github-pseudonymous-again.github.io/js-permutation/badge.svg)](https://make-github-pseudonymous-again.github.io/js-permutation/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-permutation)](https://bundlephobia.com/result?p=@aureooms/js-permutation)

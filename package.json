@@ -73,7 +73,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-permutation/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-permutation/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -116,7 +116,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aureooms/js-permutation.git"
+    "url": "https://github.com/make-github-pseudonymous-again/js-permutation.git"
   },
   "scripts": {
     "build": "babel --delete-dir-on-start --env-name production src -d lib",
