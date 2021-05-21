@@ -1,5 +1,5 @@
-import { _itranspositions } from './_itranspositions' ;
-import { used } from './used' ;
+import { _itranspositions } from './_itranspositions.js' ;
+import { used } from './used.js' ;
 
 /**
  * Computes the sequence of transpositions that if applied to

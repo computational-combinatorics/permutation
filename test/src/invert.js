@@ -7,7 +7,7 @@ import {
 	identity ,
 	invert ,
 	itranspositions
-} from '../../src' ;
+} from '../../src/index.js' ;
 
 import { shuffle } from '@aureooms/js-random' ;
 

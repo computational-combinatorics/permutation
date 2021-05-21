@@ -1,5 +1,5 @@
 import test from 'ava' ;
-import { identity , next , permutations } from '../../src' ;
+import { identity , next , permutations } from '../../src/index.js' ;
 import {increasing} from '@total-order/primitive'
 import { fixedlexicographical } from '@total-order/lex' ;
 import { issorted } from '@aureooms/js-sort' ;

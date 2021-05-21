@@ -3,7 +3,7 @@ import {
 	apply ,
 	identity ,
 	transpositions
-} from '../../src' ;
+} from '../../src/index.js' ;
 import { shuffle } from '@aureooms/js-random' ;
 
 function macro ( t , size ) {

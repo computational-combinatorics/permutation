@@ -1,4 +1,4 @@
-import { _transpose } from './_transpose' ;
+import { _transpose } from './_transpose.js' ;
 
 /**
  * Reverses input permutation ___in-place___ from input index <code>i</code>

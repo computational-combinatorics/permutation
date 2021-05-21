@@ -1,6 +1,6 @@
-import { _transpositions } from './_transpositions' ;
-import { cycles } from './cycles' ;
-import { used } from './used' ;
+import { _transpositions } from './_transpositions.js' ;
+import { cycles } from './cycles.js' ;
+import { used } from './used.js' ;
 
 /**
  * Computes the transposition decomposition of the input permutation as an

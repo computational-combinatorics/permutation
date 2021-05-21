@@ -1,5 +1,5 @@
 import test from 'ava' ;
-import { identity , reversed } from '../../src' ;
+import { identity , reversed } from '../../src/index.js' ;
 import { shuffle } from '@aureooms/js-random' ;
 
 function macro ( t , size ) {

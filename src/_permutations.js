@@ -1,4 +1,4 @@
-import { _next } from './_next' ;
+import { _next } from './_next.js' ;
 
 /**
  * Yields all permutations starting from a given one and ending at the last

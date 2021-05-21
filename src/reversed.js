@@ -1,5 +1,5 @@
-import { copy } from './copy' ;
-import { reverse } from './reverse' ;
+import { copy } from './copy.js' ;
+import { reverse } from './reverse.js' ;
 
 /**
  * Outputs a new permutation that is the reverse of the input permutation.

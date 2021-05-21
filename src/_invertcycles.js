@@ -1,4 +1,4 @@
-import { _transpose } from './_transpose' ;
+import { _transpose } from './_transpose.js' ;
 
 /**
  * Inverts given cycles in a given permutation ___in-place___. Can be used as

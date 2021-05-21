@@ -1,5 +1,5 @@
 import test from 'ava' ;
-import { bitreversal } from '../../src' ;
+import { bitreversal } from '../../src/index.js' ;
 
 test( 'bitreversal' , t => {
 

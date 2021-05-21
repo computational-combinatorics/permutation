@@ -1,6 +1,6 @@
-import { copy } from './copy' ;
-import { _next } from './_next' ;
-import { reverse } from './reverse' ;
+import { copy } from './copy.js' ;
+import { _next } from './_next.js' ;
+import { reverse } from './reverse.js' ;
 
 /**
  * Computes the permutation that follows the input permutation. If the input

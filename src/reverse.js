@@ -1,4 +1,4 @@
-import { _reverse } from './_reverse' ;
+import { _reverse } from './_reverse.js' ;
 
 /**
  * Reverses input permutation ___in-place___.

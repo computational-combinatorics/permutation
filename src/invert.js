@@ -1,5 +1,5 @@
-import { permutation } from './permutation' ;
-import { _invert } from './_invert' ;
+import { permutation } from './permutation.js' ;
+import { _invert } from './_invert.js' ;
 
 /**
  * Computes the inverse <code>tau</code> of the input permutation

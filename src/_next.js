@@ -1,5 +1,5 @@
-import { _transpose } from './_transpose' ;
-import { _reverse } from './_reverse' ;
+import { _transpose } from './_transpose.js' ;
+import { _reverse } from './_reverse.js' ;
 
 /**
  * Updates the input permutation to the next one ___in-place___. Returns true

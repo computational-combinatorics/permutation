@@ -1,5 +1,5 @@
-import { _cycles } from './_cycles' ;
-import { used } from './used' ;
+import { _cycles } from './_cycles.js' ;
+import { used } from './used.js' ;
 
 
 /**

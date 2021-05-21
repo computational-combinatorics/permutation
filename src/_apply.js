@@ -1,4 +1,4 @@
-import { _transpose } from './_transpose' ;
+import { _transpose } from './_transpose.js' ;
 
 /**
  * Applies a given sequence (in the given order) of transpositions (given as
