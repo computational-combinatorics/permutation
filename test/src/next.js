@@ -1,8 +1,12 @@
 import test from 'ava' ;
 import { identity , next } from '../../src' ;
-import { fixedlexicographical , increasing } from '@aureooms/js-compare' ;
+import {increasing} from '@total-order/primitive'
+import { fixedlexicographical } from '@total-order/lex' ;
 import { issorted } from '@aureooms/js-sort' ;
-import { list , chain , closure , takewhile } from '@aureooms/js-itertools' ;
+import {list} from '@iterable-iterator/list';
+import {_chain as chain} from '@iterable-iterator/chain';
+import {takewhile} from '@iterable-iterator/slice';
+import {singletonUnderUnaryOperator as closure} from '@set-theory/closure';
 import { partial } from '@aureooms/js-functools' ;
 import { factorial } from '@aureooms/js-factorial' ;
 

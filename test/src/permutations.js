@@ -1,6 +1,7 @@
 import test from 'ava' ;
 import { identity , next , permutations } from '../../src' ;
-import { fixedlexicographical , increasing } from '@aureooms/js-compare' ;
+import {increasing} from '@total-order/primitive'
+import { fixedlexicographical } from '@total-order/lex' ;
 import { issorted } from '@aureooms/js-sort' ;
 import { factorial } from '@aureooms/js-factorial' ;
 
