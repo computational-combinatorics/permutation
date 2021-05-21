@@ -5,7 +5,7 @@
  * power of <code>2</code>.
  *
  * @param {Array} array The array to fill.
- * @param {Number} n The size of the permutation, must be a power of 2.
+ * @param {number} n The size of the permutation, must be a power of 2.
  */
 export function _bitreversal(array, n) {
 	let i = 1;

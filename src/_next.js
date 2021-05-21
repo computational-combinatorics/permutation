@@ -7,7 +7,7 @@ import {_reverse} from './_reverse.js';
  * input permutation remains untouched.
  *
  * @param {Array} sigma The input permutation (modified in-place).
- * @param {Number} n The size of the input permutation.
+ * @param {number} n The size of the input permutation.
  * @returns {Boolean} Whether the input permutation is
  * __NOT__ the last for its elements.
  */

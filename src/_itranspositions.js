@@ -6,7 +6,7 @@
  *
  * @param {Array} sigma Input permutation.
  * @param {Array} used Helper array.
- * @return {Iterator} Iterator over the transpositions.
+ * @return {IterableIterator} Iterator over the transpositions.
  */
 export function* _itranspositions(sigma, used) {
 	for (const s of sigma) {

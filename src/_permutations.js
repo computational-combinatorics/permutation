@@ -5,8 +5,8 @@ import {_next} from './_next.js';
  * permutation.
  *
  * @param {Array} sigma The starting permutation.
- * @param {Number} n The size of the permutation.
- * @returns {Iterator} Iterator over all permutations between the starting one
+ * @param {number} n The size of the permutation.
+ * @returns {IterableIterator} Iterator over all permutations between the starting one
  * and the last permutation on its elements.
  */
 export function* _permutations(sigma, n) {

@@ -2,8 +2,8 @@
  * Computes the transposition decomposition of some permutation given its cycle
  * decomposition.
  *
- * @param {Array} cycles The cycle decomposition of some permutation.
- * @returns {Iterator} The transposition decomposition of the permutation
+ * @param {Iterable} cycles The cycle decomposition of some permutation.
+ * @returns {IterableIterator} The transposition decomposition of the permutation
  * defined by the input cycles.
  */
 export function* _transpositions(cycles) {

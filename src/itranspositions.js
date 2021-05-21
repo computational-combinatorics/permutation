@@ -10,8 +10,7 @@ import {used} from './used.js';
  * const invert = sigma => apply( sigma.length , itranspositions( sigma ) ) ;
  *
  * @param {Array} sigma Input permutation.
- * @return {Iterator} Iterator over the transpositions.
+ * @return {IterableIterator} Iterator over the transpositions.
  */
-export function* itranspositions(sigma) {
-	yield* _itranspositions(sigma, used(sigma.length));
-}
+export const itranspositions = (sigma) =>
+	_itranspositions(sigma, used(sigma.length));

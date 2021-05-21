@@ -6,7 +6,7 @@ import {_bitreversal} from './_bitreversal.js';
  * input <code>n</code> items. Note that <code>n</code> MUST be a power of
  * <code>2</code>.
  *
- * @param {Number} n The size of the permutation, must be a power of
+ * @param {number} n The size of the permutation, must be a power of
  * <code>2</code>.
  * @returns {Array} The bitreversal permutation of size <code>n</code>.
  */

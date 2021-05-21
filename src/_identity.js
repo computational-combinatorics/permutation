@@ -3,7 +3,7 @@
  * elements.
  *
  * @param {Array} sigma The input array.
- * @param {Number} n The size to use for the permutation.
+ * @param {number} n The size to use for the permutation.
  */
 export function _identity(sigma, n) {
 	for (let i = 0; i < n; ++i) sigma[i] = i;

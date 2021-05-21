@@ -14,7 +14,7 @@
  *
  * @param {Array} sigma The input permutation.
  * @param {Array} used The helper array.
- * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.
+ * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.
  */
 export function* _cycles(sigma, used) {
 	for (const s of sigma) {

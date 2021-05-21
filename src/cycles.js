@@ -7,8 +7,6 @@ import {used} from './used.js';
  * See {@link _cycles} for implementation.
  *
  * @param {Array} sigma The input permutation.
- * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.
+ * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.
  */
-export function* cycles(sigma) {
-	yield* _cycles(sigma, used(sigma.length));
-}
+export const cycles = (sigma) => _cycles(sigma, used(sigma.length));

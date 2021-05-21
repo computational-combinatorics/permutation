@@ -6,7 +6,7 @@
  * API.
  *
  * @param {Array} sigma The input permutation.
- * @param {Number} n The size of the input permutation.
+ * @param {number} n The size of the input permutation.
  * @param {Array} tau The array where to put the inverse of the input permutation.
  */
 export function _invert(sigma, n, tau) {
