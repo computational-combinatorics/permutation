@@ -23,7 +23,7 @@ next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 
 [![License](https://img.shields.io/github/license/computational-combinatorics/permutation.svg)](https://raw.githubusercontent.com/computational-combinatorics/permutation/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@combinatorics/permutation.svg)](https://www.npmjs.org/package/@combinatorics/permutation)
-[![Build](https://img.shields.io/travis/computational-combinatorics/permutation/main.svg)](https://travis-ci.com/computational-combinatorics/permutation/branches)
+[![Tests](https://img.shields.io/github/workflow/status/computational-combinatorics/permutation/ci:test?event=push&label=tests)](https://github.com/computational-combinatorics/permutation/actions/workflows/ci:test.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/david/computational-combinatorics/permutation.svg)](https://david-dm.org/computational-combinatorics/permutation)
 [![Dev dependencies](https://img.shields.io/david/dev/computational-combinatorics/permutation.svg)](https://david-dm.org/computational-combinatorics/permutation?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/computational-combinatorics/permutation.svg)](https://github.com/computational-combinatorics/permutation/issues)
