@@ -1,57 +1,52 @@
-import test from 'ava' ;
+import test from 'ava';
+import {shuffle} from '@aureooms/js-random';
 import {
-	_invertcycles ,
-	apply ,
-	compose ,
-	cycles ,
-	identity ,
-	invert ,
-	itranspositions
-} from '../../src/index.js' ;
+	_invertcycles,
+	apply,
+	compose,
+	cycles,
+	identity,
+	invert,
+	itranspositions,
+} from '../../src/index.js';
 
-import { shuffle } from '@aureooms/js-random' ;
+function macro(t, do_invert, size) {
+	const sigma = identity(size);
 
-function macro ( t , do_invert , size ) {
+	shuffle(sigma, 0, size);
 
-	const sigma = identity( size ) ;
+	const tau = do_invert(sigma);
 
-	shuffle( sigma , 0 , size ) ;
+	const rho = compose(sigma, tau);
 
-	const tau = do_invert( sigma ) ;
-
-	const rho = compose( sigma , tau ) ;
-
-	t.deepEqual( rho , identity( size ) ) ;
-
+	t.deepEqual(rho, identity(size));
 }
 
-macro.title = ( name , _ , size ) => `invert [${name}] (${size})` ;
+macro.title = (name, _, size) => `invert [${name}] (${size})`;
 
 const implementations = [
+	{name: 'invert', invert},
+	{
+		name: '_invertcycles',
+		invert: (sigma) => {
+			const tau = identity(sigma.length);
 
-	{ name : 'invert' , invert : invert } ,
-	{ name : '_invertcycles' , invert : sigma => {
+			const cycles_sigma = cycles(sigma);
 
-		const tau = identity( sigma.length ) ;
+			_invertcycles(cycles_sigma, tau);
 
-		const cycles_sigma = cycles( sigma ) ;
+			return tau;
+		},
+	},
 
-		_invertcycles( cycles_sigma , tau ) ;
+	{
+		name: 'apply( itranspositions )',
+		invert: (sigma) => {
+			return apply(sigma.length, itranspositions(sigma));
+		},
+	},
+];
 
-		return tau ;
-
-	} } ,
-
-	{ name : 'apply( itranspositions )' , invert : sigma => {
-
-		return apply( sigma.length , itranspositions( sigma ) ) ;
-
-	} }
-
-] ;
-
-for ( const { name , invert : do_invert } of implementations ) {
-
-	for ( let n = 0 ; n < 100 ; ++n ) test( name , macro , do_invert , n ) ;
-
+for (const {name, invert: do_invert} of implementations) {
+	for (let n = 0; n < 100; ++n) test(name, macro, do_invert, n);
 }

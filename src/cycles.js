@@ -1,6 +1,5 @@
-import { _cycles } from './_cycles.js' ;
-import { used } from './used.js' ;
-
+import {_cycles} from './_cycles.js';
+import {used} from './used.js';
 
 /**
  * Computes a cycle decomposition of the input permutation. For a given input,
@@ -10,9 +9,6 @@ import { used } from './used.js' ;
  * @param {Array} sigma The input permutation.
  * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.
  */
-export function* cycles ( sigma ) {
-
-	yield* _cycles( sigma , used( sigma.length ) ) ;
-
+export function* cycles(sigma) {
+	yield* _cycles(sigma, used(sigma.length));
 }
-

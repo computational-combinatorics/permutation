@@ -1,5 +1,5 @@
-import { identity } from './identity.js' ;
-import { _apply } from './_apply.js' ;
+import {identity} from './identity.js';
+import {_apply} from './_apply.js';
 
 /**
  * Apply a given sequence (in the given order) of transpositions (given as
@@ -10,13 +10,10 @@ import { _apply } from './_apply.js' ;
  * @param {Iterable} transpositions The given transpositions to apply.
  * @returns {Array} The resulting permutation.
  */
-export function apply ( n , transpositions ) {
+export function apply(n, transpositions) {
+	const rho = identity(n);
 
-	const rho = identity( n ) ;
+	_apply(transpositions, rho);
 
-	_apply( transpositions , rho ) ;
-
-	return rho ;
-
+	return rho;
 }
-

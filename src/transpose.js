@@ -1,5 +1,5 @@
-import { copy } from './copy.js' ;
-import { _transpose } from './_transpose.js' ;
+import {copy} from './copy.js';
+import {_transpose} from './_transpose.js';
 
 /**
  * Creates a copy of the input permutation, applies an input transpose,
@@ -10,13 +10,10 @@ import { _transpose } from './_transpose.js' ;
  * @param {Number} b The second index of the transpose.
  * @returns {Array} The result.
  */
-export function transpose ( sigma , a , b ) {
+export function transpose(sigma, a, b) {
+	const rho = copy(sigma);
 
-	const rho = copy( sigma ) ;
+	_transpose(a, b, rho);
 
-	_transpose( a , b , rho ) ;
-
-	return rho ;
-
+	return rho;
 }
-

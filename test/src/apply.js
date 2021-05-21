@@ -1,23 +1,17 @@
-import test from 'ava' ;
-import {
-	apply ,
-	identity ,
-	transpositions
-} from '../../src/index.js' ;
-import { shuffle } from '@aureooms/js-random' ;
+import test from 'ava';
+import {shuffle} from '@aureooms/js-random';
+import {apply, identity, transpositions} from '../../src/index.js';
 
-function macro ( t , size ) {
+function macro(t, size) {
+	const sigma = identity(size);
 
-	const sigma = identity( size ) ;
+	shuffle(sigma, 0, size);
 
-	shuffle( sigma , 0 , size ) ;
+	const tau = apply(sigma.length, transpositions(sigma));
 
-	const tau = apply( sigma.length , transpositions( sigma ) ) ;
-
-	t.deepEqual( tau , sigma ) ;
-
+	t.deepEqual(tau, sigma);
 }
 
-macro.title = ( _ , size ) => `apply (${size})` ;
+macro.title = (_, size) => `apply (${size})`;
 
-for ( let n = 0 ; n < 100 ; ++n ) test( macro , n ) ;
+for (let n = 0; n < 100; ++n) test(macro, n);

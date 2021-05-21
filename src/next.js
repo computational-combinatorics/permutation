@@ -1,6 +1,6 @@
-import { copy } from './copy.js' ;
-import { _next } from './_next.js' ;
-import { reverse } from './reverse.js' ;
+import {copy} from './copy.js';
+import {_next} from './_next.js';
+import {reverse} from './reverse.js';
 
 /**
  * Computes the permutation that follows the input permutation. If the input
@@ -10,13 +10,10 @@ import { reverse } from './reverse.js' ;
  * @param {Array} sigma The input permutation.
  * @returns {Array} The next permutation.
  */
-export function next ( sigma ) {
+export function next(sigma) {
+	const rho = copy(sigma);
 
-	const rho = copy( sigma ) ;
+	if (!_next(rho, rho.length)) reverse(rho);
 
-	if ( ! _next( rho , rho.length ) ) reverse( rho ) ;
-
-	return rho ;
-
+	return rho;
 }
-

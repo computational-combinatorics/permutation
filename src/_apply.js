@@ -1,4 +1,4 @@
-import { _transpose } from './_transpose.js' ;
+import {_transpose} from './_transpose.js';
 
 /**
  * Applies a given sequence (in the given order) of transpositions (given as
@@ -8,9 +8,6 @@ import { _transpose } from './_transpose.js' ;
  * @param {Array} sigma The permutation to apply the transpositions to
  * (modified in-place).
  */
-export function _apply ( transpositions , sigma ) {
-
-	for ( const [ s , t ] of transpositions ) _transpose( s , t , sigma ) ;
-
+export function _apply(transpositions, sigma) {
+	for (const [s, t] of transpositions) _transpose(s, t, sigma);
 }
-

@@ -1,25 +1,23 @@
-import test from 'ava' ;
-import { identity , compose , transposition } from '../../src/index.js' ;
-import { randint } from '@aureooms/js-random' ;
+import test from 'ava';
+import {randint} from '@aureooms/js-random';
+import {identity, compose, transposition} from '../../src/index.js';
 
-function macro ( t , size ) {
+function macro(t, size) {
+	const id = identity(size);
 
-	const id = identity( size ) ;
+	const a = randint(0, size);
 
-	const a = randint( 0 , size ) ;
+	const b = randint(0, size);
 
-	const b = randint( 0 , size ) ;
+	const tau = transposition(size, a, b);
 
-	const tau = transposition( size , a , b ) ;
+	const rho = compose(tau, tau);
 
-	const rho = compose( tau , tau ) ;
-
-	t.deepEqual( rho , id , 'tau ∘ tau = identity' ) ;
+	t.deepEqual(rho, id, 'tau ∘ tau = identity');
 
 	// TODO add more tests
-
 }
 
-macro.title = ( _ , size ) => `transposition (${size})` ;
+macro.title = (_, size) => `transposition (${size})`;
 
-for ( let n = 1 ; n <= 100 ; ++n ) test( macro , n ) ;
+for (let n = 1; n <= 100; ++n) test(macro, n);

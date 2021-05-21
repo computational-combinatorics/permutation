@@ -1,5 +1,5 @@
-import { _transpose } from './_transpose.js' ;
-import { _reverse } from './_reverse.js' ;
+import {_transpose} from './_transpose.js';
+import {_reverse} from './_reverse.js';
 
 /**
  * Updates the input permutation to the next one ___in-place___. Returns true
@@ -11,29 +11,24 @@ import { _reverse } from './_reverse.js' ;
  * @returns {Boolean} Whether the input permutation is
  * __NOT__ the last for its elements.
  */
-export function _next ( sigma , n ) {
+export function _next(sigma, n) {
+	let i = n - 1;
 
-	let i = n - 1 ;
+	while (i > 0) {
+		--i;
 
-	while ( i > 0 ) {
+		if (sigma[i] > sigma[i + 1]) continue;
 
-		--i ;
+		let j = n - 1;
 
-		if ( sigma[i] > sigma[i+1] ) continue ;
+		while (sigma[j] < sigma[i]) --j;
 
-		let j = n - 1 ;
+		_transpose(i, j, sigma);
 
-		while ( sigma[j] < sigma[i] ) --j ;
+		_reverse(sigma, i + 1, n);
 
-		_transpose( i , j , sigma ) ;
-
-		_reverse( sigma , i + 1 , n ) ;
-
-		return true ;
-
+		return true;
 	}
 
-	return false ;
-
+	return false;
 }
-

@@ -1,4 +1,3 @@
-
 /**
  * Computes a cycle decomposition of an input permutation. This algorithm is
  * deterministic; the algorithm will procedes in a sequential manner, first
@@ -17,31 +16,24 @@
  * @param {Array} used The helper array.
  * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.
  */
-export function* _cycles ( sigma , used ) {
+export function* _cycles(sigma, used) {
+	for (const s of sigma) {
+		if (used[s]) continue;
 
-	for ( const s of sigma ) {
+		used[s] = true;
 
-		if ( used[s] ) continue ;
+		let image = sigma[s];
 
-		used[s] = true ;
+		const cycle = [];
 
-		let image = sigma[s] ;
+		while (image !== s) {
+			used[image] = true;
 
-		const cycle = [ ] ;
+			cycle.push(image);
 
-		while ( image !== s ) {
-
-			used[image] = true ;
-
-			cycle.push( image ) ;
-
-			image = sigma[image] ;
-
+			image = sigma[image];
 		}
 
-		yield [ s , cycle ] ;
-
+		yield [s, cycle];
 	}
-
 }
-

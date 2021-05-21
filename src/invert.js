@@ -1,5 +1,5 @@
-import { permutation } from './permutation.js' ;
-import { _invert } from './_invert.js' ;
+import {permutation} from './permutation.js';
+import {_invert} from './_invert.js';
 
 /**
  * Computes the inverse <code>tau</code> of the input permutation
@@ -10,12 +10,10 @@ import { _invert } from './_invert.js' ;
  * @param {Array} sigma The input permutation.
  * @returns {Array} The inverse of the input permutation.
  */
-export function invert ( sigma ) {
+export function invert(sigma) {
+	const tau = permutation(sigma.length);
 
-	const tau = permutation( sigma.length ) ;
+	_invert(sigma, sigma.length, tau);
 
-	_invert( sigma , sigma.length , tau ) ;
-
-	return tau ;
-
+	return tau;
 }

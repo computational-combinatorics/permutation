@@ -9,8 +9,6 @@
  * @param {Number} n The size of the input permutation.
  * @param {Array} tau The array where to put the inverse of the input permutation.
  */
-export function _invert ( sigma , n , tau ) {
-
-	for ( let i = 0 ; i < n ; ++i ) tau[sigma[i]] = i ;
-
+export function _invert(sigma, n, tau) {
+	for (let i = 0; i < n; ++i) tau[sigma[i]] = i;
 }

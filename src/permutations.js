@@ -1,6 +1,6 @@
-import { identity } from './identity.js' ;
-import { _permutations } from './_permutations.js' ;
-import { copy } from './copy.js' ;
+import {identity} from './identity.js';
+import {_permutations} from './_permutations.js';
+import {copy} from './copy.js';
 
 /**
  * Generate all permutations on <code>n</code> elements.
@@ -9,13 +9,8 @@ import { copy } from './copy.js' ;
  * @returns {Iterator} Iterator that yields all permutations on <code>n</code>
  * elements.
  */
-export function* permutations ( n ) {
-
-	for ( const permutation of _permutations( identity( n ) , n ) ) {
-
-		yield copy( permutation ) ;
-
+export function* permutations(n) {
+	for (const permutation of _permutations(identity(n), n)) {
+		yield copy(permutation);
 	}
-
 }
-

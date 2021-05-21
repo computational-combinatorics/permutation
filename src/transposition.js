@@ -1,5 +1,5 @@
-import { identity } from './identity.js' ;
-import { _transposition } from './_transposition.js' ;
+import {identity} from './identity.js';
+import {_transposition} from './_transposition.js';
 
 /**
  * Outputs the permutation on input <code>n</code> numbers that only transposes
@@ -10,13 +10,10 @@ import { _transposition } from './_transposition.js' ;
  * @param {Number} b The second index to swap.
  * @returns {undefined}
  */
-export function transposition ( n , a , b ) {
+export function transposition(n, a, b) {
+	const rho = identity(n);
 
-	const rho = identity( n ) ;
+	_transposition(a, b, rho);
 
-	_transposition( a , b , rho ) ;
-
-	return rho ;
-
+	return rho;
 }
-

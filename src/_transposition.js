@@ -1,4 +1,3 @@
-
 /**
  * Helper method for {@link transposition}.
  * Transposes <code>a</code> with <code>b</code> in <code>sigma</code> provided
@@ -8,10 +7,7 @@
  * @param {Number} b Second index.
  * @param {Array} sigma Input permutation.
  */
-export function _transposition ( a , b , sigma ) {
-
-	sigma[a] = b ;
-	sigma[b] = a ;
-
+export function _transposition(a, b, sigma) {
+	sigma[a] = b;
+	sigma[b] = a;
 }
-

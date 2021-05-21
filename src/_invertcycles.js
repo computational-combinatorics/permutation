@@ -1,4 +1,4 @@
-import { _transpose } from './_transpose.js' ;
+import {_transpose} from './_transpose.js';
 
 /**
  * Inverts given cycles in a given permutation ___in-place___. Can be used as
@@ -16,13 +16,8 @@ import { _transpose } from './_transpose.js' ;
  * @param {Iterable} cycles The cycles to invert.
  * @param {Array} tau The given permutation (modified in-place).
  */
-export function _invertcycles ( cycles , tau ) {
-
-	for ( const [ s , cycle ] of cycles ) {
-
-		for ( const t of cycle ) _transpose( s , t , tau ) ;
-
+export function _invertcycles(cycles, tau) {
+	for (const [s, cycle] of cycles) {
+		for (const t of cycle) _transpose(s, t, tau);
 	}
-
 }
-

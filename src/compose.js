@@ -1,5 +1,5 @@
-import { permutation } from './permutation.js' ;
-import { _compose } from './_compose.js' ;
+import {permutation} from './permutation.js';
+import {_compose} from './_compose.js';
 
 /**
  * Compose two input permutations. The resulting permutation is output as an
@@ -9,22 +9,17 @@ import { _compose } from './_compose.js' ;
  * @param {Array} tau The second input permutation.
  * @returns {Array} The resulting permutation as an array.
  */
-export function compose ( sigma , tau ) {
-
+export function compose(sigma, tau) {
 	// TODO replace with Array.from( _compose...
 
-	const rho = permutation( sigma.length ) ;
+	const rho = permutation(sigma.length);
 
-	let i = 0 ;
+	let i = 0;
 
-	for ( const r of _compose( sigma , tau ) ) {
-
-		rho[i] = r ;
-		++i ;
-
+	for (const r of _compose(sigma, tau)) {
+		rho[i] = r;
+		++i;
 	}
 
-	return rho ;
-
+	return rho;
 }
-

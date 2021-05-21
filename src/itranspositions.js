@@ -1,5 +1,5 @@
-import { _itranspositions } from './_itranspositions.js' ;
-import { used } from './used.js' ;
+import {_itranspositions} from './_itranspositions.js';
+import {used} from './used.js';
 
 /**
  * Computes the sequence of transpositions that if applied to
@@ -12,8 +12,6 @@ import { used } from './used.js' ;
  * @param {Array} sigma Input permutation.
  * @return {Iterator} Iterator over the transpositions.
  */
-export function* itranspositions ( sigma ) {
-
-	yield* _itranspositions( sigma , used( sigma.length ) ) ;
-
+export function* itranspositions(sigma) {
+	yield* _itranspositions(sigma, used(sigma.length));
 }
