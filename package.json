@@ -81,7 +81,7 @@
     "@aureooms/js-factorial": "1.0.0",
     "@aureooms/js-functools": "2.0.3",
     "@aureooms/js-itertools": "5.0.1",
-    "@aureooms/js-random": "2.0.0",
+    "@aureooms/js-random": "3.4.0",
     "@aureooms/js-sort": "7.0.0",
     "@babel/cli": "7.13.10",
     "@babel/core": "7.13.10",
