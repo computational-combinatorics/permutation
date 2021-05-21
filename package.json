@@ -3,14 +3,14 @@
   "description": "Permutation library for JavaScript",
   "version": "2.0.0",
   "license": "AGPL-3.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "author": "make-github-pseudonymous-again",
   "homepage": "https://computational-combinatorics.github.io/permutation",
   "repository": {
     "type": "git",
-    "url": "https://github.com/make-github-pseudonymous-again/js-permutation"
+    "url": "https://github.com/computational-combinatorics/permutation"
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-permutation/issues"
+    "url": "https://github.com/computational-combinatorics/permutation/issues"
   },
   "keywords": [
     "algorithm",
