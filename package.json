@@ -1,5 +1,5 @@
 {
-  "name": "@aureooms/js-permutation",
+  "name": "@combinatorics/permutation",
   "description": "Permutation library for JavaScript",
   "version": "2.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
@@ -104,7 +104,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://make-github-pseudonymous-again.github.io/js-permutation",
+  "homepage": "https://computational-combinatorics.github.io/permutation",
   "keywords": [
     "algorithm",
     "javascript",

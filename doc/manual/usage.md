@@ -10,7 +10,7 @@ import 'regenerator-runtime/runtime' ;
 
 Then
 ```js
-const permutation = require( '@aureooms/js-permutation' ) ;
+const permutation = require( '@combinatorics/permutation' ) ;
 // or
-import * as permutation from '@aureooms/js-permutation' ;
+import * as permutation from '@combinatorics/permutation' ;
 ```

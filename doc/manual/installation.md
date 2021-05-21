@@ -6,10 +6,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-permutation
+jspm install npm:@combinatorics/permutation
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-permutation --save
+npm install @combinatorics/permutation --save
 ```

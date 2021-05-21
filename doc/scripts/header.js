@@ -13,7 +13,7 @@ domReady(function(){
 
 	var projectname = document.createElement('a');
 	projectname.classList.add('project-name');
-	projectname.text = 'aureooms/js-permutation';
+	projectname.text = 'combinatorics/permutation';
 	projectname.href = './index.html' ;
 
 	var header = document.getElementsByTagName('header')[0] ;

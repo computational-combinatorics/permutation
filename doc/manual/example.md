@@ -5,7 +5,7 @@ import {
 	identity ,
 	reversed ,
 	next
-} from '@aureooms/js-permutation' ;
+} from '@combinatorics/permutation' ;
 
 let sigma = identity( 3 ) ;
 
@@ -16,7 +16,7 @@ reversed( sigma ) ; // [ 2 , 1 , 0 ]
 next( sigma ) ; // [ 0 , 2 , 1 ]
 
 
-import { permutations } from '@aureooms/js-permutation' ;
+import { permutations } from '@combinatorics/permutation' ;
 
 for ( let tau of permutations( 3 ) ) {
 
@@ -30,7 +30,7 @@ for ( let tau of permutations( 3 ) ) {
 }
 
 
-import { invert } from '@aureooms/js-permutation' ;
+import { invert } from '@combinatorics/permutation' ;
 
 invert( [ 0 , 1 , 2 ] ) ; // [ 0 , 1 , 2 ]
 invert( [ 0 , 2 , 1 ] ) ; // [ 0 , 2 , 1 ]
@@ -40,12 +40,12 @@ invert( [ 2 , 0 , 1 ] ) ; // [ 1 , 2 , 0 ]
 invert( [ 2 , 1 , 0 ] ) ; // [ 2 , 1 , 0 ]
 
 
-import { compose } from '@aureooms/js-permutation' ;
+import { compose } from '@combinatorics/permutation' ;
 
 compose( "abc" , [ 2 , 0 , 1 ] ) ; // [ "c" , "a" , "b" ]
 
 
-import { bitreversal } from '@aureooms/js-permutation' ;
+import { bitreversal } from '@combinatorics/permutation' ;
 
 bitreversal( 8 ) ; // [ 0 , 4 , 2 , 6 , 1 , 5 , 3 , 7 ]
 ```
