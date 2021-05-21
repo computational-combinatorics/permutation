@@ -1180,7 +1180,7 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
-"@iterable-iterator/chain@^1.0.0":
+"@iterable-iterator/chain@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/chain/-/chain-1.0.0.tgz#38d15e7bad373af2dea0651f07252770823fcf08"
   integrity sha512-2XjhgDtg5fnSUTlWrkdCWg5viYe8ZPkD/GntMBBh2Us8bV7mrDHUO1uvBLy3z+BidJNp5PL8kExNsFyzB7s5xw==
@@ -1195,12 +1195,12 @@
   resolved "https://registry.yarnpkg.com/@iterable-iterator/iter/-/iter-0.0.2.tgz#7129988de2071ffb747632bd0190c0db579a5b69"
   integrity sha512-+q2BxI+awes71qm4M5zLXaJK7GUy1Tbt5K7YKTU3Yl8DgCdQxeHBbkAIxXAv49BoS2eLx5cLXHdpX6ybzvA2XQ==
 
-"@iterable-iterator/list@^0.0.2":
+"@iterable-iterator/list@0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/list/-/list-0.0.2.tgz#6289761d3ada6bb88f0c92683367ea960f310869"
   integrity sha512-103Wwqx0x8neIFjm0GVR7cmEcv29Eg7F4lX72sr9L6FzMH9lp50ejfroAdbdMT37TWq2KVNo1eEWXtFo9hBybw==
 
-"@iterable-iterator/slice@^0.0.1":
+"@iterable-iterator/slice@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/slice/-/slice-0.0.1.tgz#62a8e15435714787659563ad0bc4138e52f5baf2"
   integrity sha512-8U0wLGf3lgZY/MSvmkCwjVF6mivwp3MEY6gCBbD+I6qvJk2Xy7PAWK22lcg69kQKoqGc2HviGeLzDfMh1DNpGw==
@@ -1311,7 +1311,7 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@set-theory/closure@^0.0.1":
+"@set-theory/closure@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@set-theory/closure/-/closure-0.0.1.tgz#61297cbece330f30b1164d7958a9a3627af50d4d"
   integrity sha512-S25J3MDylpKdkgc7VuYC6tMGTU9JXi+QPisAK3Pp4r1Rd1fFbWdCOhWI43Etvs7XV683PSBCMQfTRdlEGfmobQ==
@@ -1345,12 +1345,12 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@total-order/lex@^0.0.1":
+"@total-order/lex@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@total-order/lex/-/lex-0.0.1.tgz#25a50b7213e12dddfec7f487635e1fb57fdf5598"
   integrity sha512-g6gjcsAfCt0VxMtGxbP6+OdiT6wKYeCctXQl5fFfHXfgH0/s4/FSKcg5Wz1GPAVdT/2Q+MmzbYCM+VHQRqyhWQ==
 
-"@total-order/primitive@^0.0.2":
+"@total-order/primitive@0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@total-order/primitive/-/primitive-0.0.2.tgz#0c2925de9b80e0d43f1ffc1ec4e5ded7f69b6100"
   integrity sha512-u0qradNHAUOn7pZGbcpz7xK/Wb8Ic0w5DtFWcNC+mcJ/QgURr+4ovQ0OkOj4XcK0/5lks78fMnQxOa5yOJERwg==
