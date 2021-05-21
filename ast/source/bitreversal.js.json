@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 560,
+  "end": 546,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 23,
+      "line": 20,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 560,
+    "end": 546,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 23,
+        "line": 20,
         "column": 0
       }
     },
@@ -45,30 +45,30 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 9,
-            "end": 20,
+            "start": 8,
+            "end": 19,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 1,
-                "column": 20
+                "column": 19
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 9,
-              "end": 20,
+              "start": 8,
+              "end": 19,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 20
+                  "column": 19
                 },
                 "identifierName": "permutation"
               },
@@ -76,16 +76,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 20,
+              "start": 8,
+              "end": 19,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 20
+                  "column": 19
                 },
                 "identifierName": "permutation"
               },
@@ -95,23 +95,23 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 28,
-          "end": 43,
+          "start": 26,
+          "end": 44,
           "loc": {
             "start": {
               "line": 1,
-              "column": 28
+              "column": 26
             },
             "end": {
               "line": 1,
-              "column": 43
+              "column": 44
             }
           },
           "extra": {
-            "rawValue": "./permutation",
-            "raw": "'./permutation'"
+            "rawValue": "./permutation.js",
+            "raw": "'./permutation.js'"
           },
-          "value": "./permutation"
+          "value": "./permutation.js"
         }
       },
       {
@@ -131,30 +131,30 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 55,
-            "end": 67,
+            "start": 54,
+            "end": 66,
             "loc": {
               "start": {
                 "line": 2,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 2,
-                "column": 21
+                "column": 20
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 55,
-              "end": 67,
+              "start": 54,
+              "end": 66,
               "loc": {
                 "start": {
                   "line": 2,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 2,
-                  "column": 21
+                  "column": 20
                 },
                 "identifierName": "_bitreversal"
               },
@@ -162,16 +162,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 55,
-              "end": 67,
+              "start": 54,
+              "end": 66,
               "loc": {
                 "start": {
                   "line": 2,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 2,
-                  "column": 21
+                  "column": 20
                 },
                 "identifierName": "_bitreversal"
               },
@@ -181,28 +181,28 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 75,
-          "end": 91,
+          "start": 73,
+          "end": 92,
           "loc": {
             "start": {
               "line": 2,
-              "column": 29
+              "column": 27
             },
             "end": {
               "line": 2,
-              "column": 45
+              "column": 46
             }
           },
           "extra": {
-            "rawValue": "./_bitreversal",
-            "raw": "'./_bitreversal'"
+            "rawValue": "./_bitreversal.js",
+            "raw": "'./_bitreversal.js'"
           },
-          "value": "./_bitreversal"
+          "value": "./_bitreversal.js"
         },
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {Number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
+            "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
             "start": 95,
             "end": 437,
             "loc": {
@@ -221,14 +221,14 @@
       {
         "type": "ExportNamedDeclaration",
         "start": 438,
-        "end": 558,
+        "end": 545,
         "loc": {
           "start": {
             "line": 13,
             "column": 0
           },
           "end": {
-            "line": 21,
+            "line": 19,
             "column": 1
           }
         },
@@ -237,14 +237,14 @@
         "declaration": {
           "type": "FunctionDeclaration",
           "start": 445,
-          "end": 558,
+          "end": 545,
           "loc": {
             "start": {
               "line": 13,
               "column": 7
             },
             "end": {
-              "line": 21,
+              "line": 19,
               "column": 1
             }
           },
@@ -272,16 +272,16 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 468,
-              "end": 469,
+              "start": 466,
+              "end": 467,
               "loc": {
                 "start": {
                   "line": 13,
-                  "column": 30
+                  "column": 28
                 },
                 "end": {
                   "line": 13,
-                  "column": 31
+                  "column": 29
                 },
                 "identifierName": "n"
               },
@@ -290,59 +290,59 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 472,
-            "end": 558,
+            "start": 469,
+            "end": 545,
             "loc": {
               "start": {
                 "line": 13,
-                "column": 34
+                "column": 31
               },
               "end": {
-                "line": 21,
+                "line": 19,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "VariableDeclaration",
-                "start": 476,
-                "end": 508,
+                "start": 472,
+                "end": 501,
                 "loc": {
                   "start": {
-                    "line": 15,
+                    "line": 14,
                     "column": 1
                   },
                   "end": {
-                    "line": 15,
-                    "column": 33
+                    "line": 14,
+                    "column": 30
                   }
                 },
                 "declarations": [
                   {
                     "type": "VariableDeclarator",
-                    "start": 482,
-                    "end": 506,
+                    "start": 478,
+                    "end": 500,
                     "loc": {
                       "start": {
-                        "line": 15,
+                        "line": 14,
                         "column": 7
                       },
                       "end": {
-                        "line": 15,
-                        "column": 31
+                        "line": 14,
+                        "column": 29
                       }
                     },
                     "id": {
                       "type": "Identifier",
-                      "start": 482,
-                      "end": 487,
+                      "start": 478,
+                      "end": 483,
                       "loc": {
                         "start": {
-                          "line": 15,
+                          "line": 14,
                           "column": 7
                         },
                         "end": {
-                          "line": 15,
+                          "line": 14,
                           "column": 12
                         },
                         "identifierName": "sigma"
@@ -351,29 +351,29 @@
                     },
                     "init": {
                       "type": "CallExpression",
-                      "start": 490,
-                      "end": 506,
+                      "start": 486,
+                      "end": 500,
                       "loc": {
                         "start": {
-                          "line": 15,
+                          "line": 14,
                           "column": 15
                         },
                         "end": {
-                          "line": 15,
-                          "column": 31
+                          "line": 14,
+                          "column": 29
                         }
                       },
                       "callee": {
                         "type": "Identifier",
-                        "start": 490,
-                        "end": 501,
+                        "start": 486,
+                        "end": 497,
                         "loc": {
                           "start": {
-                            "line": 15,
+                            "line": 14,
                             "column": 15
                           },
                           "end": {
-                            "line": 15,
+                            "line": 14,
                             "column": 26
                           },
                           "identifierName": "permutation"
@@ -383,16 +383,16 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 503,
-                          "end": 504,
+                          "start": 498,
+                          "end": 499,
                           "loc": {
                             "start": {
-                              "line": 15,
-                              "column": 28
+                              "line": 14,
+                              "column": 27
                             },
                             "end": {
-                              "line": 15,
-                              "column": 29
+                              "line": 14,
+                              "column": 28
                             },
                             "identifierName": "n"
                           },
@@ -406,43 +406,43 @@
               },
               {
                 "type": "ExpressionStatement",
-                "start": 511,
-                "end": 538,
+                "start": 504,
+                "end": 527,
                 "loc": {
                   "start": {
-                    "line": 17,
+                    "line": 16,
                     "column": 1
                   },
                   "end": {
-                    "line": 17,
-                    "column": 28
+                    "line": 16,
+                    "column": 24
                   }
                 },
                 "expression": {
                   "type": "CallExpression",
-                  "start": 511,
-                  "end": 536,
+                  "start": 504,
+                  "end": 526,
                   "loc": {
                     "start": {
-                      "line": 17,
+                      "line": 16,
                       "column": 1
                     },
                     "end": {
-                      "line": 17,
-                      "column": 26
+                      "line": 16,
+                      "column": 23
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 511,
-                    "end": 523,
+                    "start": 504,
+                    "end": 516,
                     "loc": {
                       "start": {
-                        "line": 17,
+                        "line": 16,
                         "column": 1
                       },
                       "end": {
-                        "line": 17,
+                        "line": 16,
                         "column": 13
                       },
                       "identifierName": "_bitreversal"
@@ -452,16 +452,16 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 525,
-                      "end": 530,
+                      "start": 517,
+                      "end": 522,
                       "loc": {
                         "start": {
-                          "line": 17,
-                          "column": 15
+                          "line": 16,
+                          "column": 14
                         },
                         "end": {
-                          "line": 17,
-                          "column": 20
+                          "line": 16,
+                          "column": 19
                         },
                         "identifierName": "sigma"
                       },
@@ -469,16 +469,16 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 533,
-                      "end": 534,
+                      "start": 524,
+                      "end": 525,
                       "loc": {
                         "start": {
-                          "line": 17,
-                          "column": 23
+                          "line": 16,
+                          "column": 21
                         },
                         "end": {
-                          "line": 17,
-                          "column": 24
+                          "line": 16,
+                          "column": 22
                         },
                         "identifierName": "n"
                       },
@@ -489,29 +489,29 @@
               },
               {
                 "type": "ReturnStatement",
-                "start": 541,
-                "end": 555,
+                "start": 530,
+                "end": 543,
                 "loc": {
                   "start": {
-                    "line": 19,
+                    "line": 18,
                     "column": 1
                   },
                   "end": {
-                    "line": 19,
-                    "column": 15
+                    "line": 18,
+                    "column": 14
                   }
                 },
                 "argument": {
                   "type": "Identifier",
-                  "start": 548,
-                  "end": 553,
+                  "start": 537,
+                  "end": 542,
                   "loc": {
                     "start": {
-                      "line": 19,
+                      "line": 18,
                       "column": 8
                     },
                     "end": {
-                      "line": 19,
+                      "line": 18,
                       "column": 13
                     },
                     "identifierName": "sigma"
@@ -525,7 +525,7 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {Number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
+              "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
               "start": 95,
               "end": 437,
               "loc": {
@@ -545,7 +545,7 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {Number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
+            "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
             "start": 95,
             "end": 437,
             "loc": {
@@ -567,7 +567,7 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {Number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
+      "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
       "start": 95,
       "end": 437,
       "loc": {
@@ -588,7 +588,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -649,16 +649,16 @@
         "binop": null
       },
       "value": "permutation",
-      "start": 9,
-      "end": 20,
+      "start": 8,
+      "end": 19,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 1,
-          "column": 20
+          "column": 19
         }
       }
     },
@@ -674,16 +674,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 21,
-      "end": 22,
+      "start": 19,
+      "end": 20,
       "loc": {
         "start": {
           "line": 1,
-          "column": 21
+          "column": 19
         },
         "end": {
           "line": 1,
-          "column": 22
+          "column": 20
         }
       }
     },
@@ -700,16 +700,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 23,
-      "end": 27,
+      "start": 21,
+      "end": 25,
       "loc": {
         "start": {
           "line": 1,
-          "column": 23
+          "column": 21
         },
         "end": {
           "line": 1,
-          "column": 27
+          "column": 25
         }
       }
     },
@@ -726,17 +726,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./permutation",
-      "start": 28,
-      "end": 43,
+      "value": "./permutation.js",
+      "start": 26,
+      "end": 44,
       "loc": {
         "start": {
           "line": 1,
-          "column": 28
+          "column": 26
         },
         "end": {
           "line": 1,
-          "column": 43
+          "column": 44
         }
       }
     },
@@ -771,7 +771,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -832,16 +832,16 @@
         "binop": null
       },
       "value": "_bitreversal",
-      "start": 55,
-      "end": 67,
+      "start": 54,
+      "end": 66,
       "loc": {
         "start": {
           "line": 2,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 2,
-          "column": 21
+          "column": 20
         }
       }
     },
@@ -857,16 +857,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 68,
-      "end": 69,
+      "start": 66,
+      "end": 67,
       "loc": {
         "start": {
           "line": 2,
-          "column": 22
+          "column": 20
         },
         "end": {
           "line": 2,
-          "column": 23
+          "column": 21
         }
       }
     },
@@ -883,16 +883,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 70,
-      "end": 74,
+      "start": 68,
+      "end": 72,
       "loc": {
         "start": {
           "line": 2,
-          "column": 24
+          "column": 22
         },
         "end": {
           "line": 2,
-          "column": 28
+          "column": 26
         }
       }
     },
@@ -909,17 +909,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./_bitreversal",
-      "start": 75,
-      "end": 91,
+      "value": "./_bitreversal.js",
+      "start": 73,
+      "end": 92,
       "loc": {
         "start": {
           "line": 2,
-          "column": 29
+          "column": 27
         },
         "end": {
           "line": 2,
-          "column": 45
+          "column": 46
         }
       }
     },
@@ -951,7 +951,7 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {Number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
+      "value": "*\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n ",
       "start": 95,
       "end": 437,
       "loc": {
@@ -1058,16 +1058,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 466,
-      "end": 467,
+      "start": 465,
+      "end": 466,
       "loc": {
         "start": {
           "line": 13,
-          "column": 28
+          "column": 27
         },
         "end": {
           "line": 13,
-          "column": 29
+          "column": 28
         }
       }
     },
@@ -1084,16 +1084,16 @@
         "binop": null
       },
       "value": "n",
-      "start": 468,
-      "end": 469,
+      "start": 466,
+      "end": 467,
       "loc": {
         "start": {
           "line": 13,
-          "column": 30
+          "column": 28
         },
         "end": {
           "line": 13,
-          "column": 31
+          "column": 29
         }
       }
     },
@@ -1109,16 +1109,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 470,
-      "end": 471,
+      "start": 467,
+      "end": 468,
       "loc": {
         "start": {
           "line": 13,
-          "column": 32
+          "column": 29
         },
         "end": {
           "line": 13,
-          "column": 33
+          "column": 30
         }
       }
     },
@@ -1134,16 +1134,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 472,
-      "end": 473,
+      "start": 469,
+      "end": 470,
       "loc": {
         "start": {
           "line": 13,
-          "column": 34
+          "column": 31
         },
         "end": {
           "line": 13,
-          "column": 35
+          "column": 32
         }
       }
     },
@@ -1162,15 +1162,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 476,
-      "end": 481,
+      "start": 472,
+      "end": 477,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 14,
           "column": 1
         },
         "end": {
-          "line": 15,
+          "line": 14,
           "column": 6
         }
       }
@@ -1188,15 +1188,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 482,
-      "end": 487,
+      "start": 478,
+      "end": 483,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 14,
           "column": 7
         },
         "end": {
-          "line": 15,
+          "line": 14,
           "column": 12
         }
       }
@@ -1215,15 +1215,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 488,
-      "end": 489,
+      "start": 484,
+      "end": 485,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 14,
           "column": 13
         },
         "end": {
-          "line": 15,
+          "line": 14,
           "column": 14
         }
       }
@@ -1241,15 +1241,15 @@
         "binop": null
       },
       "value": "permutation",
-      "start": 490,
-      "end": 501,
+      "start": 486,
+      "end": 497,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 14,
           "column": 15
         },
         "end": {
-          "line": 15,
+          "line": 14,
           "column": 26
         }
       }
@@ -1266,15 +1266,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 501,
-      "end": 502,
+      "start": 497,
+      "end": 498,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 14,
           "column": 26
         },
         "end": {
-          "line": 15,
+          "line": 14,
           "column": 27
         }
       }
@@ -1292,16 +1292,16 @@
         "binop": null
       },
       "value": "n",
-      "start": 503,
-      "end": 504,
+      "start": 498,
+      "end": 499,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 28
+          "line": 14,
+          "column": 27
         },
         "end": {
-          "line": 15,
-          "column": 29
+          "line": 14,
+          "column": 28
         }
       }
     },
@@ -1317,16 +1317,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 505,
-      "end": 506,
+      "start": 499,
+      "end": 500,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 30
+          "line": 14,
+          "column": 28
         },
         "end": {
-          "line": 15,
-          "column": 31
+          "line": 14,
+          "column": 29
         }
       }
     },
@@ -1343,16 +1343,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 507,
-      "end": 508,
+      "start": 500,
+      "end": 501,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 32
+          "line": 14,
+          "column": 29
         },
         "end": {
-          "line": 15,
-          "column": 33
+          "line": 14,
+          "column": 30
         }
       }
     },
@@ -1369,15 +1369,15 @@
         "binop": null
       },
       "value": "_bitreversal",
-      "start": 511,
-      "end": 523,
+      "start": 504,
+      "end": 516,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 1
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 13
         }
       }
@@ -1394,15 +1394,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 523,
-      "end": 524,
+      "start": 516,
+      "end": 517,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 13
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 14
         }
       }
@@ -1420,16 +1420,16 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 525,
-      "end": 530,
+      "start": 517,
+      "end": 522,
       "loc": {
         "start": {
-          "line": 17,
-          "column": 15
+          "line": 16,
+          "column": 14
         },
         "end": {
-          "line": 17,
-          "column": 20
+          "line": 16,
+          "column": 19
         }
       }
     },
@@ -1446,16 +1446,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 531,
-      "end": 532,
+      "start": 522,
+      "end": 523,
       "loc": {
         "start": {
-          "line": 17,
-          "column": 21
+          "line": 16,
+          "column": 19
         },
         "end": {
-          "line": 17,
-          "column": 22
+          "line": 16,
+          "column": 20
         }
       }
     },
@@ -1472,16 +1472,16 @@
         "binop": null
       },
       "value": "n",
-      "start": 533,
-      "end": 534,
+      "start": 524,
+      "end": 525,
       "loc": {
         "start": {
-          "line": 17,
-          "column": 23
+          "line": 16,
+          "column": 21
         },
         "end": {
-          "line": 17,
-          "column": 24
+          "line": 16,
+          "column": 22
         }
       }
     },
@@ -1497,16 +1497,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 535,
-      "end": 536,
+      "start": 525,
+      "end": 526,
       "loc": {
         "start": {
-          "line": 17,
-          "column": 25
+          "line": 16,
+          "column": 22
         },
         "end": {
-          "line": 17,
-          "column": 26
+          "line": 16,
+          "column": 23
         }
       }
     },
@@ -1523,16 +1523,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 537,
-      "end": 538,
+      "start": 526,
+      "end": 527,
       "loc": {
         "start": {
-          "line": 17,
-          "column": 27
+          "line": 16,
+          "column": 23
         },
         "end": {
-          "line": 17,
-          "column": 28
+          "line": 16,
+          "column": 24
         }
       }
     },
@@ -1551,15 +1551,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 541,
-      "end": 547,
+      "start": 530,
+      "end": 536,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 18,
           "column": 1
         },
         "end": {
-          "line": 19,
+          "line": 18,
           "column": 7
         }
       }
@@ -1577,15 +1577,15 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 548,
-      "end": 553,
+      "start": 537,
+      "end": 542,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 18,
           "column": 8
         },
         "end": {
-          "line": 19,
+          "line": 18,
           "column": 13
         }
       }
@@ -1603,16 +1603,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 554,
-      "end": 555,
+      "start": 542,
+      "end": 543,
       "loc": {
         "start": {
-          "line": 19,
-          "column": 14
+          "line": 18,
+          "column": 13
         },
         "end": {
-          "line": 19,
-          "column": 15
+          "line": 18,
+          "column": 14
         }
       }
     },
@@ -1628,15 +1628,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 557,
-      "end": 558,
+      "start": 544,
+      "end": 545,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 19,
           "column": 0
         },
         "end": {
-          "line": 21,
+          "line": 19,
           "column": 1
         }
       }
@@ -1654,15 +1654,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 560,
-      "end": 560,
+      "start": 546,
+      "end": 546,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 20,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 20,
           "column": 0
         }
       }

@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 463,
+  "end": 449,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 16,
+      "line": 14,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 463,
+    "end": 449,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 16,
+        "line": 14,
         "column": 0
       }
     },
@@ -45,30 +45,30 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 9,
-            "end": 19,
+            "start": 8,
+            "end": 18,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 1,
-                "column": 19
+                "column": 18
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 9,
-              "end": 19,
+              "start": 8,
+              "end": 18,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 19
+                  "column": 18
                 },
                 "identifierName": "_transpose"
               },
@@ -76,16 +76,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 19,
+              "start": 8,
+              "end": 18,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 19
+                  "column": 18
                 },
                 "identifierName": "_transpose"
               },
@@ -95,28 +95,28 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 27,
-          "end": 41,
+          "start": 25,
+          "end": 42,
           "loc": {
             "start": {
               "line": 1,
-              "column": 27
+              "column": 25
             },
             "end": {
               "line": 1,
-              "column": 41
+              "column": 42
             }
           },
           "extra": {
-            "rawValue": "./_transpose",
-            "raw": "'./_transpose'"
+            "rawValue": "./_transpose.js",
+            "raw": "'./_transpose.js'"
           },
-          "value": "./_transpose"
+          "value": "./_transpose.js"
         },
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+            "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {number} i The left bound (included).\n * @param {number} j The right bound (excluded).\n ",
             "start": 45,
             "end": 362,
             "loc": {
@@ -135,14 +135,14 @@
       {
         "type": "ExportNamedDeclaration",
         "start": 363,
-        "end": 462,
+        "end": 448,
         "loc": {
           "start": {
             "line": 11,
             "column": 0
           },
           "end": {
-            "line": 15,
+            "line": 13,
             "column": 1
           }
         },
@@ -151,14 +151,14 @@
         "declaration": {
           "type": "FunctionDeclaration",
           "start": 370,
-          "end": 462,
+          "end": 448,
           "loc": {
             "start": {
               "line": 11,
               "column": 7
             },
             "end": {
-              "line": 15,
+              "line": 13,
               "column": 1
             }
           },
@@ -186,20 +186,37 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 390,
-              "end": 395,
+              "start": 388,
+              "end": 393,
               "loc": {
                 "start": {
                   "line": 11,
-                  "column": 27
+                  "column": 25
                 },
                 "end": {
                   "line": 11,
-                  "column": 32
+                  "column": 30
                 },
                 "identifierName": "sigma"
               },
               "name": "sigma"
+            },
+            {
+              "type": "Identifier",
+              "start": 395,
+              "end": 396,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 32
+                },
+                "end": {
+                  "line": 11,
+                  "column": 33
+                },
+                "identifierName": "i"
+              },
+              "name": "i"
             },
             {
               "type": "Identifier",
@@ -214,23 +231,6 @@
                   "line": 11,
                   "column": 36
                 },
-                "identifierName": "i"
-              },
-              "name": "i"
-            },
-            {
-              "type": "Identifier",
-              "start": 402,
-              "end": 403,
-              "loc": {
-                "start": {
-                  "line": 11,
-                  "column": 39
-                },
-                "end": {
-                  "line": 11,
-                  "column": 40
-                },
                 "identifierName": "j"
               },
               "name": "j"
@@ -238,59 +238,59 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 406,
-            "end": 462,
+            "start": 401,
+            "end": 448,
             "loc": {
               "start": {
                 "line": 11,
-                "column": 43
+                "column": 38
               },
               "end": {
-                "line": 15,
+                "line": 13,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "WhileStatement",
-                "start": 410,
-                "end": 459,
+                "start": 404,
+                "end": 446,
                 "loc": {
                   "start": {
-                    "line": 13,
+                    "line": 12,
                     "column": 1
                   },
                   "end": {
-                    "line": 13,
-                    "column": 50
+                    "line": 12,
+                    "column": 43
                   }
                 },
                 "test": {
                   "type": "BinaryExpression",
-                  "start": 418,
-                  "end": 425,
+                  "start": 411,
+                  "end": 418,
                   "loc": {
                     "start": {
-                      "line": 13,
-                      "column": 9
+                      "line": 12,
+                      "column": 8
                     },
                     "end": {
-                      "line": 13,
-                      "column": 16
+                      "line": 12,
+                      "column": 15
                     }
                   },
                   "left": {
                     "type": "Identifier",
-                    "start": 418,
-                    "end": 419,
+                    "start": 411,
+                    "end": 412,
                     "loc": {
                       "start": {
-                        "line": 13,
-                        "column": 9
+                        "line": 12,
+                        "column": 8
                       },
                       "end": {
-                        "line": 13,
-                        "column": 10
+                        "line": 12,
+                        "column": 9
                       },
                       "identifierName": "i"
                     },
@@ -299,32 +299,32 @@
                   "operator": "<",
                   "right": {
                     "type": "UpdateExpression",
-                    "start": 421,
-                    "end": 425,
+                    "start": 415,
+                    "end": 418,
                     "loc": {
                       "start": {
-                        "line": 13,
+                        "line": 12,
                         "column": 12
                       },
                       "end": {
-                        "line": 13,
-                        "column": 16
+                        "line": 12,
+                        "column": 15
                       }
                     },
                     "operator": "--",
                     "prefix": true,
                     "argument": {
                       "type": "Identifier",
-                      "start": 424,
-                      "end": 425,
+                      "start": 417,
+                      "end": 418,
                       "loc": {
                         "start": {
-                          "line": 13,
-                          "column": 15
+                          "line": 12,
+                          "column": 14
                         },
                         "end": {
-                          "line": 13,
-                          "column": 16
+                          "line": 12,
+                          "column": 15
                         },
                         "identifierName": "j"
                       },
@@ -337,44 +337,44 @@
                 },
                 "body": {
                   "type": "ExpressionStatement",
-                  "start": 428,
-                  "end": 459,
+                  "start": 420,
+                  "end": 446,
                   "loc": {
                     "start": {
-                      "line": 13,
-                      "column": 19
+                      "line": 12,
+                      "column": 17
                     },
                     "end": {
-                      "line": 13,
-                      "column": 50
+                      "line": 12,
+                      "column": 43
                     }
                   },
                   "expression": {
                     "type": "CallExpression",
-                    "start": 428,
-                    "end": 457,
+                    "start": 420,
+                    "end": 445,
                     "loc": {
                       "start": {
-                        "line": 13,
-                        "column": 19
+                        "line": 12,
+                        "column": 17
                       },
                       "end": {
-                        "line": 13,
-                        "column": 48
+                        "line": 12,
+                        "column": 42
                       }
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 428,
-                      "end": 438,
+                      "start": 420,
+                      "end": 430,
                       "loc": {
                         "start": {
-                          "line": 13,
-                          "column": 19
+                          "line": 12,
+                          "column": 17
                         },
                         "end": {
-                          "line": 13,
-                          "column": 29
+                          "line": 12,
+                          "column": 27
                         },
                         "identifierName": "_transpose"
                       },
@@ -383,32 +383,32 @@
                     "arguments": [
                       {
                         "type": "UpdateExpression",
-                        "start": 440,
-                        "end": 443,
+                        "start": 431,
+                        "end": 434,
                         "loc": {
                           "start": {
-                            "line": 13,
-                            "column": 31
+                            "line": 12,
+                            "column": 28
                           },
                           "end": {
-                            "line": 13,
-                            "column": 34
+                            "line": 12,
+                            "column": 31
                           }
                         },
                         "operator": "++",
                         "prefix": false,
                         "argument": {
                           "type": "Identifier",
-                          "start": 440,
-                          "end": 441,
+                          "start": 431,
+                          "end": 432,
                           "loc": {
                             "start": {
-                              "line": 13,
-                              "column": 31
+                              "line": 12,
+                              "column": 28
                             },
                             "end": {
-                              "line": 13,
-                              "column": 32
+                              "line": 12,
+                              "column": 29
                             },
                             "identifierName": "i"
                           },
@@ -417,16 +417,16 @@
                       },
                       {
                         "type": "Identifier",
-                        "start": 446,
-                        "end": 447,
+                        "start": 436,
+                        "end": 437,
                         "loc": {
                           "start": {
-                            "line": 13,
-                            "column": 37
+                            "line": 12,
+                            "column": 33
                           },
                           "end": {
-                            "line": 13,
-                            "column": 38
+                            "line": 12,
+                            "column": 34
                           },
                           "identifierName": "j"
                         },
@@ -434,16 +434,16 @@
                       },
                       {
                         "type": "Identifier",
-                        "start": 450,
-                        "end": 455,
+                        "start": 439,
+                        "end": 444,
                         "loc": {
                           "start": {
-                            "line": 13,
-                            "column": 41
+                            "line": 12,
+                            "column": 36
                           },
                           "end": {
-                            "line": 13,
-                            "column": 46
+                            "line": 12,
+                            "column": 41
                           },
                           "identifierName": "sigma"
                         },
@@ -459,7 +459,7 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+              "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {number} i The left bound (included).\n * @param {number} j The right bound (excluded).\n ",
               "start": 45,
               "end": 362,
               "loc": {
@@ -479,7 +479,7 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+            "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {number} i The left bound (included).\n * @param {number} j The right bound (excluded).\n ",
             "start": 45,
             "end": 362,
             "loc": {
@@ -501,7 +501,7 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+      "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {number} i The left bound (included).\n * @param {number} j The right bound (excluded).\n ",
       "start": 45,
       "end": 362,
       "loc": {
@@ -522,7 +522,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -583,16 +583,16 @@
         "binop": null
       },
       "value": "_transpose",
-      "start": 9,
-      "end": 19,
+      "start": 8,
+      "end": 18,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 1,
-          "column": 19
+          "column": 18
         }
       }
     },
@@ -608,16 +608,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 20,
-      "end": 21,
+      "start": 18,
+      "end": 19,
       "loc": {
         "start": {
           "line": 1,
-          "column": 20
+          "column": 18
         },
         "end": {
           "line": 1,
-          "column": 21
+          "column": 19
         }
       }
     },
@@ -634,16 +634,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 22,
-      "end": 26,
+      "start": 20,
+      "end": 24,
       "loc": {
         "start": {
           "line": 1,
-          "column": 22
+          "column": 20
         },
         "end": {
           "line": 1,
-          "column": 26
+          "column": 24
         }
       }
     },
@@ -660,17 +660,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./_transpose",
-      "start": 27,
-      "end": 41,
+      "value": "./_transpose.js",
+      "start": 25,
+      "end": 42,
       "loc": {
         "start": {
           "line": 1,
-          "column": 27
+          "column": 25
         },
         "end": {
           "line": 1,
-          "column": 41
+          "column": 42
         }
       }
     },
@@ -702,7 +702,7 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {Number} i The left bound (included).\n * @param {Number} j The right bound (excluded).\n ",
+      "value": "*\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {number} i The left bound (included).\n * @param {number} j The right bound (excluded).\n ",
       "start": 45,
       "end": 362,
       "loc": {
@@ -809,16 +809,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 388,
-      "end": 389,
+      "start": 387,
+      "end": 388,
       "loc": {
         "start": {
           "line": 11,
-          "column": 25
+          "column": 24
         },
         "end": {
           "line": 11,
-          "column": 26
+          "column": 25
         }
       }
     },
@@ -835,16 +835,68 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 390,
-      "end": 395,
+      "start": 388,
+      "end": 393,
       "loc": {
         "start": {
           "line": 11,
-          "column": 27
+          "column": 25
         },
         "end": {
           "line": 11,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 393,
+      "end": 394,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 30
+        },
+        "end": {
+          "line": 11,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "i",
+      "start": 395,
+      "end": 396,
+      "loc": {
+        "start": {
+          "line": 11,
           "column": 32
+        },
+        "end": {
+          "line": 11,
+          "column": 33
         }
       }
     },
@@ -886,7 +938,7 @@
         "postfix": false,
         "binop": null
       },
-      "value": "i",
+      "value": "j",
       "start": 398,
       "end": 399,
       "loc": {
@@ -902,58 +954,6 @@
     },
     {
       "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 400,
-      "end": 401,
-      "loc": {
-        "start": {
-          "line": 11,
-          "column": 37
-        },
-        "end": {
-          "line": 11,
-          "column": 38
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "j",
-      "start": 402,
-      "end": 403,
-      "loc": {
-        "start": {
-          "line": 11,
-          "column": 39
-        },
-        "end": {
-          "line": 11,
-          "column": 40
-        }
-      }
-    },
-    {
-      "type": {
         "label": ")",
         "beforeExpr": false,
         "startsExpr": false,
@@ -964,16 +964,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 404,
-      "end": 405,
+      "start": 399,
+      "end": 400,
       "loc": {
         "start": {
           "line": 11,
-          "column": 41
+          "column": 36
         },
         "end": {
           "line": 11,
-          "column": 42
+          "column": 37
         }
       }
     },
@@ -989,16 +989,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 406,
-      "end": 407,
+      "start": 401,
+      "end": 402,
       "loc": {
         "start": {
           "line": 11,
-          "column": 43
+          "column": 38
         },
         "end": {
           "line": 11,
-          "column": 44
+          "column": 39
         }
       }
     },
@@ -1017,15 +1017,15 @@
         "updateContext": null
       },
       "value": "while",
-      "start": 410,
-      "end": 415,
+      "start": 404,
+      "end": 409,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 12,
           "column": 1
         },
         "end": {
-          "line": 13,
+          "line": 12,
           "column": 6
         }
       }
@@ -1042,15 +1042,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 416,
-      "end": 417,
+      "start": 410,
+      "end": 411,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 12,
           "column": 7
         },
         "end": {
-          "line": 13,
+          "line": 12,
           "column": 8
         }
       }
@@ -1068,16 +1068,16 @@
         "binop": null
       },
       "value": "i",
-      "start": 418,
-      "end": 419,
+      "start": 411,
+      "end": 412,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 9
+          "line": 12,
+          "column": 8
         },
         "end": {
-          "line": 13,
-          "column": 10
+          "line": 12,
+          "column": 9
         }
       }
     },
@@ -1095,16 +1095,16 @@
         "updateContext": null
       },
       "value": "<",
-      "start": 420,
-      "end": 421,
+      "start": 413,
+      "end": 414,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 11
+          "line": 12,
+          "column": 10
         },
         "end": {
-          "line": 13,
-          "column": 12
+          "line": 12,
+          "column": 11
         }
       }
     },
@@ -1121,15 +1121,15 @@
         "binop": null
       },
       "value": "--",
-      "start": 421,
-      "end": 423,
+      "start": 415,
+      "end": 417,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 12,
           "column": 12
         },
         "end": {
-          "line": 13,
+          "line": 12,
           "column": 14
         }
       }
@@ -1147,16 +1147,16 @@
         "binop": null
       },
       "value": "j",
-      "start": 424,
-      "end": 425,
+      "start": 417,
+      "end": 418,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 15
+          "line": 12,
+          "column": 14
         },
         "end": {
-          "line": 13,
-          "column": 16
+          "line": 12,
+          "column": 15
         }
       }
     },
@@ -1172,16 +1172,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 426,
-      "end": 427,
+      "start": 418,
+      "end": 419,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 17
+          "line": 12,
+          "column": 15
         },
         "end": {
-          "line": 13,
-          "column": 18
+          "line": 12,
+          "column": 16
         }
       }
     },
@@ -1198,16 +1198,16 @@
         "binop": null
       },
       "value": "_transpose",
-      "start": 428,
-      "end": 438,
+      "start": 420,
+      "end": 430,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 19
+          "line": 12,
+          "column": 17
         },
         "end": {
-          "line": 13,
-          "column": 29
+          "line": 12,
+          "column": 27
         }
       }
     },
@@ -1223,16 +1223,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 438,
-      "end": 439,
+      "start": 430,
+      "end": 431,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 29
+          "line": 12,
+          "column": 27
         },
         "end": {
-          "line": 13,
-          "column": 30
+          "line": 12,
+          "column": 28
         }
       }
     },
@@ -1249,16 +1249,16 @@
         "binop": null
       },
       "value": "i",
-      "start": 440,
-      "end": 441,
+      "start": 431,
+      "end": 432,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 31
+          "line": 12,
+          "column": 28
         },
         "end": {
-          "line": 13,
-          "column": 32
+          "line": 12,
+          "column": 29
         }
       }
     },
@@ -1275,15 +1275,67 @@
         "binop": null
       },
       "value": "++",
-      "start": 441,
-      "end": 443,
+      "start": 432,
+      "end": 434,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 32
+          "line": 12,
+          "column": 29
         },
         "end": {
-          "line": 13,
+          "line": 12,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 434,
+      "end": 435,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 31
+        },
+        "end": {
+          "line": 12,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "j",
+      "start": 436,
+      "end": 437,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 33
+        },
+        "end": {
+          "line": 12,
           "column": 34
         }
       }
@@ -1301,68 +1353,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 444,
-      "end": 445,
+      "start": 437,
+      "end": 438,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 12,
+          "column": 34
+        },
+        "end": {
+          "line": 12,
           "column": 35
-        },
-        "end": {
-          "line": 13,
-          "column": 36
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "j",
-      "start": 446,
-      "end": 447,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 37
-        },
-        "end": {
-          "line": 13,
-          "column": 38
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 448,
-      "end": 449,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 39
-        },
-        "end": {
-          "line": 13,
-          "column": 40
         }
       }
     },
@@ -1379,16 +1379,16 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 450,
-      "end": 455,
+      "start": 439,
+      "end": 444,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 41
+          "line": 12,
+          "column": 36
         },
         "end": {
-          "line": 13,
-          "column": 46
+          "line": 12,
+          "column": 41
         }
       }
     },
@@ -1404,16 +1404,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 456,
-      "end": 457,
+      "start": 444,
+      "end": 445,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 47
+          "line": 12,
+          "column": 41
         },
         "end": {
-          "line": 13,
-          "column": 48
+          "line": 12,
+          "column": 42
         }
       }
     },
@@ -1430,16 +1430,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 458,
-      "end": 459,
+      "start": 445,
+      "end": 446,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 49
+          "line": 12,
+          "column": 42
         },
         "end": {
-          "line": 13,
-          "column": 50
+          "line": 12,
+          "column": 43
         }
       }
     },
@@ -1455,15 +1455,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 461,
-      "end": 462,
+      "start": 447,
+      "end": 448,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 13,
           "column": 0
         },
         "end": {
-          "line": 15,
+          "line": 13,
           "column": 1
         }
       }
@@ -1481,15 +1481,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 463,
-      "end": 463,
+      "start": 449,
+      "end": 449,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 14,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 14,
           "column": 0
         }
       }

@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 488,
+  "end": 473,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 19,
+      "line": 13,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 488,
+    "end": 473,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 19,
+        "line": 13,
         "column": 0
       }
     },
@@ -45,30 +45,30 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 9,
-            "end": 16,
+            "start": 8,
+            "end": 15,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 1,
-                "column": 16
+                "column": 15
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 9,
-              "end": 16,
+              "start": 8,
+              "end": 15,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 16
+                  "column": 15
                 },
                 "identifierName": "_cycles"
               },
@@ -76,16 +76,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 16,
+              "start": 8,
+              "end": 15,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 16
+                  "column": 15
                 },
                 "identifierName": "_cycles"
               },
@@ -95,23 +95,23 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 24,
-          "end": 35,
+          "start": 22,
+          "end": 36,
           "loc": {
             "start": {
               "line": 1,
-              "column": 24
+              "column": 22
             },
             "end": {
               "line": 1,
-              "column": 35
+              "column": 36
             }
           },
           "extra": {
-            "rawValue": "./_cycles",
-            "raw": "'./_cycles'"
+            "rawValue": "./_cycles.js",
+            "raw": "'./_cycles.js'"
           },
-          "value": "./_cycles"
+          "value": "./_cycles.js"
         }
       },
       {
@@ -131,30 +131,30 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 47,
-            "end": 51,
+            "start": 46,
+            "end": 50,
             "loc": {
               "start": {
                 "line": 2,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 2,
-                "column": 13
+                "column": 12
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 47,
-              "end": 51,
+              "start": 46,
+              "end": 50,
               "loc": {
                 "start": {
                   "line": 2,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 2,
-                  "column": 13
+                  "column": 12
                 },
                 "identifierName": "used"
               },
@@ -162,16 +162,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 47,
-              "end": 51,
+              "start": 46,
+              "end": 50,
               "loc": {
                 "start": {
                   "line": 2,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 2,
-                  "column": 13
+                  "column": 12
                 },
                 "identifierName": "used"
               },
@@ -181,37 +181,37 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 59,
-          "end": 67,
+          "start": 57,
+          "end": 68,
           "loc": {
             "start": {
               "line": 2,
-              "column": 21
+              "column": 19
             },
             "end": {
               "line": 2,
-              "column": 29
+              "column": 30
             }
           },
           "extra": {
-            "rawValue": "./used",
-            "raw": "'./used'"
+            "rawValue": "./used.js",
+            "raw": "'./used.js'"
           },
-          "value": "./used"
+          "value": "./used.js"
         },
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
-            "start": 72,
-            "end": 396,
+            "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+            "start": 71,
+            "end": 403,
             "loc": {
               "start": {
-                "line": 5,
+                "line": 4,
                 "column": 0
               },
               "end": {
-                "line": 12,
+                "line": 11,
                 "column": 3
               }
             }
@@ -220,271 +220,274 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 397,
-        "end": 486,
+        "start": 404,
+        "end": 472,
         "loc": {
           "start": {
-            "line": 13,
+            "line": 12,
             "column": 0
           },
           "end": {
-            "line": 17,
-            "column": 1
+            "line": 12,
+            "column": 68
           }
         },
         "specifiers": [],
         "source": null,
         "declaration": {
-          "type": "FunctionDeclaration",
-          "start": 404,
-          "end": 486,
+          "type": "VariableDeclaration",
+          "start": 411,
+          "end": 472,
           "loc": {
             "start": {
-              "line": 13,
+              "line": 12,
               "column": 7
             },
             "end": {
-              "line": 17,
-              "column": 1
+              "line": 12,
+              "column": 68
             }
           },
-          "id": {
-            "type": "Identifier",
-            "start": 414,
-            "end": 420,
-            "loc": {
-              "start": {
-                "line": 13,
-                "column": 17
-              },
-              "end": {
-                "line": 13,
-                "column": 23
-              },
-              "identifierName": "cycles"
-            },
-            "name": "cycles",
-            "leadingComments": null
-          },
-          "generator": true,
-          "expression": false,
-          "async": false,
-          "params": [
+          "declarations": [
             {
-              "type": "Identifier",
-              "start": 423,
-              "end": 428,
+              "type": "VariableDeclarator",
+              "start": 417,
+              "end": 471,
               "loc": {
                 "start": {
-                  "line": 13,
-                  "column": 26
-                },
-                "end": {
-                  "line": 13,
-                  "column": 31
-                },
-                "identifierName": "sigma"
-              },
-              "name": "sigma"
-            }
-          ],
-          "body": {
-            "type": "BlockStatement",
-            "start": 431,
-            "end": 486,
-            "loc": {
-              "start": {
-                "line": 13,
-                "column": 34
-              },
-              "end": {
-                "line": 17,
-                "column": 1
-              }
-            },
-            "body": [
-              {
-                "type": "ExpressionStatement",
-                "start": 435,
-                "end": 483,
-                "loc": {
-                  "start": {
-                    "line": 15,
-                    "column": 1
-                  },
-                  "end": {
-                    "line": 15,
-                    "column": 49
-                  }
-                },
-                "expression": {
-                  "type": "YieldExpression",
-                  "start": 435,
-                  "end": 481,
-                  "loc": {
-                    "start": {
-                      "line": 15,
-                      "column": 1
-                    },
-                    "end": {
-                      "line": 15,
-                      "column": 47
-                    }
-                  },
-                  "delegate": true,
-                  "argument": {
-                    "type": "CallExpression",
-                    "start": 442,
-                    "end": 481,
-                    "loc": {
-                      "start": {
-                        "line": 15,
-                        "column": 8
-                      },
-                      "end": {
-                        "line": 15,
-                        "column": 47
-                      }
-                    },
-                    "callee": {
-                      "type": "Identifier",
-                      "start": 442,
-                      "end": 449,
-                      "loc": {
-                        "start": {
-                          "line": 15,
-                          "column": 8
-                        },
-                        "end": {
-                          "line": 15,
-                          "column": 15
-                        },
-                        "identifierName": "_cycles"
-                      },
-                      "name": "_cycles"
-                    },
-                    "arguments": [
-                      {
-                        "type": "Identifier",
-                        "start": 451,
-                        "end": 456,
-                        "loc": {
-                          "start": {
-                            "line": 15,
-                            "column": 17
-                          },
-                          "end": {
-                            "line": 15,
-                            "column": 22
-                          },
-                          "identifierName": "sigma"
-                        },
-                        "name": "sigma"
-                      },
-                      {
-                        "type": "CallExpression",
-                        "start": 459,
-                        "end": 479,
-                        "loc": {
-                          "start": {
-                            "line": 15,
-                            "column": 25
-                          },
-                          "end": {
-                            "line": 15,
-                            "column": 45
-                          }
-                        },
-                        "callee": {
-                          "type": "Identifier",
-                          "start": 459,
-                          "end": 463,
-                          "loc": {
-                            "start": {
-                              "line": 15,
-                              "column": 25
-                            },
-                            "end": {
-                              "line": 15,
-                              "column": 29
-                            },
-                            "identifierName": "used"
-                          },
-                          "name": "used"
-                        },
-                        "arguments": [
-                          {
-                            "type": "MemberExpression",
-                            "start": 465,
-                            "end": 477,
-                            "loc": {
-                              "start": {
-                                "line": 15,
-                                "column": 31
-                              },
-                              "end": {
-                                "line": 15,
-                                "column": 43
-                              }
-                            },
-                            "object": {
-                              "type": "Identifier",
-                              "start": 465,
-                              "end": 470,
-                              "loc": {
-                                "start": {
-                                  "line": 15,
-                                  "column": 31
-                                },
-                                "end": {
-                                  "line": 15,
-                                  "column": 36
-                                },
-                                "identifierName": "sigma"
-                              },
-                              "name": "sigma"
-                            },
-                            "property": {
-                              "type": "Identifier",
-                              "start": 471,
-                              "end": 477,
-                              "loc": {
-                                "start": {
-                                  "line": 15,
-                                  "column": 37
-                                },
-                                "end": {
-                                  "line": 15,
-                                  "column": 43
-                                },
-                                "identifierName": "length"
-                              },
-                              "name": "length"
-                            },
-                            "computed": false
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                }
-              }
-            ],
-            "directives": []
-          },
-          "leadingComments": [
-            {
-              "type": "CommentBlock",
-              "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
-              "start": 72,
-              "end": 396,
-              "loc": {
-                "start": {
-                  "line": 5,
-                  "column": 0
+                  "line": 12,
+                  "column": 13
                 },
                 "end": {
                   "line": 12,
+                  "column": 67
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 417,
+                "end": 423,
+                "loc": {
+                  "start": {
+                    "line": 12,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 12,
+                    "column": 19
+                  },
+                  "identifierName": "cycles"
+                },
+                "name": "cycles",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 426,
+                "end": 471,
+                "loc": {
+                  "start": {
+                    "line": 12,
+                    "column": 22
+                  },
+                  "end": {
+                    "line": 12,
+                    "column": 67
+                  }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "start": 417,
+                  "end": 423,
+                  "loc": {
+                    "start": {
+                      "line": 12,
+                      "column": 13
+                    },
+                    "end": {
+                      "line": 12,
+                      "column": 19
+                    },
+                    "identifierName": "cycles"
+                  },
+                  "name": "cycles",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": true,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 427,
+                    "end": 432,
+                    "loc": {
+                      "start": {
+                        "line": 12,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 12,
+                        "column": 28
+                      },
+                      "identifierName": "sigma"
+                    },
+                    "name": "sigma"
+                  }
+                ],
+                "body": {
+                  "type": "CallExpression",
+                  "start": 437,
+                  "end": 471,
+                  "loc": {
+                    "start": {
+                      "line": 12,
+                      "column": 33
+                    },
+                    "end": {
+                      "line": 12,
+                      "column": 67
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 437,
+                    "end": 444,
+                    "loc": {
+                      "start": {
+                        "line": 12,
+                        "column": 33
+                      },
+                      "end": {
+                        "line": 12,
+                        "column": 40
+                      },
+                      "identifierName": "_cycles"
+                    },
+                    "name": "_cycles"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 445,
+                      "end": 450,
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 41
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 46
+                        },
+                        "identifierName": "sigma"
+                      },
+                      "name": "sigma"
+                    },
+                    {
+                      "type": "CallExpression",
+                      "start": 452,
+                      "end": 470,
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 48
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 66
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 452,
+                        "end": 456,
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 48
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 52
+                          },
+                          "identifierName": "used"
+                        },
+                        "name": "used"
+                      },
+                      "arguments": [
+                        {
+                          "type": "MemberExpression",
+                          "start": 457,
+                          "end": 469,
+                          "loc": {
+                            "start": {
+                              "line": 12,
+                              "column": 53
+                            },
+                            "end": {
+                              "line": 12,
+                              "column": 65
+                            }
+                          },
+                          "object": {
+                            "type": "Identifier",
+                            "start": 457,
+                            "end": 462,
+                            "loc": {
+                              "start": {
+                                "line": 12,
+                                "column": 53
+                              },
+                              "end": {
+                                "line": 12,
+                                "column": 58
+                              },
+                              "identifierName": "sigma"
+                            },
+                            "name": "sigma"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 463,
+                            "end": 469,
+                            "loc": {
+                              "start": {
+                                "line": 12,
+                                "column": 59
+                              },
+                              "end": {
+                                "line": 12,
+                                "column": 65
+                              },
+                              "identifierName": "length"
+                            },
+                            "name": "length"
+                          },
+                          "computed": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+              "start": 71,
+              "end": 403,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 0
+                },
+                "end": {
+                  "line": 11,
                   "column": 3
                 }
               }
@@ -495,16 +498,16 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
-            "start": 72,
-            "end": 396,
+            "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+            "start": 71,
+            "end": 403,
             "loc": {
               "start": {
-                "line": 5,
+                "line": 4,
                 "column": 0
               },
               "end": {
-                "line": 12,
+                "line": 11,
                 "column": 3
               }
             }
@@ -517,16 +520,16 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
-      "start": 72,
-      "end": 396,
+      "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+      "start": 71,
+      "end": 403,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 4,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 11,
           "column": 3
         }
       }
@@ -538,7 +541,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -599,16 +602,16 @@
         "binop": null
       },
       "value": "_cycles",
-      "start": 9,
-      "end": 16,
+      "start": 8,
+      "end": 15,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 1,
-          "column": 16
+          "column": 15
         }
       }
     },
@@ -624,16 +627,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 17,
-      "end": 18,
+      "start": 15,
+      "end": 16,
       "loc": {
         "start": {
           "line": 1,
-          "column": 17
+          "column": 15
         },
         "end": {
           "line": 1,
-          "column": 18
+          "column": 16
         }
       }
     },
@@ -650,16 +653,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 19,
-      "end": 23,
+      "start": 17,
+      "end": 21,
       "loc": {
         "start": {
           "line": 1,
-          "column": 19
+          "column": 17
         },
         "end": {
           "line": 1,
-          "column": 23
+          "column": 21
         }
       }
     },
@@ -676,17 +679,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./_cycles",
-      "start": 24,
-      "end": 35,
+      "value": "./_cycles.js",
+      "start": 22,
+      "end": 36,
       "loc": {
         "start": {
           "line": 1,
-          "column": 24
+          "column": 22
         },
         "end": {
           "line": 1,
-          "column": 35
+          "column": 36
         }
       }
     },
@@ -721,7 +724,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -782,16 +785,16 @@
         "binop": null
       },
       "value": "used",
-      "start": 47,
-      "end": 51,
+      "start": 46,
+      "end": 50,
       "loc": {
         "start": {
           "line": 2,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 2,
-          "column": 13
+          "column": 12
         }
       }
     },
@@ -807,16 +810,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 52,
-      "end": 53,
+      "start": 50,
+      "end": 51,
       "loc": {
         "start": {
           "line": 2,
-          "column": 14
+          "column": 12
         },
         "end": {
           "line": 2,
-          "column": 15
+          "column": 13
         }
       }
     },
@@ -833,16 +836,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 54,
-      "end": 58,
+      "start": 52,
+      "end": 56,
       "loc": {
         "start": {
           "line": 2,
-          "column": 16
+          "column": 14
         },
         "end": {
           "line": 2,
-          "column": 20
+          "column": 18
         }
       }
     },
@@ -859,17 +862,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./used",
-      "start": 59,
-      "end": 67,
+      "value": "./used.js",
+      "start": 57,
+      "end": 68,
       "loc": {
         "start": {
           "line": 2,
-          "column": 21
+          "column": 19
         },
         "end": {
           "line": 2,
-          "column": 29
+          "column": 30
         }
       }
     },
@@ -901,16 +904,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Iterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
-      "start": 72,
-      "end": 396,
+      "value": "*\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n ",
+      "start": 71,
+      "end": 403,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 4,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 11,
           "column": 3
         }
       }
@@ -930,70 +933,44 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 397,
-      "end": 403,
+      "start": 404,
+      "end": 410,
       "loc": {
         "start": {
-          "line": 13,
+          "line": 12,
           "column": 0
         },
         "end": {
-          "line": 13,
+          "line": 12,
           "column": 6
         }
       }
     },
     {
       "type": {
-        "label": "function",
-        "keyword": "function",
+        "label": "const",
+        "keyword": "const",
         "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "function",
-      "start": 404,
-      "end": 412,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 7
-        },
-        "end": {
-          "line": 13,
-          "column": 15
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "*",
-        "beforeExpr": true,
         "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": 10,
+        "binop": null,
         "updateContext": null
       },
-      "value": "*",
-      "start": 412,
-      "end": 413,
+      "value": "const",
+      "start": 411,
+      "end": 416,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 15
+          "line": 12,
+          "column": 7
         },
         "end": {
-          "line": 13,
-          "column": 16
+          "line": 12,
+          "column": 12
         }
       }
     },
@@ -1010,16 +987,43 @@
         "binop": null
       },
       "value": "cycles",
-      "start": 414,
-      "end": 420,
+      "start": 417,
+      "end": 423,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 17
+          "line": 12,
+          "column": 13
         },
         "end": {
-          "line": 13,
-          "column": 23
+          "line": 12,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 424,
+      "end": 425,
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 20
+        },
+        "end": {
+          "line": 12,
+          "column": 21
         }
       }
     },
@@ -1035,16 +1039,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 421,
-      "end": 422,
+      "start": 426,
+      "end": 427,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 24
+          "line": 12,
+          "column": 22
         },
         "end": {
-          "line": 13,
-          "column": 25
+          "line": 12,
+          "column": 23
         }
       }
     },
@@ -1061,16 +1065,16 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 423,
-      "end": 428,
+      "start": 427,
+      "end": 432,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 26
+          "line": 12,
+          "column": 23
         },
         "end": {
-          "line": 13,
-          "column": 31
+          "line": 12,
+          "column": 28
         }
       }
     },
@@ -1086,50 +1090,24 @@
         "postfix": false,
         "binop": null
       },
-      "start": 429,
-      "end": 430,
+      "start": 432,
+      "end": 433,
       "loc": {
         "start": {
-          "line": 13,
-          "column": 32
+          "line": 12,
+          "column": 28
         },
         "end": {
-          "line": 13,
-          "column": 33
+          "line": 12,
+          "column": 29
         }
       }
     },
     {
       "type": {
-        "label": "{",
+        "label": "=>",
         "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 431,
-      "end": 432,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 34
-        },
-        "end": {
-          "line": 13,
-          "column": 35
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "yield",
-        "keyword": "yield",
-        "beforeExpr": true,
-        "startsExpr": true,
+        "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -1138,44 +1116,16 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "yield",
-      "start": 435,
-      "end": 440,
+      "start": 434,
+      "end": 436,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 1
+          "line": 12,
+          "column": 30
         },
         "end": {
-          "line": 15,
-          "column": 6
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "*",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": 10,
-        "updateContext": null
-      },
-      "value": "*",
-      "start": 440,
-      "end": 441,
-      "loc": {
-        "start": {
-          "line": 15,
-          "column": 6
-        },
-        "end": {
-          "line": 15,
-          "column": 7
+          "line": 12,
+          "column": 32
         }
       }
     },
@@ -1192,16 +1142,16 @@
         "binop": null
       },
       "value": "_cycles",
-      "start": 442,
-      "end": 449,
+      "start": 437,
+      "end": 444,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 8
+          "line": 12,
+          "column": 33
         },
         "end": {
-          "line": 15,
-          "column": 15
+          "line": 12,
+          "column": 40
         }
       }
     },
@@ -1217,16 +1167,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 449,
-      "end": 450,
+      "start": 444,
+      "end": 445,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 15
+          "line": 12,
+          "column": 40
         },
         "end": {
-          "line": 15,
-          "column": 16
+          "line": 12,
+          "column": 41
         }
       }
     },
@@ -1243,16 +1193,16 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 451,
-      "end": 456,
+      "start": 445,
+      "end": 450,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 17
+          "line": 12,
+          "column": 41
         },
         "end": {
-          "line": 15,
-          "column": 22
+          "line": 12,
+          "column": 46
         }
       }
     },
@@ -1269,16 +1219,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 457,
-      "end": 458,
+      "start": 450,
+      "end": 451,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 23
+          "line": 12,
+          "column": 46
         },
         "end": {
-          "line": 15,
-          "column": 24
+          "line": 12,
+          "column": 47
         }
       }
     },
@@ -1295,16 +1245,16 @@
         "binop": null
       },
       "value": "used",
-      "start": 459,
-      "end": 463,
+      "start": 452,
+      "end": 456,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 25
+          "line": 12,
+          "column": 48
         },
         "end": {
-          "line": 15,
-          "column": 29
+          "line": 12,
+          "column": 52
         }
       }
     },
@@ -1320,16 +1270,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 463,
-      "end": 464,
+      "start": 456,
+      "end": 457,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 29
+          "line": 12,
+          "column": 52
         },
         "end": {
-          "line": 15,
-          "column": 30
+          "line": 12,
+          "column": 53
         }
       }
     },
@@ -1346,16 +1296,16 @@
         "binop": null
       },
       "value": "sigma",
-      "start": 465,
-      "end": 470,
+      "start": 457,
+      "end": 462,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 31
+          "line": 12,
+          "column": 53
         },
         "end": {
-          "line": 15,
-          "column": 36
+          "line": 12,
+          "column": 58
         }
       }
     },
@@ -1372,16 +1322,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 470,
-      "end": 471,
+      "start": 462,
+      "end": 463,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 36
+          "line": 12,
+          "column": 58
         },
         "end": {
-          "line": 15,
-          "column": 37
+          "line": 12,
+          "column": 59
         }
       }
     },
@@ -1398,16 +1348,16 @@
         "binop": null
       },
       "value": "length",
-      "start": 471,
-      "end": 477,
+      "start": 463,
+      "end": 469,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 37
+          "line": 12,
+          "column": 59
         },
         "end": {
-          "line": 15,
-          "column": 43
+          "line": 12,
+          "column": 65
         }
       }
     },
@@ -1423,16 +1373,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 478,
-      "end": 479,
+      "start": 469,
+      "end": 470,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 44
+          "line": 12,
+          "column": 65
         },
         "end": {
-          "line": 15,
-          "column": 45
+          "line": 12,
+          "column": 66
         }
       }
     },
@@ -1448,16 +1398,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 480,
-      "end": 481,
+      "start": 470,
+      "end": 471,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 46
+          "line": 12,
+          "column": 66
         },
         "end": {
-          "line": 15,
-          "column": 47
+          "line": 12,
+          "column": 67
         }
       }
     },
@@ -1474,41 +1424,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 482,
-      "end": 483,
+      "start": 471,
+      "end": 472,
       "loc": {
         "start": {
-          "line": 15,
-          "column": 48
+          "line": 12,
+          "column": 67
         },
         "end": {
-          "line": 15,
-          "column": 49
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "}",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 485,
-      "end": 486,
-      "loc": {
-        "start": {
-          "line": 17,
-          "column": 0
-        },
-        "end": {
-          "line": 17,
-          "column": 1
+          "line": 12,
+          "column": 68
         }
       }
     },
@@ -1525,15 +1450,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 488,
-      "end": 488,
+      "start": 473,
+      "end": 473,
       "loc": {
         "start": {
-          "line": 19,
+          "line": 13,
           "column": 0
         },
         "end": {
-          "line": 19,
+          "line": 13,
           "column": 0
         }
       }

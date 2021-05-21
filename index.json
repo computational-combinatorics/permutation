@@ -1,0 +1,2496 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/_apply.js",
+    "content": "import {_transpose} from './_transpose.js';\n\n/**\n * Applies a given sequence (in the given order) of transpositions (given as\n * index tuples) to a given permutation. The permutation is modified ___in-place___.\n *\n * @param {Iterable} transpositions The given transpositions to apply.\n * @param {Array} sigma The permutation to apply the transpositions to\n * (modified in-place).\n */\nexport function _apply(transpositions, sigma) {\n\tfor (const [s, t] of transpositions) _transpose(s, t, sigma);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_apply.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "_apply",
+    "memberof": "src/_apply.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_apply.js~_apply",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_apply.js",
+    "importStyle": "{_apply}",
+    "description": "Applies a given sequence (in the given order) of transpositions (given as\nindex tuples) to a given permutation. The permutation is modified ___in-place___.",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "transpositions",
+        "description": "The given transpositions to apply."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The permutation to apply the transpositions to\n(modified in-place)."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/_bitreversal.js",
+    "content": "/**\n * Fills an input array with the bitreversal permutation for input\n * <code>n</code> items. The array is filled starting at index <code>0</code>\n * and ending at index <code>n-1</code>. Note that <code>n</code> MUST be a\n * power of <code>2</code>.\n *\n * @param {Array} array The array to fill.\n * @param {number} n The size of the permutation, must be a power of 2.\n */\nexport function _bitreversal(array, n) {\n\tlet i = 1;\n\n\tarray[0] = 0;\n\n\twhile (i < n) {\n\t\tfor (let j = 0; j < i; ++j) {\n\t\t\tarray[i + j] = (array[j] <<= 1) + 1;\n\t\t}\n\n\t\ti <<= 1;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_bitreversal.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "_bitreversal",
+    "memberof": "src/_bitreversal.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_bitreversal.js~_bitreversal",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_bitreversal.js",
+    "importStyle": "{_bitreversal}",
+    "description": "Fills an input array with the bitreversal permutation for input\n<code>n</code> items. The array is filled starting at index <code>0</code>\nand ending at index <code>n-1</code>. Note that <code>n</code> MUST be a\npower of <code>2</code>.",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "The array to fill."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation, must be a power of 2."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/_compose.js",
+    "content": "/**\n * Compose two input permutations. The resulting permutation is output as an\n * iterator of indices instead of an array of indices.\n *\n * @param {Array} sigma The first input permutation.\n * @param {Array} tau The second input permutation.\n * @returns {IterableIterator} An iterator over the items of the resulting permutation.\n */\nexport function* _compose(sigma, tau) {\n\tfor (const t of tau) yield sigma[t];\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_compose.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "_compose",
+    "memberof": "src/_compose.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/_compose.js~_compose",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_compose.js",
+    "importStyle": "{_compose}",
+    "description": "Compose two input permutations. The resulting permutation is output as an\niterator of indices instead of an array of indices.",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{IterableIterator} An iterator over the items of the resulting permutation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The first input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The second input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "An iterator over the items of the resulting permutation."
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/_copy.js",
+    "content": "/**\n * Copy an input permutation to an output array.\n *\n * @param {Array} sigma The input permutation.\n * @param {number} n The size of the input permutation to copy.\n * @param {Array} tau The output array.\n */\nexport function _copy(sigma, n, tau) {\n\tfor (let i = 0; i < n; ++i) tau[i] = sigma[i];\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_copy.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "_copy",
+    "memberof": "src/_copy.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_copy.js~_copy",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_copy.js",
+    "importStyle": "{_copy}",
+    "description": "Copy an input permutation to an output array.",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the input permutation to copy."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The output array."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/_cycles.js",
+    "content": "/**\n * Computes a cycle decomposition of an input permutation. This algorithm is\n * deterministic; the algorithm will procedes in a sequential manner, first\n * yielding the cycle containing the first (in input order) index of the\n * permutation, then yielding the cycle containing the first (in input order)\n * index of the permutation that is not in the first cycle, etc. The output is\n * in the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n * <code>a</code> is the first element of the cycle and the list <code>[b, c,\n * ...]</code> contains the second, third, etc. elements of the cycle.  The\n * algorithm uses an helper array to remember which elements have already been\n * encountered.\n *\n * @see https://en.wikipedia.org/wiki/Permutation#Cycle_notation\n *\n * @param {Array} sigma The input permutation.\n * @param {Array} used The helper array.\n * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport function* _cycles(sigma, used) {\n\tfor (const s of sigma) {\n\t\tif (used[s]) continue;\n\n\t\tused[s] = true;\n\n\t\tlet image = sigma[s];\n\n\t\tconst cycle = [];\n\n\t\twhile (image !== s) {\n\t\t\tused[image] = true;\n\n\t\t\tcycle.push(image);\n\n\t\t\timage = sigma[image];\n\t\t}\n\n\t\tyield [s, cycle];\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_cycles.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "_cycles",
+    "memberof": "src/_cycles.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/_cycles.js~_cycles",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_cycles.js",
+    "importStyle": "{_cycles}",
+    "description": "Computes a cycle decomposition of an input permutation. This algorithm is\ndeterministic; the algorithm will procedes in a sequential manner, first\nyielding the cycle containing the first (in input order) index of the\npermutation, then yielding the cycle containing the first (in input order)\nindex of the permutation that is not in the first cycle, etc. The output is\nin the form of an iterator over cycles <code>[a, [b, c, ...]]</code> where\n<code>a</code> is the first element of the cycle and the list <code>[b, c,\n...]</code> contains the second, third, etc. elements of the cycle.  The\nalgorithm uses an helper array to remember which elements have already been\nencountered.",
+    "see": [
+      "https://en.wikipedia.org/wiki/Permutation#Cycle_notation"
+    ],
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "used",
+        "description": "The helper array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "The cycles <code>[a, [b, c, ...]]</code> for sigma."
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/_identity.js",
+    "content": "/**\n * Fills an input array with the identity permutation on input <code>n</code>\n * elements.\n *\n * @param {Array} sigma The input array.\n * @param {number} n The size to use for the permutation.\n */\nexport function _identity(sigma, n) {\n\tfor (let i = 0; i < n; ++i) sigma[i] = i;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_identity.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "_identity",
+    "memberof": "src/_identity.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_identity.js~_identity",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_identity.js",
+    "importStyle": "{_identity}",
+    "description": "Fills an input array with the identity permutation on input <code>n</code>\nelements.",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input array."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size to use for the permutation."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/_invert.js",
+    "content": "/**\n * Fills an input array with the inverse <code>tau</code> of the input\n * permutation <code>sigma</code>, that is, the permutation such that\n * <code>compose(sigma, tau)</code> returns\n * <code>identity(sigma.length)</code>. See {@link invert} for the higher level\n * API.\n *\n * @param {Array} sigma The input permutation.\n * @param {number} n The size of the input permutation.\n * @param {Array} tau The array where to put the inverse of the input permutation.\n */\nexport function _invert(sigma, n, tau) {\n\tfor (let i = 0; i < n; ++i) tau[sigma[i]] = i;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_invert.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "_invert",
+    "memberof": "src/_invert.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_invert.js~_invert",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_invert.js",
+    "importStyle": "{_invert}",
+    "description": "Fills an input array with the inverse <code>tau</code> of the input\npermutation <code>sigma</code>, that is, the permutation such that\n<code>compose(sigma, tau)</code> returns\n<code>identity(sigma.length)</code>. See {@link invert} for the higher level\nAPI.",
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The array where to put the inverse of the input permutation."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/_invertcycles.js",
+    "content": "import {_transpose} from './_transpose.js';\n\n/**\n * Inverts given cycles in a given permutation ___in-place___. Can be used as\n * an alternative way of inverting an entire permutation by inverting all of\n * its cycles in the identity permutation.\n *\n * @example\n * const invert = sigma => {\n *   const tau = identity( sigma.length ) ;\n *   const cycles_sigma = cycles( sigma ) ;\n *   _invertcycles( cycles_sigma , tau ) ;\n *   return tau ;\n * } ;\n *\n * @param {Iterable} cycles The cycles to invert.\n * @param {Array} tau The given permutation (modified in-place).\n */\nexport function _invertcycles(cycles, tau) {\n\tfor (const [s, cycle] of cycles) {\n\t\tfor (const t of cycle) _transpose(s, t, tau);\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_invertcycles.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "_invertcycles",
+    "memberof": "src/_invertcycles.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_invertcycles.js~_invertcycles",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_invertcycles.js",
+    "importStyle": "{_invertcycles}",
+    "description": "Inverts given cycles in a given permutation ___in-place___. Can be used as\nan alternative way of inverting an entire permutation by inverting all of\nits cycles in the identity permutation.",
+    "examples": [
+      "const invert = sigma => {\n  const tau = identity( sigma.length ) ;\n  const cycles_sigma = cycles( sigma ) ;\n  _invertcycles( cycles_sigma , tau ) ;\n  return tau ;\n} ;"
+    ],
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cycles",
+        "description": "The cycles to invert."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The given permutation (modified in-place)."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/_itranspositions.js",
+    "content": "/**\n * Computes the sequence of transpositions that if applied to\n * <code>sigma</code> result in <code>invert(sigma)</code>. Needs an helper\n * array to keep track of processed elements. See {@link itranspositions} for\n * higher level API.\n *\n * @param {Array} sigma Input permutation.\n * @param {Array} used Helper array.\n * @return {IterableIterator} Iterator over the transpositions.\n */\nexport function* _itranspositions(sigma, used) {\n\tfor (const s of sigma) {\n\t\tif (used[s]) continue;\n\n\t\tused[s] = true;\n\n\t\tlet image = sigma[s];\n\n\t\twhile (image !== s) {\n\t\t\tused[image] = true;\n\n\t\t\tyield [s, image];\n\n\t\t\timage = sigma[image];\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_itranspositions.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "_itranspositions",
+    "memberof": "src/_itranspositions.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/_itranspositions.js~_itranspositions",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_itranspositions.js",
+    "importStyle": "{_itranspositions}",
+    "description": "Computes the sequence of transpositions that if applied to\n<code>sigma</code> result in <code>invert(sigma)</code>. Needs an helper\narray to keep track of processed elements. See {@link itranspositions} for\nhigher level API.",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "Input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "used",
+        "description": "Helper array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "Iterator over the transpositions."
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/_next.js",
+    "content": "import {_transpose} from './_transpose.js';\nimport {_reverse} from './_reverse.js';\n\n/**\n * Updates the input permutation to the next one ___in-place___. Returns true\n * unless the input permutation is the last for its elements. In that case, the\n * input permutation remains untouched.\n *\n * @param {Array} sigma The input permutation (modified in-place).\n * @param {number} n The size of the input permutation.\n * @returns {Boolean} Whether the input permutation is\n * __NOT__ the last for its elements.\n */\nexport function _next(sigma, n) {\n\tlet i = n - 1;\n\n\twhile (i > 0) {\n\t\t--i;\n\n\t\tif (sigma[i] > sigma[i + 1]) continue;\n\n\t\tlet j = n - 1;\n\n\t\twhile (sigma[j] < sigma[i]) --j;\n\n\t\t_transpose(i, j, sigma);\n\n\t\t_reverse(sigma, i + 1, n);\n\n\t\treturn true;\n\t}\n\n\treturn false;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_next.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "_next",
+    "memberof": "src/_next.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_next.js~_next",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_next.js",
+    "importStyle": "{_next}",
+    "description": "Updates the input permutation to the next one ___in-place___. Returns true\nunless the input permutation is the last for its elements. In that case, the\ninput permutation remains untouched.",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} Whether the input permutation is\n__NOT__ the last for its elements."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation (modified in-place)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "Whether the input permutation is\n__NOT__ the last for its elements."
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/_permutations.js",
+    "content": "import {_next} from './_next.js';\n\n/**\n * Yields all permutations starting from a given one and ending at the last\n * permutation.\n *\n * @param {Array} sigma The starting permutation.\n * @param {number} n The size of the permutation.\n * @returns {IterableIterator} Iterator over all permutations between the starting one\n * and the last permutation on its elements.\n */\nexport function* _permutations(sigma, n) {\n\tdo {\n\t\tyield sigma;\n\t} while (_next(sigma, n));\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_permutations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "_permutations",
+    "memberof": "src/_permutations.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/_permutations.js~_permutations",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_permutations.js",
+    "importStyle": "{_permutations}",
+    "description": "Yields all permutations starting from a given one and ending at the last\npermutation.",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{IterableIterator} Iterator over all permutations between the starting one\nand the last permutation on its elements."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The starting permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "Iterator over all permutations between the starting one\nand the last permutation on its elements."
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "src/_reverse.js",
+    "content": "import {_transpose} from './_transpose.js';\n\n/**\n * Reverses input permutation ___in-place___ from input index <code>i</code>\n * (include) to input index <code>j</code> (excluded).\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n * @param {number} i The left bound (included).\n * @param {number} j The right bound (excluded).\n */\nexport function _reverse(sigma, i, j) {\n\twhile (i < --j) _transpose(i++, j, sigma);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_reverse.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "_reverse",
+    "memberof": "src/_reverse.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_reverse.js~_reverse",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_reverse.js",
+    "importStyle": "{_reverse}",
+    "description": "Reverses input permutation ___in-place___ from input index <code>i</code>\n(include) to input index <code>j</code> (excluded).",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation to reverse (modified in-place)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "i",
+        "description": "The left bound (included)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "j",
+        "description": "The right bound (excluded)."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/_transpose.js",
+    "content": "/**\n * Transpose elements of input index <code>a</code> and <code>b</code> in the\n * input permutation.\n *\n * @param {number} a The first input index.\n * @param {number} b The second input index.\n * @param {Array} sigma The input permutation.\n */\nexport function _transpose(a, b, sigma) {\n\tconst tmp = sigma[a];\n\tsigma[a] = sigma[b];\n\tsigma[b] = tmp;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_transpose.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "_transpose",
+    "memberof": "src/_transpose.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_transpose.js~_transpose",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_transpose.js",
+    "importStyle": "{_transpose}",
+    "description": "Transpose elements of input index <code>a</code> and <code>b</code> in the\ninput permutation.",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": "The first input index."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "b",
+        "description": "The second input index."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/_transposition.js",
+    "content": "/**\n * Helper method for {@link transposition}.\n * Transposes <code>a</code> with <code>b</code> in <code>sigma</code> provided\n * <code>sigma[a] === a</code> and <code>sigma[b] === b</code>.\n *\n * @param {number} a First index.\n * @param {number} b Second index.\n * @param {Array} sigma Input permutation.\n */\nexport function _transposition(a, b, sigma) {\n\tsigma[a] = b;\n\tsigma[b] = a;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_transposition.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "_transposition",
+    "memberof": "src/_transposition.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_transposition.js~_transposition",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_transposition.js",
+    "importStyle": "{_transposition}",
+    "description": "Helper method for {@link transposition}.\nTransposes <code>a</code> with <code>b</code> in <code>sigma</code> provided\n<code>sigma[a] === a</code> and <code>sigma[b] === b</code>.",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": "First index."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "b",
+        "description": "Second index."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "Input permutation."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/_transpositions.js",
+    "content": "/**\n * Computes the transposition decomposition of some permutation given its cycle\n * decomposition.\n *\n * @param {Iterable} cycles The cycle decomposition of some permutation.\n * @returns {IterableIterator} The transposition decomposition of the permutation\n * defined by the input cycles.\n */\nexport function* _transpositions(cycles) {\n\tfor (const [s, cycle] of cycles) {\n\t\twhile (cycle.length > 0) yield [s, cycle.pop()];\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_transpositions.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "_transpositions",
+    "memberof": "src/_transpositions.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/_transpositions.js~_transpositions",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_transpositions.js",
+    "importStyle": "{_transpositions}",
+    "description": "Computes the transposition decomposition of some permutation given its cycle\ndecomposition.",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{IterableIterator} The transposition decomposition of the permutation\ndefined by the input cycles."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cycles",
+        "description": "The cycle decomposition of some permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "The transposition decomposition of the permutation\ndefined by the input cycles."
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/_used.js",
+    "content": "/**\n * For a given size <code>n</code>, fills an input array with\n * <code>false</code>. Starting at index <code>0</code>, ending at index\n * <code>n-1</code>. This array is used as a helper in other function. For\n * example, for computing the cycle decomposition of an input permutation (see\n * {@link _cycles}, {@link cycles}).\n *\n * @param {number} n The given size.\n * @param {Array} array The input array.\n */\nexport function _used(n, array) {\n\tfor (let i = 0; i < n; ++i) array[i] = false;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/_used.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "_used",
+    "memberof": "src/_used.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/_used.js~_used",
+    "access": "private",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/_used.js",
+    "importStyle": "{_used}",
+    "description": "For a given size <code>n</code>, fills an input array with\n<code>false</code>. Starting at index <code>0</code>, ending at index\n<code>n-1</code>. This array is used as a helper in other function. For\nexample, for computing the cycle decomposition of an input permutation (see\n{@link _cycles}, {@link cycles}).",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The given size."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "The input array."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/apply.js",
+    "content": "import {identity} from './identity.js';\nimport {_apply} from './_apply.js';\n\n/**\n * Apply a given sequence (in the given order) of transpositions (given as\n * index tuples) to the identity permutation over input <code>n</code> elements.\n *\n * @param {number} n The size of the identity permutation to apply the transpositions\n * to.\n * @param {Iterable} transpositions The given transpositions to apply.\n * @returns {Array} The resulting permutation.\n */\nexport function apply(n, transpositions) {\n\tconst rho = identity(n);\n\n\t_apply(transpositions, rho);\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/apply.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "function",
+    "name": "apply",
+    "memberof": "src/apply.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/apply.js~apply",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/apply.js",
+    "importStyle": "{apply}",
+    "description": "Apply a given sequence (in the given order) of transpositions (given as\nindex tuples) to the identity permutation over input <code>n</code> elements.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The resulting permutation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the identity permutation to apply the transpositions\nto."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "transpositions",
+        "description": "The given transpositions to apply."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The resulting permutation."
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "src/bitreversal.js",
+    "content": "import {permutation} from './permutation.js';\nimport {_bitreversal} from './_bitreversal.js';\n\n/**\n * Returns a newly allocated array containing the bitreversal permutation for\n * input <code>n</code> items. Note that <code>n</code> MUST be a power of\n * <code>2</code>.\n *\n * @param {number} n The size of the permutation, must be a power of\n * <code>2</code>.\n * @returns {Array} The bitreversal permutation of size <code>n</code>.\n */\nexport function bitreversal(n) {\n\tconst sigma = permutation(n);\n\n\t_bitreversal(sigma, n);\n\n\treturn sigma;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/bitreversal.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "bitreversal",
+    "memberof": "src/bitreversal.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bitreversal.js~bitreversal",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/bitreversal.js",
+    "importStyle": "{bitreversal}",
+    "description": "Returns a newly allocated array containing the bitreversal permutation for\ninput <code>n</code> items. Note that <code>n</code> MUST be a power of\n<code>2</code>.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The bitreversal permutation of size <code>n</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation, must be a power of\n<code>2</code>."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The bitreversal permutation of size <code>n</code>."
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/compose.js",
+    "content": "import {permutation} from './permutation.js';\nimport {_compose} from './_compose.js';\n\n/**\n * Compose two input permutations. The resulting permutation is output as an\n * array of indices.\n *\n * @param {Array} sigma The first input permutation.\n * @param {Array} tau The second input permutation.\n * @returns {Array} The resulting permutation as an array.\n */\nexport function compose(sigma, tau) {\n\t// TODO replace with Array.from( _compose...\n\n\tconst rho = permutation(sigma.length);\n\n\tlet i = 0;\n\n\tfor (const r of _compose(sigma, tau)) {\n\t\trho[i] = r;\n\t\t++i;\n\t}\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/compose.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "compose",
+    "memberof": "src/compose.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/compose.js~compose",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/compose.js",
+    "importStyle": "{compose}",
+    "description": "Compose two input permutations. The resulting permutation is output as an\narray of indices.",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The resulting permutation as an array."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The first input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "tau",
+        "description": "The second input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The resulting permutation as an array."
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/copy.js",
+    "content": "import {permutation} from './permutation.js';\nimport {_copy} from './_copy.js';\n\n/**\n * Make a copy of the input permutation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The copy.\n */\nexport function copy(sigma) {\n\tconst rho = permutation(sigma.length);\n\n\t_copy(sigma, sigma.length, rho);\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/copy.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "copy",
+    "memberof": "src/copy.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/copy.js~copy",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/copy.js",
+    "importStyle": "{copy}",
+    "description": "Make a copy of the input permutation.",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The copy."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The copy."
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "name": "src/cycles.js",
+    "content": "import {_cycles} from './_cycles.js';\nimport {used} from './used.js';\n\n/**\n * Computes a cycle decomposition of the input permutation. For a given input,\n * the algorithm used will always yield the same cycle decomposition.\n * See {@link _cycles} for implementation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma.\n */\nexport const cycles = (sigma) => _cycles(sigma, used(sigma.length));\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/cycles.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "cycles",
+    "memberof": "src/cycles.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/cycles.js~cycles",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/cycles.js",
+    "importStyle": "{cycles}",
+    "description": "Computes a cycle decomposition of the input permutation. For a given input,\nthe algorithm used will always yield the same cycle decomposition.\nSee {@link _cycles} for implementation.",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{IterableIterator} The cycles <code>[a, [b, c, ...]]</code> for sigma."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "The cycles <code>[a, [b, c, ...]]</code> for sigma."
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "file",
+    "name": "src/identity.js",
+    "content": "import {permutation} from './permutation.js';\nimport {_identity} from './_identity.js';\n\n/**\n * Returns the identity permutation of a given size.\n *\n * @param {number} n The size of the permutation to return.\n * @returns {Array} The identity permutation on <code>n</code> elements.\n */\nexport function identity(n) {\n\tconst rho = permutation(n);\n\n\t_identity(rho, n);\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/identity.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "identity",
+    "memberof": "src/identity.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/identity.js~identity",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/identity.js",
+    "importStyle": "{identity}",
+    "description": "Returns the identity permutation of a given size.",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The identity permutation on <code>n</code> elements."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation to return."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The identity permutation on <code>n</code> elements."
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export * from './_apply.js';\nexport * from './_bitreversal.js';\nexport * from './_compose.js';\nexport * from './_copy.js';\nexport * from './_cycles.js';\nexport * from './_identity.js';\nexport * from './_invert.js';\nexport * from './_invertcycles.js';\nexport * from './_itranspositions.js';\nexport * from './_next.js';\nexport * from './_permutations.js';\nexport * from './_reverse.js';\nexport * from './_transpose.js';\nexport * from './_transposition.js';\nexport * from './_transpositions.js';\nexport * from './_used.js';\nexport * from './apply.js';\nexport * from './bitreversal.js';\nexport * from './compose.js';\nexport * from './copy.js';\nexport * from './cycles.js';\nexport * from './identity.js';\nexport * from './invert.js';\nexport * from './itranspositions.js';\nexport * from './next.js';\nexport * from './permutation.js';\nexport * from './permutations.js';\nexport * from './reverse.js';\nexport * from './reversed.js';\nexport * from './transpose.js';\nexport * from './transposition.js';\nexport * from './transpositions.js';\nexport * from './used.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "src/invert.js",
+    "content": "import {permutation} from './permutation.js';\nimport {_invert} from './_invert.js';\n\n/**\n * Computes the inverse <code>tau</code> of the input permutation\n * <code>sigma</code>, that is, the permutation such that <code>compose(sigma,\n * tau)</code> returns <code>identity(sigma.length)</code>. Alternatives\n * include using {@link _invertcycles} and {@link itranspositions}.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The inverse of the input permutation.\n */\nexport function invert(sigma) {\n\tconst tau = permutation(sigma.length);\n\n\t_invert(sigma, sigma.length, tau);\n\n\treturn tau;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/invert.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "invert",
+    "memberof": "src/invert.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/invert.js~invert",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/invert.js",
+    "importStyle": "{invert}",
+    "description": "Computes the inverse <code>tau</code> of the input permutation\n<code>sigma</code>, that is, the permutation such that <code>compose(sigma,\ntau)</code> returns <code>identity(sigma.length)</code>. Alternatives\ninclude using {@link _invertcycles} and {@link itranspositions}.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The inverse of the input permutation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The inverse of the input permutation."
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/itranspositions.js",
+    "content": "import {_itranspositions} from './_itranspositions.js';\nimport {used} from './used.js';\n\n/**\n * Computes the sequence of transpositions that if applied to\n * <code>sigma</code> result in <code>invert(sigma)</code>. Uses\n * {@link _itranspositions} as the underlying implementation.\n *\n * @example\n * const invert = sigma => apply( sigma.length , itranspositions( sigma ) ) ;\n *\n * @param {Array} sigma Input permutation.\n * @return {IterableIterator} Iterator over the transpositions.\n */\nexport const itranspositions = (sigma) =>\n\t_itranspositions(sigma, used(sigma.length));\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/itranspositions.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "function",
+    "name": "itranspositions",
+    "memberof": "src/itranspositions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/itranspositions.js~itranspositions",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/itranspositions.js",
+    "importStyle": "{itranspositions}",
+    "description": "Computes the sequence of transpositions that if applied to\n<code>sigma</code> result in <code>invert(sigma)</code>. Uses\n{@link _itranspositions} as the underlying implementation.",
+    "examples": [
+      "const invert = sigma => apply( sigma.length , itranspositions( sigma ) ) ;"
+    ],
+    "lineNumber": 15,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "Input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "Iterator over the transpositions."
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/next.js",
+    "content": "import {copy} from './copy.js';\nimport {_next} from './_next.js';\nimport {reverse} from './reverse.js';\n\n/**\n * Computes the permutation that follows the input permutation. If the input\n * permutation is the last for its elements, return the first for its elements.\n * The input permutation is not altered.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The next permutation.\n */\nexport function next(sigma) {\n\tconst rho = copy(sigma);\n\n\tif (!_next(rho, rho.length)) reverse(rho);\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/next.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "next",
+    "memberof": "src/next.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/next.js~next",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/next.js",
+    "importStyle": "{next}",
+    "description": "Computes the permutation that follows the input permutation. If the input\npermutation is the last for its elements, return the first for its elements.\nThe input permutation is not altered.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The next permutation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The next permutation."
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/permutation.js",
+    "content": "/**\n * Allocates a new permutation of given input size.\n *\n * @param {number} n The size of the permutation to allocate.\n * @returns {Array} The allocated permutation.\n */\nexport function permutation(n) {\n\treturn new Array(n);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/permutation.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "permutation",
+    "memberof": "src/permutation.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/permutation.js~permutation",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/permutation.js",
+    "importStyle": "{permutation}",
+    "description": "Allocates a new permutation of given input size.",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The allocated permutation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation to allocate."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The allocated permutation."
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/permutations.js",
+    "content": "import {identity} from './identity.js';\nimport {_permutations} from './_permutations.js';\nimport {copy} from './copy.js';\n\n/**\n * Generate all permutations on <code>n</code> elements.\n *\n * @param {number} n The size of the permutations to generate.\n * @returns {IterableIterator} Iterator that yields all permutations on <code>n</code>\n * elements.\n */\nexport function* permutations(n) {\n\tfor (const permutation of _permutations(identity(n), n)) {\n\t\tyield copy(permutation);\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/permutations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "permutations",
+    "memberof": "src/permutations.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/permutations.js~permutations",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/permutations.js",
+    "importStyle": "{permutations}",
+    "description": "Generate all permutations on <code>n</code> elements.",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{IterableIterator} Iterator that yields all permutations on <code>n</code>\nelements."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutations to generate."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "Iterator that yields all permutations on <code>n</code>\nelements."
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/reverse.js",
+    "content": "import {_reverse} from './_reverse.js';\n\n/**\n * Reverses input permutation ___in-place___.\n *\n * @param {Array} sigma The input permutation to reverse (modified in-place).\n */\nexport function reverse(sigma) {\n\t_reverse(sigma, 0, sigma.length);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/reverse.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "function",
+    "name": "reverse",
+    "memberof": "src/reverse.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reverse.js~reverse",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/reverse.js",
+    "importStyle": "{reverse}",
+    "description": "Reverses input permutation ___in-place___.",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation to reverse (modified in-place)."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "src/reversed.js",
+    "content": "import {copy} from './copy.js';\nimport {reverse} from './reverse.js';\n\n/**\n * Outputs a new permutation that is the reverse of the input permutation.\n *\n * @param {Array} sigma The input permutation.\n * @returns {Array} The reverse of the input permutation.\n */\nexport function reversed(sigma) {\n\tconst rho = copy(sigma);\n\n\treverse(rho);\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/reversed.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "function",
+    "name": "reversed",
+    "memberof": "src/reversed.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reversed.js~reversed",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/reversed.js",
+    "importStyle": "{reversed}",
+    "description": "Outputs a new permutation that is the reverse of the input permutation.",
+    "lineNumber": 10,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The reverse of the input permutation."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The reverse of the input permutation."
+    }
+  },
+  {
+    "__docId__": 107,
+    "kind": "file",
+    "name": "src/transpose.js",
+    "content": "import {copy} from './copy.js';\nimport {_transpose} from './_transpose.js';\n\n/**\n * Creates a copy of the input permutation, applies an input transpose,\n * then returns the result.\n *\n * @param {Array} sigma The input permutation.\n * @param {number} a The first index of the transpose.\n * @param {number} b The second index of the transpose.\n * @returns {Array} The result.\n */\nexport function transpose(sigma, a, b) {\n\tconst rho = copy(sigma);\n\n\t_transpose(a, b, rho);\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/transpose.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 108,
+    "kind": "function",
+    "name": "transpose",
+    "memberof": "src/transpose.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/transpose.js~transpose",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/transpose.js",
+    "importStyle": "{transpose}",
+    "description": "Creates a copy of the input permutation, applies an input transpose,\nthen returns the result.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The result."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": "The first index of the transpose."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "b",
+        "description": "The second index of the transpose."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The result."
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "src/transposition.js",
+    "content": "import {identity} from './identity.js';\nimport {_transposition} from './_transposition.js';\n\n/**\n * Outputs the permutation on input <code>n</code> numbers that only transposes\n * two input elements <code>a</code> and <code>b</code>.\n *\n * @param {number} n The size of the permutation to output.\n * @param {number} a The first index to swap.\n * @param {number} b The second index to swap.\n * @returns {undefined}\n */\nexport function transposition(n, a, b) {\n\tconst rho = identity(n);\n\n\t_transposition(a, b, rho);\n\n\treturn rho;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/transposition.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "function",
+    "name": "transposition",
+    "memberof": "src/transposition.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/transposition.js~transposition",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/transposition.js",
+    "importStyle": "{transposition}",
+    "description": "Outputs the permutation on input <code>n</code> numbers that only transposes\ntwo input elements <code>a</code> and <code>b</code>.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{undefined}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the permutation to output."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": "The first index to swap."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "b",
+        "description": "The second index to swap."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 111,
+    "kind": "file",
+    "name": "src/transpositions.js",
+    "content": "import {_transpositions} from './_transpositions.js';\nimport {cycles} from './cycles.js';\n\n/**\n * Computes the transposition decomposition of the input permutation as an\n * Iterator.\n *\n * @param {Array} sigma The input permutation.\n * @returns {IterableIterator} The transposition decomposition of <code>sigma</code>.\n */\nexport const transpositions = (sigma) => _transpositions(cycles(sigma));\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/transpositions.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 112,
+    "kind": "function",
+    "name": "transpositions",
+    "memberof": "src/transpositions.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/transpositions.js~transpositions",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/transpositions.js",
+    "importStyle": "{transpositions}",
+    "description": "Computes the transposition decomposition of the input permutation as an\nIterator.",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{IterableIterator} The transposition decomposition of <code>sigma</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sigma",
+        "description": "The input permutation."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "IterableIterator"
+      ],
+      "spread": false,
+      "description": "The transposition decomposition of <code>sigma</code>."
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "src/used.js",
+    "content": "import {_used} from './_used.js';\n\n/**\n * Generates an helper array of given size (used in {@link _cycle}, {@link cycle}).\n *\n * @param {number} n The given size.\n * @returns {Array} The helper array of prescribed size.\n */\nexport function used(n) {\n\tconst array = new Array(n);\n\n\t_used(n, array);\n\n\treturn array;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/permutation/permutation/src/used.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "function",
+    "name": "used",
+    "memberof": "src/used.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/used.js~used",
+    "access": "public",
+    "export": true,
+    "importPath": "@combinatorics/permutation/src/used.js",
+    "importStyle": "{used}",
+    "description": "Generates an helper array of given size (used in {@link _cycle}, {@link cycle}).",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} The helper array of prescribed size."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The given size."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The helper array of prescribed size."
+    }
+  },
+  {
+    "kind": "index",
+    "content": ":seat: [@combinatorics/permutation](https://computational-combinatorics.github.io/permutation)\n==\n\n<p align=\"center\">\n<a href=\"https://commons.wikimedia.org/wiki/File:Symmetric_group_3;_Cayley_table;_matrices.svg\">\n<img alt=\"Symmetric group of order 3\" src=\"https://upload.wikimedia.org/wikipedia/commons/e/e0/Symmetric_group_3;_Cayley_table;_matrices.svg\" width=\"440\">\n</a><br/>\n<a href=\"https://en.wikipedia.org/wiki/User:Watchduck\">\nUser:Watchduck\n</a>\n/\n<a href=\"https://creativecommons.org/licenses/by-sa/4.0\">CC BY-SA 4.0</a>\n</p>\n\nPermutation library for JavaScript.\nSee [docs](https://computational-combinatorics.github.io/permutation).\nParent is [js-algorithms](https://github.com/make-github-pseudonymous-again/js-algorithms).\n\n```js\nimport { next , reversed , identity } from '@combinatorics/permutation' ;\nnext( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]\n```\n\n[![License](https://img.shields.io/github/license/computational-combinatorics/permutation.svg)](https://raw.githubusercontent.com/computational-combinatorics/permutation/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@combinatorics/permutation.svg)](https://www.npmjs.org/package/@combinatorics/permutation)\n[![Tests](https://img.shields.io/github/workflow/status/computational-combinatorics/permutation/ci:test?event=push&label=tests)](https://github.com/computational-combinatorics/permutation/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/computational-combinatorics/permutation.svg)](https://david-dm.org/computational-combinatorics/permutation)\n[![Dev dependencies](https://img.shields.io/david/dev/computational-combinatorics/permutation.svg)](https://david-dm.org/computational-combinatorics/permutation?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/computational-combinatorics/permutation.svg)](https://github.com/computational-combinatorics/permutation/issues)\n[![Downloads](https://img.shields.io/npm/dm/@combinatorics/permutation.svg)](https://www.npmjs.org/package/@combinatorics/permutation)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/computational-combinatorics/permutation.svg)](https://codeclimate.com/github/computational-combinatorics/permutation/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/computational-combinatorics/permutation.svg)](https://codeclimate.com/github/computational-combinatorics/permutation/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/computational-combinatorics/permutation/main.svg)](https://codecov.io/gh/computational-combinatorics/permutation)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/computational-combinatorics/permutation.svg)](https://codeclimate.com/github/computational-combinatorics/permutation/trends/technical_debt)\n[![Documentation](https://computational-combinatorics.github.io/permutation/badge.svg)](https://computational-combinatorics.github.io/permutation/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@combinatorics/permutation)](https://bundlephobia.com/result?p=@combinatorics/permutation)\n",
+    "longname": "/home/runner/work/permutation/permutation/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@combinatorics/permutation\",\n  \"description\": \"Permutation library for JavaScript\",\n  \"version\": \"3.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://computational-combinatorics.github.io/permutation\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/computational-combinatorics/permutation\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/computational-combinatorics/permutation/issues\"\n  },\n  \"keywords\": [\n    \"algorithm\",\n    \"javascript\",\n    \"js\",\n    \"list\",\n    \"permutation\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@aureooms/js-factorial\": \"1.0.0\",\n    \"@aureooms/js-functools\": \"2.0.3\",\n    \"@aureooms/js-random\": \"3.4.0\",\n    \"@aureooms/js-sort\": \"7.0.0\",\n    \"@babel/core\": \"7.14.3\",\n    \"@babel/preset-env\": \"7.14.2\",\n    \"@babel/register\": \"7.13.16\",\n    \"@commitlint/cli\": \"12.1.4\",\n    \"@iterable-iterator/chain\": \"^1.0.0\",\n    \"@iterable-iterator/list\": \"^0.0.2\",\n    \"@iterable-iterator/slice\": \"^0.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"@set-theory/closure\": \"^0.0.1\",\n    \"@total-order/lex\": \"^0.0.1\",\n    \"@total-order/primitive\": \"^0.0.2\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.1.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.2\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"11.0.0\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.5.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.40.1\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/permutation/permutation/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/permutation/permutation/doc/manual/overview.md",
+    "name": "./doc/manual/overview.md",
+    "content": "# Overview\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/permutation/permutation/doc/manual/installation.md",
+    "name": "./doc/manual/installation.md",
+    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@combinatorics/permutation\n```\n\n### npm\n```terminal\nnpm install @combinatorics/permutation --save\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/permutation/permutation/doc/manual/usage.md",
+    "name": "./doc/manual/usage.md",
+    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst permutation = require( '@combinatorics/permutation' ) ;\n// or\nimport * as permutation from '@combinatorics/permutation' ;\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/permutation/permutation/doc/manual/example.md",
+    "name": "./doc/manual/example.md",
+    "content": "# Example\n\n```js\nimport {\n\tidentity ,\n\treversed ,\n\tnext\n} from '@combinatorics/permutation' ;\n\nlet sigma = identity( 3 ) ;\n\nsigma ; // [ 0 , 1 , 2 ]\n\nreversed( sigma ) ; // [ 2 , 1 , 0 ]\n\nnext( sigma ) ; // [ 0 , 2 , 1 ]\n\n\nimport { permutations } from '@combinatorics/permutation' ;\n\nfor ( let tau of permutations( 3 ) ) {\n\n\t... // yields [ 0 , 1 , 2 ]\n\t    //        [ 0 , 2 , 1 ]\n\t    //        [ 1 , 0 , 2 ]\n\t    //        [ 1 , 2 , 0 ]\n\t    //        [ 2 , 0 , 1 ]\n\t    //        [ 2 , 1 , 0 ]\n\n}\n\n\nimport { invert } from '@combinatorics/permutation' ;\n\ninvert( [ 0 , 1 , 2 ] ) ; // [ 0 , 1 , 2 ]\ninvert( [ 0 , 2 , 1 ] ) ; // [ 0 , 2 , 1 ]\ninvert( [ 1 , 0 , 2 ] ) ; // [ 1 , 0 , 2 ]\ninvert( [ 1 , 2 , 0 ] ) ; // [ 2 , 0 , 1 ]\ninvert( [ 2 , 0 , 1 ] ) ; // [ 1 , 2 , 0 ]\ninvert( [ 2 , 1 , 0 ] ) ; // [ 2 , 1 , 0 ]\n\n\nimport { compose } from '@combinatorics/permutation' ;\n\ncompose( \"abc\" , [ 2 , 0 , 1 ] ) ; // [ \"c\" , \"a\" , \"b\" ]\n\n\nimport { bitreversal } from '@combinatorics/permutation' ;\n\nbitreversal( 8 ) ; // [ 0 , 4 , 2 , 6 , 1 , 5 , 3 , 7 ]\n```\n",
+    "static": true,
+    "access": "public"
+  }
+]
