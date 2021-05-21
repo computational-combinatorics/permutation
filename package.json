@@ -121,7 +121,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/make-github-pseudonymous-again/js-permutation.git"
+    "url": "https://github.com/make-github-pseudonymous-again/js-permutation"
   },
   "scripts": {
     "build": "babel --delete-dir-on-start --env-name production src -d lib",
