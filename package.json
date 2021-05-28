@@ -66,7 +66,7 @@
     "@aureooms/js-random": "3.4.0",
     "@aureooms/js-sort": "7.0.0",
     "@babel/core": "7.14.3",
-    "@babel/preset-env": "7.14.2",
+    "@babel/preset-env": "7.14.4",
     "@babel/register": "7.13.16",
     "@commitlint/cli": "12.1.4",
     "@iterable-iterator/chain": "1.0.0",
