@@ -2092,10 +2092,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@set-theory/closure@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@set-theory/closure/-/closure-0.0.1.tgz#61297cbece330f30b1164d7958a9a3627af50d4d"
-  integrity sha512-S25J3MDylpKdkgc7VuYC6tMGTU9JXi+QPisAK3Pp4r1Rd1fFbWdCOhWI43Etvs7XV683PSBCMQfTRdlEGfmobQ==
+"@set-theory/closure@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@set-theory/closure/-/closure-1.0.0.tgz#b89f79d08978c34524045b34e4387a8780f39db6"
+  integrity sha512-FvXl25HRgeK6/WlCYNhfOA4v35Y06DtVjz78wO9JCrsh35c24L9DubAGhagAMLwy4W8lEuqpnOt3xvyDAZYMuQ==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
