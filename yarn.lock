@@ -2126,10 +2126,10 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@total-order/lex@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@total-order/lex/-/lex-0.0.1.tgz#25a50b7213e12dddfec7f487635e1fb57fdf5598"
-  integrity sha512-g6gjcsAfCt0VxMtGxbP6+OdiT6wKYeCctXQl5fFfHXfgH0/s4/FSKcg5Wz1GPAVdT/2Q+MmzbYCM+VHQRqyhWQ==
+"@total-order/lex@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@total-order/lex/-/lex-1.0.0.tgz#6ecbf85442c1892d008b2415c8ea0ba57e757948"
+  integrity sha512-D4KM/U13QXdPNJDSW67Ux9dqCr9jUTK4APYtBYrL9cveIv14ewx6SMgsrJS/bgHm0/F6T4lgq3oNkKsYxDZYAQ==
 
 "@total-order/primitive@0.0.2":
   version "0.0.2"
