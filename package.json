@@ -75,7 +75,7 @@
     "@js-library/commitlint-config": "0.0.4",
     "@set-theory/closure": "0.0.1",
     "@total-order/lex": "1.0.0",
-    "@total-order/primitive": "0.0.2",
+    "@total-order/primitive": "1.0.1",
     "ava": "3.15.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.1.0",
