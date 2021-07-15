@@ -1929,12 +1929,12 @@
   dependencies:
     arrify "^1.0.1"
 
-"@data-structure/deque@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@data-structure/deque/-/deque-8.0.0.tgz#79e865b747b7d63e1b05861efe8183fad2e39c20"
-  integrity sha512-/LmJyugrdyFndrGDbecbM0d9vHTIAPUWXVA9aRvexKiID9u/GQITOZj74efKc507MyTEHjVAgBwR0MXgJL8EhA==
+"@data-structure/deque@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@data-structure/deque/-/deque-9.0.1.tgz#756f8a80d5bc3fe2be18a5739d051493397a6367"
+  integrity sha512-/LSOEPmWGZ10OiKfje06GNDM/fzbY1ZfXyvZKr+/a79ZTlGoTwsQW1uPvtmQDtBzs2h2VbPjHho4zNSP5YH0Zg==
   dependencies:
-    "@failure-abstraction/error" "^5.0.3"
+    "@failure-abstraction/error" "^6.0.1"
 
 "@eslint/eslintrc@^0.4.1":
   version "0.4.1"
@@ -1951,10 +1951,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@failure-abstraction/error@^5.0.3":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@failure-abstraction/error/-/error-5.0.5.tgz#0cf54ae8f76a025a8df015acd958192fb29a5e9a"
-  integrity sha512-1wYCScLBgVzSrXWDNg6KqZPCTtrbduDIxGGx3OXfGXQgWusFC8vdgKL6XLycAgsv3FRx8jardWQGYnEHUCccQQ==
+"@failure-abstraction/error@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@failure-abstraction/error/-/error-6.0.1.tgz#ab6929395c7ed3ec74d86db2976e74e31f9569e2"
+  integrity sha512-KvIHhvwfrgbUduQbk55WRDGL2XcXjDLwleId+pSnK7mUUIY7zMGMy3N+ouDcOFymme48tKDlarKsYj5mEEd3fg==
 
 "@istanbuljs/schema@^0.1.2":
   version "0.1.3"
@@ -1966,29 +1966,29 @@
   resolved "https://registry.yarnpkg.com/@iterable-iterator/chain/-/chain-2.0.0.tgz#85aa6ebfbef9a69e7fce10c8e7da0ec635550bf1"
   integrity sha512-JuVZzpM0DSI31kvCyM6lbPkA4CYcsvw+HWUC+ZPQFIdsJuoaEwuHmIMgHkZYO/FOPL4MlwkJGX5hKK3R4pTWug==
 
-"@iterable-iterator/consume@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@iterable-iterator/consume/-/consume-0.0.1.tgz#a37a96aba64caf2c64b517b1d2529a5864482df2"
-  integrity sha512-z4a8wR6JciJTrV85itsNw8pcXlq44ktWmESp66em0gjAqSnaYtKyGwDFp2FdTuVa1+p+mO+WoC0XmSVMFYc3jQ==
+"@iterable-iterator/consume@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@iterable-iterator/consume/-/consume-1.0.1.tgz#abbe00af0d48542eb8e240f698e85fd4ba9b28b0"
+  integrity sha512-KVJufzV8/gOnYqrtO4CFdGZopJ5kkUBhzHcbU0iToOv5aTl0igxnsRzCaDSxUgO4q0mDbf9WEfjz4K39cl1iNA==
 
-"@iterable-iterator/iter@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@iterable-iterator/iter/-/iter-0.0.2.tgz#7129988de2071ffb747632bd0190c0db579a5b69"
-  integrity sha512-+q2BxI+awes71qm4M5zLXaJK7GUy1Tbt5K7YKTU3Yl8DgCdQxeHBbkAIxXAv49BoS2eLx5cLXHdpX6ybzvA2XQ==
+"@iterable-iterator/iter@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@iterable-iterator/iter/-/iter-1.0.1.tgz#11149acef0d28b689e0b998dc478113eda81871d"
+  integrity sha512-/C/Ciq69we9C0wvqx0rOdnpXAoSW+UnyIV/ZQrUYDzmtguvUQ4HjiIPcU2Csdh705VS6TMkUhoaBHIGh44V3OA==
 
 "@iterable-iterator/list@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@iterable-iterator/list/-/list-1.0.1.tgz#e84fd841d7d58c2ad6d0c026f0612c8228dc97f5"
   integrity sha512-234a2cf0a0YhD1Ofb3F0xSjXDkqDK1xCiLnXoMUt/DWAt/odAvJToaxEFMemiKlAUvqF6E8MSi2v2UvlIOpBUA==
 
-"@iterable-iterator/slice@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@iterable-iterator/slice/-/slice-0.0.1.tgz#62a8e15435714787659563ad0bc4138e52f5baf2"
-  integrity sha512-8U0wLGf3lgZY/MSvmkCwjVF6mivwp3MEY6gCBbD+I6qvJk2Xy7PAWK22lcg69kQKoqGc2HviGeLzDfMh1DNpGw==
+"@iterable-iterator/slice@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@iterable-iterator/slice/-/slice-1.0.1.tgz#b6344d4e91379f6eab360a87ff304d0b3cc75ccf"
+  integrity sha512-vvlv9kBO5YIbB64WBjMtoa5s1tRe8OdKH5YGYJza7ctS5DgPWl+QRsoNbsxcecyxxut63RKQdXqp8DQM9P0v6A==
   dependencies:
-    "@data-structure/deque" "^8.0.0"
-    "@iterable-iterator/consume" "^0.0.1"
-    "@iterable-iterator/iter" "^0.0.2"
+    "@data-structure/deque" "^9.0.1"
+    "@iterable-iterator/consume" "^1.0.1"
+    "@iterable-iterator/iter" "^1.0.1"
 
 "@js-library/commitlint-config@0.0.4":
   version "0.0.4"
