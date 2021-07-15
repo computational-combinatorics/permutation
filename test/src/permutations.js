@@ -1,8 +1,8 @@
 import test from 'ava';
 import {increasing} from '@total-order/primitive';
 import {fixedlexicographical} from '@total-order/lex';
-import {issorted} from '@aureooms/js-sort';
-import {factorial} from '@aureooms/js-factorial';
+import {isSorted} from '@comparison-sorting/is-sorted';
+import {factorial} from '@combinatorics/factorial';
 import {identity, next, permutations} from '../../src/index.js';
 
 function macro(t, size) {
@@ -16,9 +16,8 @@ function macro(t, size) {
 
 	t.deepEqual(next(pis[pis.length - 1]), identity(size), 'next(last) is id');
 
-	t.is(
-		issorted(compare, pis, 0, pis.length),
-		pis.length,
+	t.true(
+		isSorted(compare, pis, 0, pis.length),
 		'permutations are in sorted order',
 	);
 }

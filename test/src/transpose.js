@@ -1,5 +1,5 @@
 import test from 'ava';
-import {randint, shuffle} from '@aureooms/js-random';
+import {randint, shuffle} from '@randomized/random';
 import {copy, compose, identity, transpose} from '../../src/index.js';
 
 function macro(t, size) {

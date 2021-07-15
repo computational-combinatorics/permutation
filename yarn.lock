@@ -2,26 +2,6 @@
 # yarn lockfile v1
 
 
-"@aureooms/js-factorial@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-factorial/-/js-factorial-1.0.0.tgz#f3b060c3d3b6ca4db7f8fd3b5b9a910c2d2d3c90"
-  integrity sha1-87Bgw9O2yk23+P07W5qRDC0tPJA=
-
-"@aureooms/js-functools@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-functools/-/js-functools-2.0.3.tgz#5139d6245278193da4cf21c44666797bf40a1d6e"
-  integrity sha1-UTnWJFJ4GT2kzyHERmZ5e/QKHW4=
-
-"@aureooms/js-random@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-3.4.0.tgz#4d32ab8b0bd30ada20bd84fa65da861c22dfc214"
-  integrity sha512-beThd4HqYLjYOakD/+6nB1ZFaAiGrfzZIT0eOiHUfQe0omiLfRdfcsInZ8vYFgEKM/mN+5WkFPNyldOhRJ1ygA==
-
-"@aureooms/js-sort@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-sort/-/js-sort-7.0.0.tgz#db3c8b93acd93ee0500462b2cec29239c3deb34d"
-  integrity sha1-2zyLk6zZPuBQBGKyzsKSOcPes00=
-
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -1011,6 +991,13 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@combinatorics/factorial@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@combinatorics/factorial/-/factorial-0.0.2.tgz#9e5e29f4472099e31af60c8a58e75efcef0f4396"
+  integrity sha512-y1NzKW2oIBRHndYZg3EI08z9m1C/BghOgZiddPugKPRpimGOBRlHKfTq8g6NoLWsbRSLXIUi6KFjHGXMLGIevQ==
+  dependencies:
+    "@failure-abstraction/error" "^6.0.1"
+
 "@commitlint/cli@13.1.0":
   version "13.1.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-13.1.0.tgz#3608bb24dbef41aaa0729ffe65c7f9b57409626a"
@@ -1142,6 +1129,11 @@
   dependencies:
     chalk "^4.0.0"
 
+"@comparison-sorting/is-sorted@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@comparison-sorting/is-sorted/-/is-sorted-0.0.1.tgz#db4d0e0e78f2e06a01a90a490cbc5210d07687c7"
+  integrity sha512-hi9Nk2Pp8VKuN1AG1OFDiCOJT0ByPQ2s8GiO1hAXYPEPq7CNU2HRKUtYK4qrP2rHwcXmmM/v6AKjL3SES7uPSw==
+
 "@concordance/react@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@concordance/react/-/react-2.0.0.tgz#aef913f27474c53731f4fd79cc2f54897de90fde"
@@ -1175,6 +1167,11 @@
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@failure-abstraction/error/-/error-6.0.1.tgz#ab6929395c7ed3ec74d86db2976e74e31f9569e2"
   integrity sha512-KvIHhvwfrgbUduQbk55WRDGL2XcXjDLwleId+pSnK7mUUIY7zMGMy3N+ouDcOFymme48tKDlarKsYj5mEEd3fg==
+
+"@functional-abstraction/functools@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@functional-abstraction/functools/-/functools-3.0.2.tgz#19c51ebb30b1e699ef9f30d2dcdbe1f11b1c9852"
+  integrity sha512-CL5aTFWBa+zoiwLFePQhvSJr/aX2nEG69dqAp7Zf3D2I/DGHE+KNe31DNJdNCZtJJPthsVg17qyMXldabre2Lw==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -1262,6 +1259,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@randomized/random@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@randomized/random/-/random-4.0.0.tgz#3664429ea3fd97a1bf321897d03e4681fd7b00c7"
+  integrity sha512-4dG15onq/4tXLMTrG12hRrlL3/hJ8yJbWc4YD3db45z5P5UtRqSQRqaW518YkXhXaIsLX1pA78FJBDl8jg85sw==
 
 "@rollup/plugin-alias@^3.1.1":
   version "3.1.4"
