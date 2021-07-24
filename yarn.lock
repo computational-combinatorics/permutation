@@ -17,10 +17,10 @@
   resolved "https://registry.yarnpkg.com/@aureooms/js-random/-/js-random-3.4.0.tgz#4d32ab8b0bd30ada20bd84fa65da861c22dfc214"
   integrity sha512-beThd4HqYLjYOakD/+6nB1ZFaAiGrfzZIT0eOiHUfQe0omiLfRdfcsInZ8vYFgEKM/mN+5WkFPNyldOhRJ1ygA==
 
-"@aureooms/js-sort@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-sort/-/js-sort-7.0.0.tgz#db3c8b93acd93ee0500462b2cec29239c3deb34d"
-  integrity sha1-2zyLk6zZPuBQBGKyzsKSOcPes00=
+"@aureooms/js-sort@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-sort/-/js-sort-8.0.0.tgz#5a82b69c0e1b61b8068b1b4f2ecd69e1ae35257f"
+  integrity sha512-aOP63ajdczRgwELnG5eZpMf4/1ygeq01ALeznH4xT6x4ESqBq+g9uXntUh4rvzczgRAwFWazLIRR0fK3tKEMWw==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"

@@ -64,7 +64,7 @@
     "@aureooms/js-factorial": "1.0.0",
     "@aureooms/js-functools": "2.0.3",
     "@aureooms/js-random": "3.4.0",
-    "@aureooms/js-sort": "7.0.0",
+    "@aureooms/js-sort": "8.0.0",
     "@babel/core": "7.14.8",
     "@babel/preset-env": "7.14.8",
     "@babel/register": "7.14.5",
