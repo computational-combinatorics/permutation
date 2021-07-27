@@ -991,7 +991,7 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@combinatorics/factorial@^0.0.2":
+"@combinatorics/factorial@0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@combinatorics/factorial/-/factorial-0.0.2.tgz#9e5e29f4472099e31af60c8a58e75efcef0f4396"
   integrity sha512-y1NzKW2oIBRHndYZg3EI08z9m1C/BghOgZiddPugKPRpimGOBRlHKfTq8g6NoLWsbRSLXIUi6KFjHGXMLGIevQ==
@@ -1129,7 +1129,7 @@
   dependencies:
     chalk "^4.0.0"
 
-"@comparison-sorting/is-sorted@^0.0.1":
+"@comparison-sorting/is-sorted@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@comparison-sorting/is-sorted/-/is-sorted-0.0.1.tgz#db4d0e0e78f2e06a01a90a490cbc5210d07687c7"
   integrity sha512-hi9Nk2Pp8VKuN1AG1OFDiCOJT0ByPQ2s8GiO1hAXYPEPq7CNU2HRKUtYK4qrP2rHwcXmmM/v6AKjL3SES7uPSw==
@@ -1260,7 +1260,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@randomized/random@^4.0.0":
+"@randomized/random@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@randomized/random/-/random-4.0.0.tgz#3664429ea3fd97a1bf321897d03e4681fd7b00c7"
   integrity sha512-4dG15onq/4tXLMTrG12hRrlL3/hJ8yJbWc4YD3db45z5P5UtRqSQRqaW518YkXhXaIsLX1pA78FJBDl8jg85sw==
