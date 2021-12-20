@@ -14,9 +14,11 @@ export function _bitreversal(array, n) {
 
 	while (i < n) {
 		for (let j = 0; j < i; ++j) {
+			// eslint-disable-next-line no-bitwise
 			array[i + j] = (array[j] <<= 1) + 1;
 		}
 
+		// eslint-disable-next-line no-bitwise
 		i <<= 1;
 	}
 }
