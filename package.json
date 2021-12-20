@@ -72,7 +72,7 @@
     "@functional-abstraction/functools": "3.0.2",
     "@iterable-iterator/chain": "2.0.1",
     "@iterable-iterator/list": "1.0.1",
-    "@iterable-iterator/slice": "1.0.1",
+    "@iterable-iterator/slice": "1.0.2",
     "@js-library/commitlint-config": "0.0.4",
     "@randomized/random": "4.0.0",
     "@set-theory/closure": "1.0.0",
