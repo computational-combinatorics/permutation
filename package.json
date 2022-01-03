@@ -78,7 +78,7 @@
     "@set-theory/closure": "1.0.0",
     "@total-order/lex": "1.0.0",
     "@total-order/primitive": "1.0.1",
-    "ava": "3.15.0",
+    "ava": "4.0.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.2.0",
     "babel-preset-power-assert": "3.0.0",
