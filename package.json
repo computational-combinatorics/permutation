@@ -1,7 +1,7 @@
 {
   "name": "@combinatorics/permutation",
   "description": "Permutation library for JavaScript",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
   "homepage": "https://computational-combinatorics.github.io/permutation",
