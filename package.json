@@ -68,7 +68,6 @@
   "devDependencies": {
     "@babel/core": "7.17.9",
     "@babel/preset-env": "7.16.11",
-    "@babel/register": "7.17.7",
     "@combinatorics/factorial": "0.0.2",
     "@commitlint/cli": "16.2.3",
     "@comparison-sorting/is-sorted": "0.0.1",
@@ -77,6 +76,7 @@
     "@iterable-iterator/list": "1.0.1",
     "@iterable-iterator/slice": "1.0.2",
     "@js-library/commitlint-config": "0.0.4",
+    "@node-loader/babel": "2.0.1",
     "@randomized/random": "4.1.0",
     "@set-theory/closure": "1.0.0",
     "@total-order/lex": "1.0.0",
@@ -105,21 +105,15 @@
       "test/src/**/*"
     ],
     "require": [
-      "regenerator-runtime/runtime",
-      "@babel/register"
+      "regenerator-runtime/runtime"
     ],
-    "timeout": "1m"
+    "timeout": "1m",
+    "nodeArguments": [
+      "--experimental-loader=@node-loader/babel"
+    ]
   },
   "babel": {
     "sourceMaps": true,
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": "current node"
-        }
-      ]
-    ],
     "plugins": [
       [
         "transform-remove-console",
