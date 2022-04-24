@@ -13,8 +13,12 @@ User:Watchduck
 </p>
 
 Permutation library for JavaScript.
-See [docs](https://computational-combinatorics.github.io/permutation).
+See [docs](https://computational-combinatorics.github.io/permutation/index.html).
 Parent is [js-algorithms](https://github.com/make-github-pseudonymous-again/js-algorithms).
+
+> :warning: Depending on your environment, the code may require
+> `regeneratorRuntime` to be defined, for instance by importing
+> [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
 
 ```js
 import { next , reversed , identity } from '@combinatorics/permutation' ;

@@ -1,4 +1,6 @@
-# Example
+# Examples
+
+> More examples in [the test files](https://github.com/computational-combinatorics/permutation/tree/main/test/src).
 
 ```js
 import {
