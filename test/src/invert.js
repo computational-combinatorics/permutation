@@ -8,7 +8,7 @@ import {
 	identity,
 	invert,
 	itranspositions,
-} from '../../src/index.js';
+} from '#module';
 
 function macro(t, do_invert, size) {
 	const sigma = identity(size);

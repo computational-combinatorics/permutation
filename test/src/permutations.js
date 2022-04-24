@@ -3,7 +3,7 @@ import {increasing} from '@total-order/primitive';
 import {fixedlexicographical} from '@total-order/lex';
 import {isSorted} from '@comparison-sorting/is-sorted';
 import {factorial} from '@combinatorics/factorial';
-import {identity, next, permutations} from '../../src/index.js';
+import {identity, next, permutations} from '#module';
 
 function macro(t, size) {
 	const compare = fixedlexicographical(increasing, size);

@@ -8,7 +8,7 @@ import {takewhile} from '@iterable-iterator/slice';
 import {singletonUnderUnaryOperator as closure} from '@set-theory/closure';
 import {partial} from '@functional-abstraction/functools';
 import {factorial} from '@combinatorics/factorial';
-import {identity, next} from '../../src/index.js';
+import {identity, next} from '#module';
 
 function macro(t, size) {
 	const compare = fixedlexicographical(increasing, size);

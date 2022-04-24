@@ -1,5 +1,5 @@
 import test from 'ava';
-import {bitreversal} from '../../src/index.js';
+import {bitreversal} from '#module';
 
 test('bitreversal', (t) => {
 	t.deepEqual(bitreversal(1), [0]);

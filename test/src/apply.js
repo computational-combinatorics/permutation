@@ -1,6 +1,6 @@
 import test from 'ava';
 import {shuffle} from '@randomized/random';
-import {apply, identity, transpositions} from '../../src/index.js';
+import {apply, identity, transpositions} from '#module';
 
 function macro(t, size) {
 	const sigma = identity(size);

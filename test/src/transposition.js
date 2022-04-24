@@ -1,6 +1,6 @@
 import test from 'ava';
 import {randint} from '@randomized/random';
-import {identity, compose, transposition} from '../../src/index.js';
+import {identity, compose, transposition} from '#module';
 
 function macro(t, size) {
 	const id = identity(size);
