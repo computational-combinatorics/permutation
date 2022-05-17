@@ -70,8 +70,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.17.10",
-    "@babel/preset-env": "7.17.10",
+    "@babel/core": "7.17.12",
+    "@babel/preset-env": "7.17.12",
     "@combinatorics/factorial": "0.0.2",
     "@commitlint/cli": "16.3.0",
     "@comparison-sorting/is-sorted": "0.0.1",
