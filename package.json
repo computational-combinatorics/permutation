@@ -73,7 +73,7 @@
     "@babel/core": "7.18.2",
     "@babel/preset-env": "7.18.2",
     "@combinatorics/factorial": "0.0.2",
-    "@commitlint/cli": "17.0.0",
+    "@commitlint/cli": "17.0.1",
     "@comparison-sorting/is-sorted": "0.0.1",
     "@functional-abstraction/functools": "3.0.2",
     "@iterable-iterator/chain": "2.0.1",
