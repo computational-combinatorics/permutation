@@ -70,7 +70,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.21.5",
+    "@babel/core": "7.21.8",
     "@babel/preset-env": "7.21.5",
     "@combinatorics/factorial": "0.0.2",
     "@commitlint/cli": "17.6.1",
