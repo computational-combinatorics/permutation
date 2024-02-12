@@ -27,7 +27,7 @@ next( reversed( identity( 3 ) ) ) ; // [ 0 , 1 , 2 ]
 
 [![License](https://img.shields.io/github/license/computational-combinatorics/permutation.svg)](https://raw.githubusercontent.com/computational-combinatorics/permutation/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@combinatorics/permutation.svg)](https://www.npmjs.org/package/@combinatorics/permutation)
-[![Tests](https://img.shields.io/github/workflow/status/computational-combinatorics/permutation/ci?event=push&label=tests)](https://github.com/computational-combinatorics/permutation/actions/workflows/ci.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/actions/workflow/status/computational-combinatorics/permutation/ci.yml?branch=main&event=push&label=tests)](https://github.com/computational-combinatorics/permutation/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/computational-combinatorics/permutation.svg)](https://github.com/computational-combinatorics/permutation/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/computational-combinatorics/permutation.svg)](https://github.com/computational-combinatorics/permutation/issues)
 [![Downloads](https://img.shields.io/npm/dm/@combinatorics/permutation.svg)](https://www.npmjs.org/package/@combinatorics/permutation)
