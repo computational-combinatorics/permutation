@@ -1,5 +1,5 @@
-import {permutation} from './permutation.js';
 import {_copy} from './_copy.js';
+import {permutation} from './permutation.js';
 
 /**
  * Make a copy of the input permutation.

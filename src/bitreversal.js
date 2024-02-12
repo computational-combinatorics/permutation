@@ -1,5 +1,5 @@
-import {permutation} from './permutation.js';
 import {_bitreversal} from './_bitreversal.js';
+import {permutation} from './permutation.js';
 
 /**
  * Returns a newly allocated array containing the bitreversal permutation for

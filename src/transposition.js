@@ -1,5 +1,5 @@
-import {identity} from './identity.js';
 import {_transposition} from './_transposition.js';
+import {identity} from './identity.js';
 
 /**
  * Outputs the permutation on input <code>n</code> numbers that only transposes

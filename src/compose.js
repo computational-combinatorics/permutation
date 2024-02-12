@@ -1,5 +1,5 @@
-import {permutation} from './permutation.js';
 import {_compose} from './_compose.js';
+import {permutation} from './permutation.js';
 
 /**
  * Compose two input permutations. The resulting permutation is output as an

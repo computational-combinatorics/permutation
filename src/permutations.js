@@ -1,6 +1,6 @@
-import {identity} from './identity.js';
 import {_permutations} from './_permutations.js';
 import {copy} from './copy.js';
+import {identity} from './identity.js';
 
 /**
  * Generate all permutations on <code>n</code> elements.

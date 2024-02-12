@@ -1,5 +1,5 @@
-import {permutation} from './permutation.js';
 import {_identity} from './_identity.js';
+import {permutation} from './permutation.js';
 
 /**
  * Returns the identity permutation of a given size.

@@ -1,5 +1,5 @@
-import {copy} from './copy.js';
 import {_next} from './_next.js';
+import {copy} from './copy.js';
 import {reverse} from './reverse.js';
 
 /**

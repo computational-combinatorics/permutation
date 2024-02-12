@@ -1,5 +1,5 @@
-import {copy} from './copy.js';
 import {_transpose} from './_transpose.js';
+import {copy} from './copy.js';
 
 /**
  * Creates a copy of the input permutation, applies an input transpose,

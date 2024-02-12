@@ -1,4 +1,5 @@
 import test from 'ava';
+
 import {bitreversal} from '#module';
 
 test('bitreversal', (t) => {

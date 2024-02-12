@@ -1,5 +1,5 @@
-import {identity} from './identity.js';
 import {_apply} from './_apply.js';
+import {identity} from './identity.js';
 
 /**
  * Apply a given sequence (in the given order) of transpositions (given as

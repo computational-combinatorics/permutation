@@ -1,5 +1,7 @@
 import test from 'ava';
+
 import {randint, shuffle} from '@randomized/random';
+
 import {copy, compose, identity, transpose} from '#module';
 
 function macro(t, size) {

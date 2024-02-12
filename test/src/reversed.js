@@ -1,5 +1,7 @@
 import test from 'ava';
+
 import {shuffle} from '@randomized/random';
+
 import {identity, reversed} from '#module';
 
 function macro(t, size) {
